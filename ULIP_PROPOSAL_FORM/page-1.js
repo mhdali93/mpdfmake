@@ -1,5 +1,6 @@
 const Page_1 = ({
-  convertTextToRtl
+  convertTextToRtl,
+  innerTableLayouts
 }) => {
   return {
     layout : "customTableLayout",
@@ -458,6 +459,7 @@ const Page_1 = ({
                 ],
               ],
             },
+            layout: innerTableLayouts['zeroPadding']
           },
           {}
         ],

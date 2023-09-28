@@ -32,12 +32,20 @@ const Page_3 = require("./page-3");
 const Page_4 = require("./page-4");
 const Page_5 = require("./page-5");
 const Page_6 = require("./page-6");
-// const Page_7 = require("./page-7");
-// const Page_8 = require("./page-8");
+const Page_7 = require("./page-7");
+const Page_8 = require("./page-8");
+const Page_9 = require("./page-9");
 
 const convertTextToRtl = (text) => {
   return text.split(" ").reverse().join(" ");
 }
+
+const innerTableLayouts = {
+  zeroPadding:{
+    paddingTop: (i, node) => 0,
+    paddingBottom: (i, node) => 0
+  }
+};
 
 const generatePF1Document = () => {
 
@@ -45,14 +53,15 @@ const generatePF1Document = () => {
     const docDefinition = {
       pageMargins : [15,18,18,18],
       content: [
-        Page_1({ convertTextToRtl }),
+        Page_1({ convertTextToRtl, innerTableLayouts }),
         Page_2({ convertTextToRtl }),
         Page_3({ convertTextToRtl }),
         Page_4({ convertTextToRtl }),
         Page_5({ convertTextToRtl }),
         Page_6({ convertTextToRtl }),
-        // Page_7({ convertTextToRtl }),
-        // Page_8({ convertTextToRtl }),
+        Page_7({ convertTextToRtl, innerTableLayouts }),
+        Page_8({ convertTextToRtl }),
+        Page_9({ convertTextToRtl }),
       ],
       defaultStyle: {
         font: 'Arial',

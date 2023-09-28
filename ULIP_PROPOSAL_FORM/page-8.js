@@ -1,461 +1,111 @@
-const Page_4 = ({
+const Page_8 = ({
   convertTextToRtl
 }) => {
   return {
     layout : "customTableLayout",
     pageMargin : [0, 0, 0, 0],
     pageBreak : "after",
-    fontSize : 8.5,
+    fontSize : 9,
     table : {
+      widths : [220, '*'],
       body : [
         [
           {
             border: [false, false, false, false],
-            table: {
-              widths: [
-                84, 
-                84,
-                84,
-                84,
-                84,
-                84
-              ],
-              body: [
-                [
-                  {
-                    text: '7. Family History',
-                    style: ['header','defaultStyle',{"fontSize": 10}], 
-                    colSpan: 6
-                  },
-                  {},{},{},{},{}
-                ],
-                [
-                  {
-                    text: '',
-                    style: {"fontSize": 2}, 
-                    colSpan: 6
-                  },
-                  {},{},{},{},{}
-                ],
-                [
-                  {
-                    text: '', 
-                    style:['cellHeader']
-                  },
-                  {
-                    text:'LIVING',
-                    style:['cellHeader'],
-                    colSpan:2
-                  },{},
-                  {
-                    text:'DECEASED',
-                    style:['cellHeader'],
-                    colSpan:3
-                  },{},{}
-                ],
-                [
-                  {
-                    text: 'MEMBERS', 
-                    style:['cellHeader']
-                  },
-                  {
-                    text:'PRESENT AGE',
-                    style:['cellHeader']
-                  },
-                  {
-                    text:'STATE OF HEALTH',
-                    style:['cellHeader']
-                  },
-                  {
-                    text:'YEAR OF DEATH',
-                    style:['cellHeader']
-                  },
-                  {
-                    text:'AGE AT DEATH',
-                    style:['cellHeader']
-                  },
-                  {
-                    text:'CAUSE OF DEATH',
-                    style:['cellHeader']
-                  },
-                ],
-                [
-                  {
-                    text: 'FATHER', 
-                    style:['cellHeader']
-                  },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                ],
-                [
-                  {
-                    text: 'MOTHER', 
-                    style:['cellHeader']
-                  },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                ],
-                [
-                  {
-                    text: 'BROTHERS', 
-                    style:['cellHeader']
-                  },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                ],
-                [
-                  {
-                    text: 'SISTERS', 
-                    style:['cellHeader']
-                  },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                ],
-                [
-                  {
-                    text: 'WIFE/HUSBAND', 
-                    style:['cellHeader']
-                  },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                ],
-                [
-                  {
-                    text: 'CHILDREN', 
-                    style:['cellHeader']
-                  },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                  { text:'' },
-                ]
-                
-              ],
-            }
-          }
+            image : "./assets/images/logo1.png",
+            width: 130
+          },
+          {
+            border: [false, false, false, false],
+            text:[
+              {
+                text: "Life Insurance Corporation (International) B.S.C.(c)\n",
+                style: ["center", {fontSize: 14, font: 'Times'}],
+              },
+              {
+                text: "Single Premium Wealth Creator - 268\n",
+                style: ["center", {fontSize: 18, font: 'Times'}],
+              },
+              {
+                text: "Annexure (List of Funds)",
+                style: ["center", {fontSize: 14, bold: true, font: 'Times'}],
+              }
+            ]
+          },
         ],
         [
           {
             border: [false, false, false, false],
+            colSpan:2,
             table: {
               widths: [
-                10, 
-                "*",
-                "*",
-                "*",
-                "*",
-                "*"
+                20, 
+                "auto", 
+                "*",  
+                50
               ],
               body: [
                 [
                   {
-                    text: '8. To be answered if Life to be assured is a female:',
-                    style: ['header','defaultStyle',{"fontSize": 10}], 
-                    colSpan: 6
-                  },{},{},{},{},{}
-                ],  
-                [
-                  { text: 'A.', style:["center", "cellHeader"], border:[true, true, true, false] },
-                  { text: 'Husband’s Full Name', style:["left", "cellHeader"]},
-                  { text: '', colSpan: 4},{},{},{}
-                ],
-                [
-                  { text: '', style:["cellHeader"], border:[true, false, true, true] },
-                  { text: 'Husband’s Occupation', style:["left", "cellHeader"]},
-                  { text: '', colSpan:2},{},
-                  { text: 'Annual Income', style:["left", "cellHeader"]},
-                  { text: ''}
-                ], 
-                [
-                  { text: 'B.', style:["center", "cellHeader"], border:[true, true, true, false] },
-                  { text: 'Details of Husband’s Insurance', style:["left", "cellHeader"], colSpan: 5},{},{},{},{}
-                ], 
-                [
-                  { text: '', style:["cellHeader"]},
-                  { text: 'Policy No', style:["left", "cellHeader"]},
-                  { text: 'Name of the Insurer / Company', style:["left", "cellHeader"]},
-                  { text: 'Sum Assured', style:["left", "cellHeader"]},
-                  { text: 'Plan & Term', style:["left", "cellHeader"]},
-                  { text: 'Present Status of the Policies', style:["left", "cellHeader"]},
-                ],
-                [
-                  { text: '', style:["cellHeader",{"fontSize":10}]},
-                  { text: ''},
-                  { text: ''},
-                  { text: ''},
-                  { text: ''},
-                  { text: ''}
-                ],   
-                [
-                  { text: '', style:["cellHeader"]},
-                  { text: ''},
-                  { text: ''},
-                  { text: ''},
-                  { text: ''},
-                  { text: ''}
-                ],   
-                [
-                  { text: '', style:["cellHeader"]},
-                  { text: ''},
-                  { text: ''},
-                  { text: ''},
-                  { text: ''},
-                  { text: ''}
-                ],   
-                [
-                  { text: '', style:["cellHeader"]},
-                  { text: ''},
-                  { text: ''},
-                  { text: ''},
-                  { text: ''},
-                  { text: ''}
-                ],   
-                [
-                  { text: 'C.', style:["center", "cellHeader"] },
-                  { text: 'Are you Pregnant now?', style:["center", "cellHeader"]},
-                  { text: 'Date of last Delivery', style:["center", "cellHeader"]},
-                  { text: 'Have you had any abortion or miscarriage or Caesarean Section? If so, give details.', style:["center", "cellHeader"], colSpan:2},
-                  {},
-                  { text: 'Date of last menstruation', style:["center", "cellHeader"]}
-                ],
-                [
-                  { text: '', style:["cellHeader"]},
-                  { text: ''},
-                  { text: ''},
-                  { text: ''},
-                  { text: ''},
-                  { text: ''}
-                ],            
-              ],
-            }
-          }
-        ],
-        [
-          {
-            border: [false, false, false, false],
-            table: {
-              widths: [
-                10,
-                85,
-                "*",
-                "*",
-                "*",
-                "*",
-                "*",
-                "*",
-              ],
-              body: [
-                [
-                  {
-                    text: '9. Plan Details',
-                    style: ['header','defaultStyle',{"fontSize": 10}], 
-                    colSpan: 8
-                  },
-                  {},{},{},{},{},{},{}
-                ],
-                [
-                  { text: 'A.', style: ['cellHeader', 'center'] },
-                  { text: 'Plan Name', style: ['cellHeader', 'center'] },
-                  { text: '', colSpan: 3 },{},{},
-                  { text: 'Plan No', style: ['cellHeader', 'center'] },
-                  { text: '', colSpan: 2 },{}
-                ],  
-                [
-                  { text: 'B.', style: ['cellHeader', 'center'] },
-                  { text: 'Policy Term (years)', style: ['cellHeader', 'center'] },
-                  { text: '', colSpan: 2 },{},
-                  { text: 'Payment Term (years)', style: ['cellHeader', 'center'], colSpan:2 },{},
-                  { text: '', colSpan: 2 },{}
-                ],    
-                [
-                  { text: 'C.', style: ['cellHeader', 'center'] },
-                  { text: 'Premium Type', style: ['cellHeader', 'center'] },
-                  { text: 'Single', style: ['cellHeader', 'center'] },
-                  { text: '$', style: ['left'] },
-                  { text: 'Top-up', style: ['cellHeader', 'center'] },
-                  { text: '$', style: ['left'] },
-                  { text: 'Regular', style: ['cellHeader', 'center'] },
-                  { text: '$', style: ['left'] },
-                ],  
-                [
-                  { text: 'D.', style: ['cellHeader', 'center'] },
-                  { text: 'Frequency (If regular)', style: ['cellHeader', 'center'] },
-                  { text: 'Yearly\t\t\t\t\t\t\t\tHalf Yearly\t\t\t\t\t\t\t\t\tQuarterly\t\t\t\t\t\t\t\t\tMonthly', style: ['left'], colSpan:6 },
-                  {},{},{},{},{}
-                ],   
-                [
-                  { text: 'E.', style: ['cellHeader', 'center'] },
-                  { text: 'Investment Amount', style: ['cellHeader', 'center'] },
-                  { text: 'In words:', style: ['readOnly', 'left'], colSpan:4},{},{},{},
-                  { text: 'USD (In figure)', style: ['cellHeader', 'center'] },
-                  { text: '$', style: ['left'] },
-                ],          
-              ],
-            }
-          }
-        ],
-        [
-          {
-            border: [false, false, false, false],
-            table: {
-              widths: [
-                22,
-                "*",
-                "*",
-                "*"
-              ],
-              body: [
-                [
-                  {
-                    text: '10. Fund Details',
-                    style: ['header','defaultStyle',{"fontSize": 10}], 
+                    text: 'LIST OF FUNDS - EQUITY',
+                    style: ['header','defaultStyle','center',{"fontSize": 11}], 
                     colSpan: 4
-                  },
-                  {},{},{}
+                  },{},{},{}
                 ],
                 [
-                  {
-                    text: 'Please use additional sheet in case of more No. of fund details.',
-                    style: ['cellHeader'], 
-                    colSpan: 4
-                  },
-                  {},{},{}
+                  { text: 'S.No.', style: ["center", "cellHeader"] },
+                  { text: 'ISIN', style: ["center", "cellHeader"] },
+                  { text: 'Fund Name', style: ["center", "cellHeader"] },
+                  { text: '% Of Allocation', style: ["center", "cellHeader"] }
                 ],
-                [
-                  { text: 'S.No.', style: ['cellHeader', 'center'] },
-                  { text: 'ISIN', style: ['cellHeader', 'center'] },
-                  { text: 'Fund Name', style: ['cellHeader', 'center'] },
-                  { text: '% Of Allocation', style: ['cellHeader', 'center'] }
-                ],
-                [
-                  { text: '1.', style: ['cellHeader', 'center']},
-                  { text: ''}, { text: ''}, { text: ''}
-                ],
-                [
-                  { text: '2.', style: ['cellHeader', 'center']},
-                  { text: ''}, { text: ''}, { text: ''}
-                ],
-                [
-                  { text: '3.', style: ['cellHeader', 'center']},
-                  { text: ''}, { text: ''}, { text: ''}
-                ],
-                [
-                  { text: '4.', style: ['cellHeader', 'center'] },
-                  { text: ''}, { text: ''}, { text: ''}
-                ],
-                [
-                  { text: '5.', style: ['cellHeader', 'center'] },
-                  { text: ''}, { text: ''}, { text: ''}
-                ],
-                [
-                  { text: '6.', style: ['cellHeader', 'center'] },
-                  { text: ''}, { text: ''}, { text: ''}
-                ],
-                [
-                  { text: '7.', style: ['cellHeader', 'center'] },
-                  { text: ''}, { text: ''}, { text: ''}
-                ],
-                [
-                  { text: '8.', style: ['cellHeader', 'center'] },
-                  { text: ''}, { text: ''}, { text: ''}
-                ],
-                [
-                  { text: '9.', style: ['cellHeader', 'center'] },
-                  { text: ''}, { text: ''}, { text: ''}
-                ],
-                [
-                  { text: '10.', style: ['cellHeader', 'center'] },
-                  { text: ''}, { text: ''}, { text: ''}
-                ],
-                [
-                  { text: '11.', style: ['cellHeader', 'center'] },
-                  { text: ''}, { text: ''}, { text: ''}
-                ],
-                [
-                  { text: '12.', style: ['cellHeader', 'center'] },
-                  { text: ''}, { text: ''}, { text: ''}
-                ],
-                [
-                  { text: '13.', style: ['cellHeader', 'center'] },
-                  { text: ''}, { text: ''}, { text: ''}
-                ],
-                [
-                  { text: '14.', style: ['cellHeader', 'center'] },
-                  { text: ''}, { text: ''}, { text: ''}
-                ],
-                [
-                  { text: '15.', style: ['cellHeader', 'center'] },
-                  { text: ''}, { text: ''}, { text: ''}
-                ],
-                [
-                  { text: 'Total', style: ['cellHeader', 'right'], colSpan:3 },
-                  {}, {}, { text: '100%', style: ['cellHeader', 'center']}
-                ],
-                [
-                  {
-                    text: 'Risk Disclaimer: Investments in unit linked plans are subject to various risks including market and investment risks. This product is a unit linked insurance plan. All such risks are borne by the proposed life assured / policy owner. Life Insurance Corporation (International) B.S.C.( c) does not guarantee on the return of the invested funds ',
-                    style: ['cellHeader'], 
-                    colSpan: 4
-                  },
-                  {},{},{}
-                ],
+                [{ text: '1', style:'center' }, { text: "LU2286301283" }, { text: ' ALLIANZ CYBER SECURITY "RT" (USD) ACC ' }, {}],
+                [{ text: '2', style:'center' }, { text: "LU2009012233" }, { text: ' ALLIANZ THEMATICA "RT" (USD) ACC ' }, {}],
+                [{ text: '3', style:'center' }, { text: "LU1698898050" }, { text: ' ALLIANZ GLOBAL ARTIFICIAL INTELLIGENCE "RT" (USD) ACC ' }, {}],
+                [{ text: '4', style:'center' }, { text: "LU1997245508" }, { text: ' ALLIANZ CHINA A-SHARES "RT" (USD) ACC A ' }, {}],
+                [{ text: '5', style:'center' }, { text: "LU0329593262" }, { text: ' BGF WORLD FINANCIALS "D2" ACC ' }, {}],
+                [{ text: '6', style:'center' }, { text: "LU0252968341" }, { text: ' BGF WORLD MINING "D2" ACC ' }, {}],
+                [{ text: '7', style:'center' }, { text: "LU0341384864" }, { text: ' BGF US SMALL & MIDCAP OPPORTUNITIES "D2" (USD) ' }, {}],
+                [{ text: '8', style:'center' }, { text: "LU0252969661" }, { text: ' BGF SUSTAINABLE ENERGY "D2" (USD) ACC ' }, {}],
+                [{ text: '9', style:'center' }, { text: "LU0368268198" }, { text: ' BGF GLOBAL DYNAMIC EQUITY "D2" (USD) ' }, {}],
+                [{ text: '10', style:'center' }, { text:  "LU0252969232" }, { text: ' BGF US FLEXIBLE EQUITY "D2" (USD) ACC ' }, {}],
+                [{ text: '11', style:'center' }, { text:  "LU0252969075" }, { text: ' BGF WORLD ENERGY "D2" ACC ' }, {}],
+                [{ text: '12', style:'center' }, { text:  "LU0724618193" }, { text: ' BGF INDIA "D2" (USD) ACC ' }, {}],
+                [{ text: '13', style:'center' }, { text:  "LU0368268602" }, { text: ' BGF SYSTEMATIC GLOBAL EQUITY HIGH INCOME "D2"(USD) ACC ' }, {}],
+                [{ text: '14', style:'center' }, { text:  "LU1861214903" }, { text: ' BGF FUTURE OF TRANSPORT "D2" (USD) ACC ' }, {}],
+                [{ text: '15', style:'center' }, { text:  "LU0724618946" }, { text: ' BGF WORLD TECHNOLOGY "D2" (USD) ACC ' }, {}],
+                [{ text: '16', style:'center' }, { text:  "LU0368270509" }, { text: ' BGF GLOBAL LONG-HORIZON EQUITY "D2" (USD) ACC ' }, {}],
+                [{ text: '17', style:'center' }, { text:  "LU0329593007" }, { text: ' BGF WORLD HEALTHSCIENCE "D2" ACC ' }, {}],
+                [{ text: '18', style:'center' }, { text:  "LU0702159939" }, { text: 'FIDELITY ASIAN SMALLER COMPANIES "Y" (USD) ACC' }, {}],
+                [{ text: '19', style:'center' }, { text:  "LU1560650563" }, { text: 'FIDELITY GLOBAL TECHNOLOGY "Y" (USD) ACC' }, {}],
+                [{ text: '20', style:'center' }, { text:  "LU1731833213" }, { text: 'FIDELITY EUROPEAN DYNAMIC GROWTH "Y" (USDHDG) ACC' }, {}],
+                [{ text: '21', style:'center' }, { text:  "LU0346390510" }, { text: 'FIDELITY ASEAN "Y"' }, {}],
+                [{ text: '22', style:'center' }, { text:  "LU0318939179" }, { text: 'FIDELITY AMERICA "Y" (USD) ACC' }, {}],
+                [{ text: '23', style:'center' }, { text:  "LU0370789132" }, { text: 'FIDELITY FUNDS GLOBAL THEMATIC OPPORTUNITIES "Y" (USD) ACC' }, {}],
+                [{ text: '24', style:'center' }, { text:  "LU0346391245" }, { text: 'FIDELITY INDIA FOCUS "Y" (USD)' }, {}],
+                [{ text: '25', style:'center' }, { text:  "LU0346390866" }, { text: 'FIDELITY CHINA FOCUS "Y"' }, {}],
+                [{ text: '26', style:'center' }, { text:  "LU0605515963" }, { text: 'FIDELITY GLOBAL DIVIDEND "Y" (USD) ACC' }, {}],
+                [{ text: '27', style:'center' }, { text:  "LU0318941159" }, { text: 'FIDELITY FUNDS SUSTAINABLE ASIA EQUITY "Y" (USD) ACC' }, {}],
+                [{ text: '28', style:'center' }, { text:  "LU0346391831" }, { text: 'FIDELITY PACIFIC "Y" ACC' }, {}],
+                [{ text: '29', style:'center' }, { text:  "LU0792612466" }, { text: 'FRANKLIN U.S. OPPORTUNITIES "W" (USD) ACC' }, {}],
+                [{ text: '30', style:'center' }, { text:  "LU0976566736" }, { text: 'FRANKLIN TECHNOLOGY "W" (USD) ACC' }, {}],
+                [{ text: '31', style:'center' }, { text:  "LU0792612383" }, { text: 'FRANKLIN INDIA "W" (USD) ACC' }, {}],
+                [{ text: '32', style:'center' }, { text:  "LU0959060798" }, { text: 'TEMPLETON EMERGING MARKETS "W" (USD) ACC' }, {}],
+                [{ text: '33', style:'center' }, { text:  "LU2404266335" }, { text: 'FRANKLIN GOLD & PRECIOUS METALS "W" (USD) ACC' }, {}],
+                [{ text: '34', style:'center' }, { text:  "LU0830625926" }, { text: 'GS GLOBAL CORESM EQUITY PORTFOLIO "R" (USD) ACC SNAP' }, {}],
+                [{ text: '35', style:'center' }, { text:  "LU0830624010" }, { text: 'GS INDIA EQUITY PORTFOLIO "R" (USD) ACC' }, {}],
+                [{ text: '36', style:'center' }, { text:  "LU0858289241" }, { text: 'GOLDMAN GLOBAL MILLENNIALS EQUITY PORTFOLIO "R" (USD) ACC' }, {}],
+                [{ text: '37', style:'center' }, { text:  "LU1981114066" }, { text: 'INVESCO JAPANESE EQUITY ADVANTAGE FUND "Z" (USD) ACC ' }, {}],
+                [{ text: '38', style:'center' }, { text:  "LU1590492648" }, { text: 'INVESCO GLOBAL CONSUMER TRENDS "Z" (USD) ACC ' }, {}],
+                [{ text: '39', style:'center' }, { text:  "LU1252825630" }, { text: 'INVESCO PAN EUROPEAN EQUITY "Z" (USDHDG) ACC ' }, {}],
+                [{ text: '40', style:'center' }, { text:  "IE00BYPC7S51" }, { text: 'UTI INDIA DYNAMIC EQUITY "RDR" (USD) ACC ' }, {}],
               ],
-            }
-          }
-        ],
+            },
+          },{}
+        ]
+
       ]
     }
   }
 }
 
-module.exports = Page_4
-
-
-     
-                                                              
-// 9. Plan Details 
-// A. Plan Name   Plan No  
-// B. Policy Term (years)  Payment Term (years)  
-// C. Premium Type     Single                             $    Top-up            $    Regular            $ 
-// D.    Frequency (If regular)     Yearly                   Half Yearly                    Quarterly                      Monthly          
-// E. Investment  Amount In words:  USD (In figure) $ 
- 
-//  10. Fund Details 
-//  Please use additional sheet in case of more No. of fund details. 
-// S.No. ISIN Fund Name % Of Allocation 
-// 1.    
-// 2.    
-// 3.    
-// 4.    
-// 5.    
-// 6.    
-// 7.    
-// 8.    
-// 9.    
-// 10.    
-// 11.    
-// 12.    
-// 13.    
-// 14.    
-// 15.    
-//                                                                                                                                                         Total 100 % 
-// Risk Disclaimer: Investments in unit linked plans are subject to various risks including market and investment risks. This product is a unit linked 
-// insurance plan. All such risks are borne by the proposed life assured / policy owner. Life Insurance Corporation (International) B.S.C.( c) 
-// does not guarantee on the return of the invested funds 
- 
+module.exports = Page_8
