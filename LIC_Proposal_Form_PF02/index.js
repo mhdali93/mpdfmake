@@ -40,7 +40,14 @@ const convertTextToRtl = (text) => {
   return text.split(" ").reverse().join(" ");
 }
 
-const generatePF1Document = () => {
+const innerTableLayouts = {
+  zeroPadding:{
+    paddingTop: (i, node) => 0,
+    paddingBottom: (i, node) => 0
+  }
+};
+
+const generateLICPF02Document = () => {
 
   return new Promise((resolve, reject) => {
     const docDefinition = {
@@ -58,7 +65,8 @@ const generatePF1Document = () => {
       ],
       defaultStyle: {
         font: 'Arial',
-        fontSize : 9
+        fontSize : 9,
+        color: '#8e0f6c'
       },
       styles : {
         arabic : {
@@ -93,15 +101,8 @@ const generatePF1Document = () => {
       }
     };
 
-    const innerTableLayouts = {
-      zeroPadding:{
-        paddingTop: (i, node) => 0,
-        paddingBottom: (i, node) => 0
-      }
-    };
-
     const pdfDoc = printer.createPdfKitDocument(docDefinition, { tableLayouts : customTableLayouts });
-    let stream  = pdfDoc.pipe(fs.createWriteStream(`./ULIP_PROPOSAL_FORM.pdf`));
+    let stream  = pdfDoc.pipe(fs.createWriteStream(`./LIC_Proposal_Form_PF02.pdf`));
     pdfDoc.end();
 
     stream.on('finish', () => {
@@ -110,4 +111,4 @@ const generatePF1Document = () => {
   })
 }
 
-module.exports = generatePF1Document;
+module.exports = generateLICPF02Document;
