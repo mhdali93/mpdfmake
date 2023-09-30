@@ -11,325 +11,20 @@ const Page_2 = ({
         [
           {
             border: [false, false, false, false],
+            layout:{
+              paddingTop: (i, node) => 0,
+              paddingBottom: (i, node) => 0,
+              paddingLeft: (i, node) => -23
+            },
             table: {
-              heights: 13,
-              widths: [
-                9, 
-                85, 
-                "*", 
-                "*", 
-                "*", 
-                "*", 
-                "*", 
-                "*", 
-                "*", 
-                "*", 
-                60, 
-                "*", 
-                "*", 
-                "*", 
-                "*", 
-                "*", 
-                "*",
-                50,
-                "*", 
-                "*", 
-                "*", 
-                "*", 
-                "*", 
-                "*"
-              ],
               body: [
                 [
                   {
-                    text: '2. Details of Life to be Assured (Applicable if different from the Proposer) ',
-                    style: ['header','defaultStyle',{"fontSize": 10}], 
-                    colSpan: 24 
-                  },
-                  {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: 'A.', style:["center", "cellHeader"] },
-                  { text: 'Full Name', style:["left", "cellHeader"] },
-                  { text: 'First name', style: ["left", "readOnly"], colSpan: 8 },
-                  {},{},{},{},{},{},{},
-                  { text: 'Last name', style: ["left", "readOnly"], colSpan: 8 },
-                  {},{},{},{},{},{},{},
-                  { text: 'Mr.', style:["left", "cellHeader"], colSpan: 2 },
-                  {},
-                  { text: 'Mrs.', style:["left", "cellHeader"], colSpan: 2 },
-                  {},
-                  { text: 'Ms.', style:["left", "cellHeader"], colSpan: 2 },
-                  {}
-                ],
-                [
-                  { text: 'B.', style:["center", "cellHeader"] },
-                  { text: 'Father Name', style:["left", "cellHeader"] },
-                  { text: 'First name', style: ["left", "readOnly"], colSpan: 8 },
-                  {},{},{},{},{},{},{},
-                  { text: 'Last name', style: ["left", "readOnly"], colSpan: 8 },
-                  {},{},{},{},{},{},{},
-                  { text: 'Male', style:["left", "cellHeader"], colSpan: 3 },
-                  {},{},
-                  { text: 'Female', style:["left", "cellHeader"], colSpan: 3 },
-                  {},{}
-                ],
-                [
-                  { text: 'C.', style:["center", "cellHeader"] },
-                  { text: 'Nationality', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 8 },
-                  {},{},{},{},{},{},{},
-                  { text: 'Place of Birth', style:["left", "cellHeader"] },
-                  { text: '', style: ["left", "readOnly"], colSpan: 13 },
-                  {},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: 'D.', style:["center", "cellHeader"] },
-                  { text: 'Date of Birth', style: ["left", "cellHeader"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                  { text: 'Age', style: ["left", "cellHeader"] },
-                  { text: '', colSpan: 7 },
-                  {},{},{},{},{},{},
-                  { text: 'years', style:["left", "cellHeader"], colSpan: 6 },
-                  {},{},{},{},{}
-                ],
-                [
-                  { text: 'E.', style:["center", "cellHeader"] },
-                  { text: 'Emirates ID Number', style:["left", "cellHeader"] },
-                  { text: '', style: ["left", "readOnly"], colSpan: 8 },
-                  {},{},{},{},{},{},{},
-                  { text: 'Issue Date', style:["left", "cellHeader"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                  { text: 'Expiry Date',style:["left", "cellHeader"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                ],
-                [
-                  { text: 'F.', style:["center", "cellHeader"] },
-                  { text: 'Passport Number', style:["left", "cellHeader"] },
-                  { text: '', style: ["left", "readOnly"], colSpan: 8 },
-                  {},{},{},{},{},{},{},
-                  { text: 'Issue Date', style:["left", "cellHeader"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                  { text: 'Expiry Date',style:["left", "cellHeader"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                ],
-                [
-                  { text: 'G.', style:["center", "cellHeader"] },
-                  { text: 'Qualification', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 8 },
-                  {},{},{},{},{},{},{},
-                  { text: 'Annual Income', style:["left", "cellHeader"] },
-                  { text: '', style: ["left", "readOnly"], colSpan: 13 },
-                  {},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: 'H.', style:["center", "cellHeader"] },
-                  { text: 'Marital Status', style:["left", "cellHeader"]},
-                  { text: 'Single', style: ["left", "cellHeader"], colSpan: 4 },
-                  {},{},{},
-                  { text: 'Married', style: ["left", "cellHeader"], colSpan: 4 },
-                  {},{},{},
-                  { text: 'Widow', style:["left", "cellHeader"], colSpan:4 },
-                  {},{},{},
-                  { text: 'Divorced', style: ["left", "cellHeader"], colSpan: 10 },
-                  {},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: 'I.', style:["center", "cellHeader"] },
-                  { text: 'Relation with Proposer', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 22 },
-                  {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: 'J.', style:["center", "cellHeader"] },
-                  { text: 'Email', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 22 },
-                  {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: 'Address (if different from Proposed Life Assured)', style:["left", "cellHeader"], colSpan: 24 },
-                  {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: 'K.', style:["center", "cellHeader"] },
-                  { text: 'Residential', style:["left", "cellHeader"]},
-                  { text: 'Building:', style: ["left", "readOnly"], colSpan: 22 },
-                  {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: '', style:["center", "cellHeader"] },
-                  { text: '', style:["left", "cellHeader"]},
-                  { text: 'Street:', style: ["left", "readOnly"], colSpan: 22 },
-                  {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: '', style:["center", "cellHeader"] },
-                  { text: '', style:["left", "cellHeader"]},
-                  { text: 'PO Box.', style: ["left", "readOnly"], colSpan: 8 },
-                  {},{},{},{},{},{},{},
-                  { text: 'City: ', style:["left", "readOnly"] },
-                  { text: 'Country:', style: ["left", "readOnly"], colSpan: 13 },
-                  {},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: '', style:["center", "cellHeader"] },
-                  { text: 'Mobile', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 8 },
-                  {},{},{},{},{},{},{},
-                  { text: 'Telephone', style:["left", "cellHeader"] },
-                  { text: '', style: ["left", "readOnly"], colSpan: 13 },
-                  {},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: 'L.', style:["center", "cellHeader"] },
-                  { text: 'Office', style:["left", "cellHeader"]},
-                  { text: 'Building:', style: ["left", "readOnly"], colSpan: 22 },
-                  {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: '', style:["center", "cellHeader"] },
-                  { text: '', style:["left", "cellHeader"]},
-                  { text: 'Street:', style: ["left", "readOnly"], colSpan: 22 },
-                  {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: '', style:["center", "cellHeader"] },
-                  { text: '', style:["left", "cellHeader"]},
-                  { text: 'PO Box.', style: ["left", "readOnly"], colSpan: 8 },
-                  {},{},{},{},{},{},{},
-                  { text: 'City: ', style:["left", "readOnly"] },
-                  { text: 'Country:', style: ["left", "readOnly"], colSpan: 13 },
-                  {},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: '', style:["center", "cellHeader"] },
-                  { text: 'Mobile', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 8 },
-                  {},{},{},{},{},{},{},
-                  { text: 'Telephone', style:["left", "cellHeader"] },
-                  { text: '', style: ["left", "readOnly"], colSpan: 13 },
-                  {},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: 'M.', style:["center", "cellHeader"] },
-                  { text: 'Home Country', style:["left", "cellHeader"]},
-                  { text: 'Building:', style: ["left", "readOnly"], colSpan: 22 },
-                  {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: '', style:["center", "cellHeader"] },
-                  { text: '', style:["left", "cellHeader"]},
-                  { text: 'Street:', style: ["left", "readOnly"], colSpan: 22 },
-                  {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: '', style:["center", "cellHeader"] },
-                  { text: '', style:["left", "cellHeader"]},
-                  { text: 'PO Box.', style: ["left", "readOnly"], colSpan: 8 },
-                  {},{},{},{},{},{},{},
-                  { text: 'City: ', style:["left", "readOnly"] },
-                  { text: 'Country:', style: ["left", "readOnly"], colSpan: 13 },
-                  {},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: '', style:["center", "cellHeader"] },
-                  { text: 'Mobile', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 8 },
-                  {},{},{},{},{},{},{},
-                  { text: 'Telephone', style:["left", "cellHeader"] },
-                  { text: '', style: ["left", "readOnly"], colSpan: 13 },
-                  {},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: 'N. ', style:["center", "cellHeader"] },
-                  { text: 'Correspondence Address', style:["left", "cellHeader"]},
-                  { text: 'Residential                        Office', style: ["left", "cellHeader"], colSpan: 9 },
-                  {},{},{},{},{},{},{},{},
-                  { text: '', style: ["left", "readOnly"], colSpan: 13 },
-                  {},
-                  {},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: 'O.', style:["center", "cellHeader"] },
-                  { text: 'Occupation', style:["left", "cellHeader"]},
-                  { text: 'Salaried', style: ["left", "cellHeader"], colSpan: 4 },
-                  {},{},{},
-                  { text: 'Business', style: ["left", "cellHeader"], colSpan: 4 },
-                  {},{},{},
-                  { text: 'Self Employed', style:["left", "cellHeader"], colSpan:6 },
-                  {},{},{},{},{},
-                  { text: 'Other', style: ["left", "cellHeader"], colSpan: 8 },
-                  {},{},{},{},{},{},{}
-                ],
-                [
-                  { text: 'P.', style:["center", "cellHeader"] },
-                  { text: 'Job Title', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 8 },
-                  {},{},{},{},{},{},{},
-                  { text: 'Length of Service', style:["left", "cellHeader"], colSpan:4 },
-                  {},{},{},
-                  { text: 'years', style: ["right"], colSpan: 10 },
-                  {},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: 'Q.', style:["center", "cellHeader"] },
-                  { text: 'Company Name', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 22 },
-                  {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: 'R.', style:["center", "cellHeader"] },
-                  { text: 'Name of Business', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 22 },
-                  {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  { text: 'S.', style:["center", "cellHeader"] },
-                  { text: 'Physical Measurements', style:["left", "cellHeader"]},
-                  { text: 'Height (In Cms)', style: ["left", "cellHeader"], colSpan: 5 },
-                  {},{},{},{},
-                  { text: '', style: ["left"], colSpan: 4 },
-                  {},{},{},
-                  { text: 'Weight (In Kgs)', style:["left", "cellHeader"], colSpan:6 },
-                  {},{},{},{},{},
-                  { text: '', style: ["left"], colSpan: 7 },
-                  {},{},{},{},{},{}
-                ],
-                [
-                  { text: 'T.', style:["center", "cellHeader"] },
-                  { text: 'Are you a Politically Exposed Person*?', style:["left", "cellHeader"], colSpan: 7 },
-                  {},{},{},{},{},{},
-                  { text: 'Yes', style: ["left", "cellHeader"], colSpan: 8 },
-                  {},{},{},{},{},{},{},
-                  { text: 'No', style:["left", "cellHeader"], colSpan:8 },
-                  {},{},{},{},{}
+                    border: [false, false, false, false],
+                    image : "./assets/images/head1.png",
+                    width: 600,
+                    alignment: 'center',
+                  }
                 ],
               ],
             },
@@ -338,91 +33,641 @@ const Page_2 = ({
         [
           {
             border: [false, false, false, false],
+            table: {
+              layout:{
+                paddingTop: (i, node) => -10,
+                paddingBottom: (i, node) => -10
+              },
+              widths: [550],
+              body: [
+                [
+                  {
+                    border: [false, false, false, false],
+                    text:"Form No. PF 02",
+                    style: ["right", {fontSize: 10}, "bold", "Times"]
+                  }
+                ]
+              ],
+            },
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingTop: (i, node) => -20,
+              paddingBottom: (i, node) => -5
+            },
+            table: {
+              widths: ["*"],
+              body: [
+                [
+                  {
+                    border: [false, false, false, false],
+                    text:[
+                      {
+                        text:convertTextToRtl("طلب للتأمين على الحياة"),
+                        style: ["center", {fontSize: 18}, "arabic", "bold"]
+                      },
+                      {
+                        text:"\nProposal for Life Insurance",
+                        style: ["center", {fontSize: 18}, "Times", "bold"]
+                      },
+                    ]
+                  }
+                ],
+              ]
+            },
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingTop: (i, node) => -10,
+              paddingBottom: (i, node) => -20
+            },
             margin: [0,15],
             table: {
-              heights: 13,
+              widths: ["*"],
+              body: [
+                [
+                  {
+                    border: [false, false, false, false],
+                    text:[
+                      {
+                        text:convertTextToRtl(")نموذج طلب بوليصة تأمين مشترك أو بوالص تأمين على حياة القاصرين("),
+                        style: ["center", {fontSize: 11}, "arabic", "bold"]
+                      },
+                      {
+                        text:"\n(Proposal Form for Joint life or policies on the lives of minors)",
+                        style: ["center", {fontSize: 11}, "Times", "bold"]
+                      },
+                    ]
+                  }
+                ]
+              ],
+            },
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            table: {
+              widths: ["*"],
+              body: [
+                [
+                  {
+                    border: [false, false, false, false],
+                    text:[
+                      {
+                        text:convertTextToRtl("يُرجى المصادقة على التعديلات / التصحيحات، والتوقيع أسفل كل صفحة"),
+                        style: ["center", {fontSize: 11}, "arabic", "bold"]
+                      },
+                      {
+                        text:"\nPlease write all answers in BLOCK capital Letters. Kindly authenticate alterations/corrections",
+                        style: ["center", {fontSize: 11}, "Arial"]
+                      },
+                    ]
+                  }
+                ]
+              ],
+            },
+          }
+        ],
+        [
+          {
+            layout:{
+              paddingTop: (i, node) => 0,
+              paddingBottom: (i, node) => 0
+            },
+            border: [false, false, false, false],
+            table: {
               widths: [
-                50, 
-                "*", 
-                "*", 
-                "*", 
-                "*"
+                95,
+                77,
+                80,
+                77,
+                95,
+                77
               ],
               body: [
                 [
                   {
-                    text: '3. Declaration ',
-                    style: ['header','defaultStyle',{"fontSize": 10}], 
-                    colSpan: 5
-                  },
-                  {},{},{},{}
+                    text:[
+                      {
+                        text:convertTextToRtl("رقم الإدخال"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nInward No",
+                        style: ["left", {fontSize: 10}, "Times"]
+                      },
+                    ],
+                  },{},
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("تاريخ الإدخال"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nDate of inward",
+                        style: ["left", {fontSize: 10}, "Times"]
+                      },
+                    ],
+                  },{},
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("تاريخ الطلب"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nDate of Proposal",
+                        style: ["left", {fontSize: 10}, "Times"]
+                      },
+                    ],
+                  },{}
                 ],
                 [
-                  { 
-                    border: [true, false, true, false],
-                    text: 'I/We hereby declare that I/We am/are in good health and not suffering from any physical or mental or psychiatric diseases. I/We do not suffer from cancer or tumor, disease of heart, lungs, kidneys, liver, stomach, or intestines. Further, I/We also confirm that I/We have  never participated nor intend to participate in any hazardous sports or  activities. The statements above are complete and true. I/We  accept  that  this  declaration  shall  constitute  part  of  my  application  for  the  life  insurance  linked  to  my  investment.  I/We acknowledge that failure to disclose any material health information known to me on the date of signing this declaration   shall invalidate the contract from its inception. Life Insurance Corporation  (International)  B.S.C.(c) shall not be liable for the claim on account of my death, the cause of which was known prior to my/our signing this application for the life insurance cover. \n \n', 
-                    style:["justify", "cellHeader"], 
-                    colSpan: 5 
-                  },
-                  {},{},{},{}
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("اسم الاستشاري"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nName of Consultant",
+                        style: ["left", {fontSize: 10}, "Times"]
+                      },
+                    ],
+                  },{text:"", colSpan:3},{},{},
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("رقم كود الاستشاري"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nConsultant Code No",
+                        style: ["left", {fontSize: 10}, "Times"]
+                      },
+                    ],
+                  },{}
                 ],
                 [
                   {
-                    border: [true, false, false, true],
-                    text: [
-                      {text: '\n', style: ["center"]},
-                      {text: 'Date\n', style: ["center"]},
-                      {text: 'Place', style: ["center"]}
+                    text:[
+                      {
+                        text:convertTextToRtl("اسم الوكيل الرئيسي"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nChief Agent Name",
+                        style: ["left", {fontSize: 10}, "Times"]
+                      },
                     ],
-                    style:["cellHeader"] 
-                  },
+                  },{text:"", colSpan:3},{},{},
                   {
-                    border: [false, false, false, true],
-                    text: [
-                      {text: '\n'},
-                      {text: '\n'},
-                      {text: '\n'},
-                      {text: ''}
+                    text:[
+                      {
+                        text:convertTextToRtl("رقم الوكيل الرئيسي"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nChief Agent Code No",
+                        style: ["left", {fontSize: 10}, "Times"]
+                      },
                     ],
-                    style: ['readOnly','center'], 
-                  },
+                  },{}
+                ]
+              ],
+            }
+          }
+        ],
+        [
+          {
+            layout:{
+              paddingTop: (i, node) => 0,
+              paddingBottom: (i, node) => 0
+            },
+            border: [false, false, false, false],
+            table: {
+              widths: [
+                75,
+                75,
+                70,
+                70,
+                115,
+                96
+              ],
+              body: [
+                [
                   {
-                    border: [false, false, false, true],
-                    text: [
-                      {text: '\n', style: ["center"]},
-                      {text: '\n', style: ["center"]},
-                      {text: 'Signature', style: ["center"]}
+                    text:[
+                      {
+                        text:convertTextToRtl("عملة إيداع الطلب: دينار بحريني/دولار أمريكي/درهم إماراتي/دينار كويتي/ريال قطري"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nProposal Deposit Currency : BD / USD / AED / KD / OR / QR",
+                        style: ["left", {fontSize: 10}, "Times"]
+                      },
                     ],
-                    style:["cellHeader"] 
-                  },
+                    colSpan:4
+                  },{},{},{},
                   {
-                    border: [false, false, false, true],
-                    text: [
-                      {text: '\n'},
-                      {text: '\n'},
-                      {text: 'Proposer\n'},
-                      {text: '\n'}
+                    text:[
+                      {
+                        text:convertTextToRtl("مبلغ إيداع الطلب"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nProposal Deposit Amount",
+                        style: ["left", {fontSize: 10}, "Times"]
+                      },
                     ],
-                    style: ['readOnly','center'], 
-                  },
-                  {
-                    border: [false, false, true, true],
-                    text: [
-                      {text: '\n'},
-                      {text: '\n'},
-                      {text: 'Life to be Assured\n'},
-                      {text: '\n'}
-                    ],
-                    style: ['readOnly','center'], 
-                  },
+                  },{}
                 ],
+                [
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("تاريخ إيداع الطلب"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nDate of Proposal Deposit",
+                        style: ["left", {fontSize: 10}, "Times"]
+                      },
+                    ],
+                    colSpan:2
+                  },{},{text:"", colSpan:2},{},
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("رقم الطلب"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nProposal Number",
+                        style: ["left", {fontSize: 10}, "Times"]
+                      },
+                    ],
+                  },{}
+                ],
+                [
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("طريقة دفع مبلغ إيداع الطلب"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nProposal Deposit Payment Mode",
+                        style: ["left", {fontSize: 10}, "Times"]
+                      },
+                    ],
+                    colSpan:2
+                  },{},
+                  {
+                    border: [false, true, false, true],
+                    text:[
+                      {
+                        text:convertTextToRtl("نقدا"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nCash",
+                        style: ["left", {fontSize: 10}, "Times"]
+                      },
+                    ]
+                  },
+                  {
+                    border: [false, true, false, true],
+                    text:[
+                      {
+                        text:convertTextToRtl("شيك"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nCheque",
+                        style: ["left", {fontSize: 10}, "Times"]
+                      },
+                    ]
+                  },
+                  {
+                    border: [false, true, false, true],
+                    text:[
+                      {
+                        text:convertTextToRtl("تاريخ إيداع الطلب"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nTelex Transfer",
+                        style: ["left", {fontSize: 10}, "Times"]
+                      },
+                    ]
+                  },
+                  {
+                    border: [false, true, true, true],
+                    text:[
+                      {
+                        text:convertTextToRtl("كمبيالة تحت الطلب"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nDemand Draft",
+                        style: ["left", {fontSize: 10}, "Times"]
+                      },
+                    ]
+                  }
+                ]
+              ],
+            }
+          }
+        ],
+        [
+          {
+            layout:{
+              paddingTop: (i, node) => 0,
+              paddingBottom: (i, node) => 0
+            },
+            border: [false, false, false, false],
+            table: {
+              widths: [550],
+              body: [
+                [
+                  {
+                    border: [false, false, false, false],
+                    text:[
+                      {
+                        text:convertTextToRtl("البيانات الشخصية لمقدم الطلب / المؤمن على حياته حسب الحالة"),
+                        style: ["right", {fontSize: 14}, "arabic", "bold"]
+                      },
+                      {
+                        text:convertTextToRtl("الجزء ا:"),
+                        style: ["right", {fontSize: 16}, "arabic", "bold"]
+                      },
+                      {text:"\n"},
+                      {
+                        text:convertTextToRtl("من فضلك اذكر تفاصيل البيانات الشخصية لمقدم الطلب / المؤمن على حياته حسب الحالة، حسب الأسئلة المذكورة أدناه:"),
+                        style: ["right", {fontSize: 12}, "arabic", "bold"]
+                      },
+                      {
+                        text:"\nPart A: ",
+                        style: ["left", {fontSize: 14}, "Arial", "bold"]
+                      },
+                      {
+                        text:"Personal Details of Proposer/Life to be Assured (L A) as the case may be",
+                        style: ["left", {fontSize: 12}, "Arial", "bold"]
+                      },
+                      {
+                        text:"\nPlease provide details of proposer/s or Life to be Assured as the case may be as per questions mentioned there",
+                        style: ["left", {fontSize: 11}, "Arial", "bold"]
+                      },
+                    ]
+                  }
+                ]
               ],
             },
           }
-        ]
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            table: {
+              widths: [
+                10, 60,
+                20,20,20,20,20,20,20,20,
+                20,20,20,20,20,20,20,20,
+              ],
+              body: [
+                [
+                  {
+                    text:"1.",
+                    rowSpan:4
+                  },
+                  {
+                    text:[
+                      {
+                        text:"Particulars:",
+                      },
+                      {
+                        text:" Proposer / Life to be Assured 1",
+                        style: ["bold"]
+                      },
+                      {
+                        text:"\nName (As appearing in the Passport)"
+                      },
+                    ],
+                    colSpan:9
+                  },{},{},{},{},{},{},{},{},
+                  {
+                    text:[
+                      { text:convertTextToRtl("مقدم الطلب/ المؤمن على حياته ۱") },
+                      { text:convertTextToRtl("التفاصيل :") },
+                      { text:"\n"},
+                      { text:convertTextToRtl("الاسم )حسبما يظهر في جواز السفر(") },
+                    ],
+                    colSpan:8
+                  },{},{},{},{},{},{},{},
+                ],
+                [
+                  {},
+                  {
+                    text:[
+                      { text:convertTextToRtl("  إسم العائلة  \t\t\t\t\t\t\t\t\t\t إسم الأب والجد \t\t\t\t\t\t\t\t\t\t الأسم الأول") },
+                      { text:"\n"},
+                      { text:"First Name\t\t\t\t\t\t\t\t\t\t Middle Name \t\t\t\t\t\t\t\t\t\t Last Name" },
+                      { text:"\n\n\n" },
+                    ],colSpan:17
+                  },{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},
+                ],
+                [
+                  {},
+                  {
+                    text:[
+                      {
+                        text:"Particulars:",
+                      },
+                      {
+                        text:" Proposer / Life to be Assured 2",
+                        style: ["bold"]
+                      },
+                      {
+                        text:"\nName (As appearing in the Passport)"
+                      },
+                    ],
+                    colSpan:9
+                  },{},{},{},{},{},{},{},{},
+                  {
+                    text:[
+                      { text:convertTextToRtl("مقدم الطلب/ المؤمن على حياته ٢") },
+                      { text:convertTextToRtl("التفاصيل :") },
+                      { text:"\n"},
+                      { text:convertTextToRtl("الاسم )حسبما يظهر في جواز السفر(") },
+                    ],
+                    colSpan:8
+                  },{},{},{},{},{},{},{},
+                ],
+                [
+                  {},
+                  {
+                    text:[
+                      { text:convertTextToRtl("  إسم العائلة  \t\t\t\t\t\t\t\t\t\t إسم الأب والجد \t\t\t\t\t\t\t\t\t\t الأسم الأول") },
+                      { text:"\n"},
+                      { text:"First Name\t\t\t\t\t\t\t\t\t\t Middle Name \t\t\t\t\t\t\t\t\t\t Last Name" },
+                      { text:"\n\n\n" },
+                    ],colSpan:17
+                  },{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},
+                ],
+                [
+                  {text:"",colSpan:2, style: {fillColor: '#f8eff2'}},{},
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ١"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nProposer / Life to be Assured 1",
+                        style: ["center", {fontSize: 10}, "Times"]
+                      },
+                    ],
+                    colSpan:8,
+                    style: {fillColor: '#f8eff2'},
+                  },{},{},{},{},{},{},{},
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ٢"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nProposer / Life to be Assured 2",
+                        style: ["center", {fontSize: 10}, "Times"]
+                      },
+                    ],
+                    colSpan:8,
+                    style: {fillColor: '#f8eff2'},
+                  },{},{},{},{},{},{},{},
+                ],
+                [
+                  {text:"2."},
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("الجنس"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nGender",
+                      },
+                    ],
+                  },
+                  {text:[
+                    {
+                      text:convertTextToRtl("أنثى \t\t\t\t\t\t\t\t\t ذكر  "),
+                      style: ["left", {fontSize: 10}, "arabic"]
+                    },
+                    {
+                      text:"\nMale \t\t\t\t\t\t\t\t Female",
+                    },
+                  ],colSpan:8},
+                  {},{},{},{},{},{},{},
+                  {text:[
+                    {
+                      text:convertTextToRtl("أنثى \t\t\t\t\t\t\t\t\t ذكر  "),
+                      style: ["left", {fontSize: 10}, "arabic"]
+                    },
+                    {
+                      text:"\nMale \t\t\t\t\t\t\t\t Female",
+                    },
+                  ],colSpan:8},
+                  {},{},{},{},{},{},{},
+                ],
+                [
+                  {text:"3.", rowSpan:2},
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("تاريخ الميلاد"),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nDate of Birth",
+                      },
+                    ],
+                    rowSpan:2
+                  },
+                  {text:"D", style:"center"},
+                  {text:"D", style:"center"},
+                  {text:"M", style:"center"},
+                  {text:"M", style:"center"},
+                  {text:"Y", style:"center"},
+                  {text:"Y", style:"center"},
+                  {text:"Y", style:"center"},
+                  {text:"Y", style:"center"},
+                  {text:"D", style:"center"},
+                  {text:"D", style:"center"},
+                  {text:"M", style:"center"},
+                  {text:"M", style:"center"},
+                  {text:"Y", style:"center"},
+                  {text:"Y", style:"center"},
+                  {text:"Y", style:"center"},
+                  {text:"Y", style:"center"},
+                ],
+                [
+                  {},{},
+                  {text:"\n"},
+                  {text:"\n"},
+                  {text:"\n"},
+                  {text:"\n"},
+                  {text:"\n"},
+                  {text:"\n"},
+                  {text:"\n"},
+                  {text:"\n"},
+                  {text:"\n"},
+                  {text:"\n"},
+                  {text:"\n"},
+                  {text:"\n"},
+                  {text:"\n"},
+                  {text:"\n"},
+                  {text:"\n"},
+                  {text:"\n"},
+                  
+                ]
+              ],
+            }
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingTop: (i, node) => 10
+            },
+            table: {
+              widths: [550],
+              body: [
+                [
+                  {
+                    border: [false, false, false, false],
+                    text:"Page 2",
+                    style: ["center", {fontSize: 10}, "bold", "Times"]
+                  }
+                ]
+              ],
+            },
+          }
+        ],
       ]
     }
   }
 }
 
 module.exports = Page_2
+
+

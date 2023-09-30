@@ -27,7 +27,7 @@ const printer = new PdfPrinter(fonts);
 const fs = require('fs');
 
 const Page_1 = require("./page-1");
-// const Page_2 = require("./page-2");
+const Page_2 = require("./page-2");
 // const Page_3 = require("./page-3");
 // const Page_4 = require("./page-4");
 // const Page_5 = require("./page-5");
@@ -54,7 +54,7 @@ const generateLICPF02Document = () => {
       pageMargins : [15,18,18,18],
       content: [
         Page_1({ convertTextToRtl, innerTableLayouts }),
-        // Page_2({ convertTextToRtl }),
+        Page_2({ convertTextToRtl }),
         // Page_3({ convertTextToRtl }),
         // Page_4({ convertTextToRtl }),
         // Page_5({ convertTextToRtl }),
