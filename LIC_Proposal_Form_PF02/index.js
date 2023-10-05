@@ -32,9 +32,9 @@ const Page_3 = require("./page-3");
 const Page_4 = require("./page-4");
 // const Page_5 = require("./page-5");
 const Page_6 = require("./page-6");
-// const Page_7 = require("./page-7");
-// const Page_8 = require("./page-8");
-// const Page_9 = require("./page-9");
+const Page_7 = require("./page-7");
+const Page_8 = require("./page-8");
+const Page_9 = require("./page-9");
 
 const convertTextToRtl = (text) => {
   return text.split(" ").reverse().join(" ");
@@ -59,9 +59,9 @@ const generateLICPF02Document = () => {
         Page_4({ convertTextToRtl }),
         // Page_5({ convertTextToRtl }),
         Page_6({ convertTextToRtl }),
-        // Page_7({ convertTextToRtl }),
-        // Page_8({ convertTextToRtl }),
-        // Page_9({ convertTextToRtl }),
+        Page_7({ convertTextToRtl }),
+        Page_8({ convertTextToRtl }),
+        Page_9({ convertTextToRtl }),
       ],
       defaultStyle: {
         font: 'Arial',
@@ -73,9 +73,7 @@ const generateLICPF02Document = () => {
           font : "arabic_fonts"
         },
         header: {
-          bold: true,
-          color: "#FFF",
-          fillColor: "#006FC0"
+          fillColor: "#f8eff2"
         },
         bold: { bold: true },
         arial: { font: 'Arial' },

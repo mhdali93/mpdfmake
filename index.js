@@ -1,5 +1,5 @@
 // const generateMTRFPdf = require("./MTRF");
-// const generatePF1Document = require("./ULIP_PROPOSAL_FORM");
+const generatePF1Document = require("./ULIP_PROPOSAL_FORM");
 const generateLICPF02Document = require("./LIC_Proposal_Form_PF02");
 
 // generateMTRFPdf().then(() => {

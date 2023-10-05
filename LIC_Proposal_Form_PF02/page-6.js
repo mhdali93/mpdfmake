@@ -57,7 +57,7 @@ const Page_6 = ({
                     style:"justify"
                   },
                   {
-                    text:[
+                    stack:[
                       {
                         text:convertTextToRtl("هل سبق لك أن تم رفض أو تأجيل أو قبول طلب تأمين على الحياة"),
                         style: ["right", {fontSize: 10}, "arabic"]
@@ -66,7 +66,6 @@ const Page_6 = ({
                         text:convertTextToRtl("أو العجز أو الأمراض الخطيرة بسبب خلاف للشروط العادية؟"),
                         style: ["right", {fontSize: 10}, "arabic"]
                       },
-                      
                     ],
                     border:[false, true, true, true],
                   }
@@ -241,7 +240,7 @@ const Page_6 = ({
                 ],
                 [
                   {
-                    text:"\n\n\n\n\n",
+                    text:"\n\n\n\n\n\n\n\n",
                     colSpan:2,
                   },{},
                   { text:"" }
