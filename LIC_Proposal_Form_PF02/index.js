@@ -35,6 +35,10 @@ const Page_6 = require("./page-6");
 const Page_7 = require("./page-7");
 const Page_8 = require("./page-8");
 const Page_9 = require("./page-9");
+const Page_10 = require("./page-10");
+const Page_11 = require("./page-11");
+const Page_12 = require("./page-12");
+const Page_13 = require("./page-13");
 
 const convertTextToRtl = (text) => {
   return text.split(" ").reverse().join(" ");
@@ -62,6 +66,10 @@ const generateLICPF02Document = () => {
         Page_7({ convertTextToRtl }),
         Page_8({ convertTextToRtl }),
         Page_9({ convertTextToRtl }),
+        Page_10({ convertTextToRtl }),
+        Page_11({ convertTextToRtl }),
+        Page_12({ convertTextToRtl }),
+        Page_13({ convertTextToRtl }),
       ],
       defaultStyle: {
         font: 'Arial',
