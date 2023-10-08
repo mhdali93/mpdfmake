@@ -37,14 +37,6 @@ const Page_8 = require("./page-8");
 const Page_9 = require("./page-9");
 const Page_10 = require("./page-10");
 const Page_11 = require("./page-11");
-const Page_12 = require("./page-12");
-const Page_13 = require("./page-13");
-const Page_14 = require("./page-14");
-const Page_15 = require("./page-15");
-const Page_16 = require("./page-16");
-const Page_17 = require("./page-17");
-const Page_18 = require("./page-18");
-const Page_19 = require("./page-19");
 
 const convertTextToRtl = (text) => {
   return text.split(" ").reverse().join(" ");
@@ -57,7 +49,7 @@ const innerTableLayouts = {
   }
 };
 
-const generateLICPF02Document = () => {
+const generatePlan260Document = () => {
 
   return new Promise((resolve, reject) => {
     const docDefinition = {
@@ -74,26 +66,19 @@ const generateLICPF02Document = () => {
         Page_9({ convertTextToRtl }),
         Page_10({ convertTextToRtl }),
         Page_11({ convertTextToRtl }),
-        Page_12({ convertTextToRtl }),
-        Page_13({ convertTextToRtl }),
-        Page_14({ convertTextToRtl }),
-        Page_15({ convertTextToRtl }),
-        Page_16({ convertTextToRtl }),
-        Page_17({ convertTextToRtl }),
-        Page_18({ convertTextToRtl }),
-        Page_19({ convertTextToRtl }),
       ],
       defaultStyle: {
         font: 'Arial',
         fontSize : 9,
-        color: '#8e0f6c'
       },
       styles : {
         arabic : {
           font : "arabic_fonts"
         },
         header: {
-          fillColor: "#f8eff2"
+          bold: true,
+          color: "#FFF",
+          fillColor: "#34849a"
         },
         bold: { bold: true },
         arial: { font: 'Arial' },
@@ -104,7 +89,11 @@ const generateLICPF02Document = () => {
         left: { alignment: 'left' },
         justify: { alignment: 'justify' },
         right: { alignment: 'right' },
-        readOnly: { color: "#AAA" }
+        readOnly: { color: "#AAA" },
+        red: {color: "#FF0000"},
+        grey: {color: "#D3D3D3"},
+        blue: {color: "blue"},
+        purple: {color: "purple"}
       }
     };
     
@@ -120,7 +109,7 @@ const generateLICPF02Document = () => {
     };
 
     const pdfDoc = printer.createPdfKitDocument(docDefinition, { tableLayouts : customTableLayouts });
-    let stream  = pdfDoc.pipe(fs.createWriteStream(`./LIC_Proposal_Form_PF02.pdf`));
+    let stream  = pdfDoc.pipe(fs.createWriteStream(`./Plan 260 Proposal Form UAE.pdf`));
     pdfDoc.end();
 
     stream.on('finish', () => {
@@ -129,4 +118,4 @@ const generateLICPF02Document = () => {
   })
 }
 
-module.exports = generateLICPF02Document;
+module.exports = generatePlan260Document

@@ -4,57 +4,277 @@ const Page_5 = ({
   return {
     layout : "customTableLayout",
     pageMargin : [0, 0, 0, 0],
-    pageBreak : "after",
-    fontSize : 8.5,
+    pageOrientation: 'landscape',
+    pageBreak : "before",
+    fontSize : 9.5,
     table : {
       body : [
         [
           {
             border: [false, false, false, false],
+            layout:{
+              paddingBottom: (i, node) => 2,
+              paddingTop: (i, node) => 2,
+            },
             table: {
               widths: [
-                10,
-                140,
-                170,
-                200
+                10,50,50,55,"*","*","*","*","*","*"
               ],
               body: [
                 [
+                  {text:"21."},
                   {
-                    text: '11. Premium Payment Details',
-                    style: ['header','defaultStyle',{"fontSize": 10}], 
-                    colSpan: 4
-                  },
-                  {},{},{}
+                    columns:[
+                      {text:"Particulars of the Plan/s proposed for Life Insurance"},
+                      {
+                        text:convertTextToRtl("تفاصيل الخطة / الخطط المقترحة من أجل التأمين على الحياة"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                    ],
+                    colSpan:9
+                  },{},{},{},{},{},{},{},{}
                 ],
                 [
-                  { text: 'A.', style: ['cellHeader', 'center'] },
-                  { text: 'Object of Insurance Contract?', style: ['cellHeader', 'center'] },
-                  { text: '', colSpan: 2 },{}
-                ],  
-                [
-                  { text: 'B.', style: ['cellHeader', 'center'] },
-                  { text: 'Who will pay Premium?', style: ['cellHeader', 'center'] },
-                  { text: 'Proposer', border:[true, true, false, true] },
-                  { text: 'Life to be Assured', border:[false, true, true, true] }
-                ],  
-                [
-                  { text: 'C.', style: ['cellHeader', 'center'] },
-                  { text: 'Premium Currency', style: ['cellHeader', 'center'] },
-                  { text: 'USD', border:[true, true, false, true] },
-                  { text: 'AED', border:[false, true, true, true] }
-                ],       
-                [
-                  {text: 'D',style: ['cellHeader', 'center']}, 
-                  {text: 'Payment Method', style: ['cellHeader', 'center']}, 
+                  {},
                   {
-                    text: [
-                      {text: 'Bank Transfer\n', style:{bold:true}},
-                      {text: 'Once the application is accepted, our bank details we will be provided through email'}
+                    stack:[
+                      {
+                        text:convertTextToRtl("الخطة"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Plan"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("المدة"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl(")السنوات("),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Term"},
+                      {text:"(Years)"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("مدة دفع"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("القسط"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Premium"},
+                      {text:"paying term"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("طريقة الدفع"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("سنوي / نصف سنوي /"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("ربع سنوي /"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("شهرية / قسط واحد"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Mode: Yly/ Hly/ "},
+                      {text:"Qly/Mly/S.P."},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("مبلغ التأمين"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl(")بالدولار الأمريكي("),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Sum Assured USD ($)"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("القسط"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl(")بالدولار الأمريكي("),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Premium USD ($)"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("إضافة قسط"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl(")بالدولار الأمريكي("),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Top Up Premium\nUSD ($)"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("مزايا تغطية الحوادث )يرجى"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("ذكرمبلغ التأمين لتغطية)"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Double Accident benefits required (please state the Sum Assured)"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("إذا التاريخ بتاريخ "),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("سابق مطلوب"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Date of commencement (if back dating required)"},
+                    ], 
+                    style:"center"
+                  }
+                ],
+                [
+                  {},{text:"\n\n"},{},{},{},{},{},{},{},{}
+                ],
+                [
+                  {},{text:"\n\n"},{},{},{},{},{},{},{},{}
+                ],
+                [
+                  {},
+                  {
+                    columns:[
+                      {stack:[
+                        {
+                          text:convertTextToRtl("المزايا الإضافية للتأمين، عند الإختيار:"),
+                          style: [{fontSize: 10}, "arabic"]
+                        },
+                        {
+                          text:"For additional insurance riders,if opted"
+                        }
+                      ]},
+                      {stack:[
+                        {
+                          text:convertTextToRtl(")لا / نعم( ميزة حماية الأسرة مطلوبة"),
+                          style: [{fontSize: 10}, "arabic"]
+                        },
+                        {
+                          text:"A) Premium Waiver benefit required"
+                        }
+                      ]},
                     ],
-                    colSpan: 2, 
-                    style: ['left']
-                  },{}
+                    colSpan:5,
+                    border:[true, true, false, true]
+                  },{},{},{},{},
+                  {
+                    columns:[
+                      {stack:[
+                        {
+                          text:"YES",
+                          style: [{fontSize: 10}]
+                        },
+                        {
+                          text:"NO",
+                          style: [{fontSize: 10}]
+                        },
+                      ]},
+                      {stack:[
+                        {
+                          image : "./assets/images/uncheck.png",
+                          width: 10,
+                          border:[false,false,false,false],
+                          style:"center"
+                        },
+                        {text:"\n", style:{fontSize:3}},
+                        {
+                          image : "./assets/images/uncheck.png",
+                          width: 10,
+                          border:[false,false,false,false],
+                          style:"center"
+                        }
+                      ]},
+                    ],
+                    border:[false, true, false, true]
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl(")لا / نعم( ميزة حماية الأسرة مطلوبة"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"B) Family Protection benefit required"
+                      }
+                    ],
+                    colSpan:2,
+                    border:[false, true, false, true]
+                  },{},
+                  {
+                    columns:[
+                      {stack:[
+                        {
+                          text:"YES",
+                          style: [{fontSize: 10}]
+                        },
+                        {
+                          text:"NO",
+                          style: [{fontSize: 10}]
+                        },
+                      ]},
+                      {stack:[
+                        {
+                          image : "./assets/images/uncheck.png",
+                          width: 10,
+                          border:[false,false,false,false],
+                          style:"center"
+                        },
+                        {text:"\n", style:{fontSize:3}},
+                        {
+                          image : "./assets/images/uncheck.png",
+                          width: 10,
+                          border:[false,false,false,false],
+                          style:"center"
+                        }
+                      ]}
+                    ],
+                    border:[false, true, true, true]
+                  }
                 ]
               ],
             }
@@ -63,86 +283,164 @@ const Page_5 = ({
         [
           {
             border: [false, false, false, false],
+            layout:{
+              paddingBottom: (i, node) => 2,
+              paddingTop: (i, node) => 2,
+            },
+            margin:[0,10],
             table: {
               widths: [
-                10,
-                140,
-                '*','*','*','*','*',
-                '*','*','*','*','*',
-                '*','*','*','*','*',
-                '*','*','*','*','*',
-                '*','*','*'
+                10,"*","*","*","*","*","*","*","*","*"
               ],
               body: [
                 [
+                  {text:"22."},
                   {
-                    text: '12. Bank Details for all Payment',
-                    style: ['header','defaultStyle',{"fontSize": 10}], 
-                    colSpan: 25
+                    columns:[
+                      {text:"Details of the previous insurance including policies with disability or critical illness cover with any insurance company worldwide."},
+                      {
+                        stack:[
+                          {
+                            text:convertTextToRtl("تفاصيل التأمين السابق الخاصة بالإعاقة أو تغطية الأمراض الخطيرة مع أي شركة تأمين في جميع"),
+                            style: ["right", {fontSize: 10}, "arabic"]
+                          },
+                          {
+                            text:convertTextToRtl("أنحاء العالم؟ إذا كانت الإجابة بنعم ، يرجى إكمال التفاصيل أدناه"),
+                            style: ["right", {fontSize: 10}, "arabic"]
+                          },
+                        ]
+                      }
+                    ],
+                    colSpan:9
+                  },{},{},{},{},{},{},{},{}
+                ],
+                [
+                  {},{},
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("أرقام بوليصة التأمين"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Policy Numbers"},
+                    ], 
+                    style:"center"
                   },
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{}
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("اسم شركة التأمين"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Name of"},
+                      {text:"Insurance Company"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("سنة الإصدار"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Year Of Issue"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("المزايا و مبلغ تغطية التأمين"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl(")بالدولار الأمريكي("),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Sum Assured USD ($)"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("مع أو بدون التأمين"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("ضد الحوادث"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Accident Benefit\nYES/NO"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("فترة البوليصة"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Policy Term"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("سبب تغطية التأمين"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Purpose for Cover"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("الوضع الحالي"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("لوثيقة التأمين"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Present Status"},
+                      {text:"of the policy"},
+                    ], 
+                    style:"center"
+                  },
                 ],
                 [
-                  { text: 'A.', style: ['cellHeader', 'center'] },
-                  { text: 'Name Of Bank', style: ['cellHeader', 'left'] },
-                  { text: '', colSpan: 23 },
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{}
-                ],  
-                [
-                  { text: '', style: ['cellHeader', 'center'] },
-                  { text: 'Bank Branch & Address', style: ['cellHeader', 'left'] },
-                  { text: '', colSpan: 23 },
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{}
+                  {},{text:"\n\n"},{},{},{},{},{},{},{},{}
                 ],
                 [
-                  { text: 'B.', style: ['cellHeader', 'center'] },
-                  { text: 'Account Name', style: ['cellHeader', 'left'] },
-                  { text: '', colSpan: 23 },
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{}
-                ],  
-                [
-                  { text: '', style: ['cellHeader', 'center'] },
-                  { text: 'Account Number', style: ['cellHeader', 'left'] },
-                  { text: ''},{ text: ''},{ text: ''},{ text: ''},{ text: ''},
-                  { text: ''},{ text: ''},{ text: ''},{ text: ''},{ text: ''},
-                  { text: ''},{ text: ''},{ text: ''},{ text: ''},{ text: ''},
-                  { text: ''},{ text: ''},{ text: ''},{ text: ''},{ text: ''},
-                  { text: ''},{ text: ''},{ text: ''}
+                  {},{text:"\n\n"},{},{},{},{},{},{},{},{}
                 ],
                 [
-                  { text: 'C.', style: ['cellHeader', 'center'] },
-                  { text: 'IBAN Number (23 Digits)', style: ['cellHeader', 'left'] },
-                  { text: ''},{ text: ''},{ text: ''},{ text: ''},{ text: ''},
-                  { text: ''},{ text: ''},{ text: ''},{ text: ''},{ text: ''},
-                  { text: ''},{ text: ''},{ text: ''},{ text: ''},{ text: ''},
-                  { text: ''},{ text: ''},{ text: ''},{ text: ''},{ text: ''},
-                  { text: ''},{ text: ''},{ text: ''}
-                ],
-                [
-                  { text: 'How long is the Account held for', style: ['cellHeader', 'left'], colSpan: 2 },{},
-                  { text: 'Year(s)', colSpan: 11, style:["right"] },
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  { text: 'Month(s)', colSpan: 12, style:["right"] },
-                  {},{},{},{},{},{},
-                  {},{},{},{},{}
-                ], 
+                  {},
+                  {
+                    columns:[
+                      {stack:[
+                        {
+                          text:"Please Note: The Company does not entertain any fresh proposal for insurance where a policy has lapsed or has been converted into paid up policy within the last three years or surrendered in last year."
+                        }
+                      ]},
+                      {stack:[
+                        {
+                          text:convertTextToRtl("ملاحظة : يُرجى العلم أن الشركة لا تقدم أي طلب جديد للتأمين في حالة انقضاء أحد وثائق التأمين أو"),
+                          style: [{fontSize: 10}, "arabic"]
+                        },
+                        {
+                          text:convertTextToRtl("إذا تم تحويلها إلى وثيقة مدفوعة خلال السنوات الثلاث الأخيرة أو تسليمها في العام الماضي."),
+                          style: [{fontSize: 10}, "arabic"]
+                        },
+                      ], style:"right"},
+                    ],
+                    colSpan:9,
+                  },
+                  {},{},{},{},{},{},{},{}
+                ]
               ],
             }
           }
@@ -150,220 +448,23 @@ const Page_5 = ({
         [
           {
             border: [false, false, false, false],
+            layout:{
+              paddingTop: (i, node) => 0
+            },
             table: {
-              widths: [
-                10,
-                140,
-                '*','*','*','*','*',
-                '*','*','*','*','*',
-                '*','*','*','*','*',
-                '*','*','*','*','*',
-                '*','*','*'
-              ],
+              widths: [750],
               body: [
                 [
                   {
-                    text: '13. Source of Funds (Same as Bank Details above        Yes         No – If different, please complete bank details)',
-                    style: ['header','defaultStyle',{"fontSize": 10}], 
-                    colSpan: 25
-                  },
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{}
-                ],
-                [
-                  { text: 'A.', style: ['cellHeader', 'center'] },
-                  { text: 'Name Of Bank', style: ['cellHeader', 'left'] },
-                  { text: '', colSpan: 23 },
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{}
-                ],  
-                [
-                  { text: '', style: ['cellHeader', 'center'] },
-                  { text: 'Bank Branch & Address', style: ['cellHeader', 'left'] },
-                  { text: '', colSpan: 23 },
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{}
-                ],
-                [
-                  { text: 'B.', style: ['cellHeader', 'center'] },
-                  { text: 'Account Name', style: ['cellHeader', 'left'] },
-                  { text: '', colSpan: 23 },
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  {},{}
-                ],  
-                [
-                  { text: '', style: ['cellHeader', 'center'] },
-                  { text: 'Account Number', style: ['cellHeader', 'left'] },
-                  { text: ''},{ text: ''},{ text: ''},{ text: ''},{ text: ''},
-                  { text: ''},{ text: ''},{ text: ''},{ text: ''},{ text: ''},
-                  { text: ''},{ text: ''},{ text: ''},{ text: ''},{ text: ''},
-                  { text: ''},{ text: ''},{ text: ''},{ text: ''},{ text: ''},
-                  { text: ''},{ text: ''},{ text: ''}
-                ],
-                [
-                  { text: 'C.', style: ['cellHeader', 'center'] },
-                  { text: 'IBAN Number (23 Digits)', style: ['cellHeader', 'left'] },
-                  { text: ''},{ text: ''},{ text: ''},{ text: ''},{ text: ''},
-                  { text: ''},{ text: ''},{ text: ''},{ text: ''},{ text: ''},
-                  { text: ''},{ text: ''},{ text: ''},{ text: ''},{ text: ''},
-                  { text: ''},{ text: ''},{ text: ''},{ text: ''},{ text: ''},
-                  { text: ''},{ text: ''},{ text: ''}
-                ],
-                [
-                  { text: 'How long is the Account held for', style: ['cellHeader', 'left'], colSpan: 2 },{},
-                  { text: 'Year(s)', colSpan: 11, style:["right"] },
-                  {},{},{},{},{},
-                  {},{},{},{},{},
-                  { text: 'Month(s)', colSpan: 12, style:["right"] },
-                  {},{},{},{},{},{},
-                  {},{},{},{},{}
-                ], 
-              ],
-            }
-          }
-        ],
-        [
-          {
-            border: [false, false, false, false],
-            table: {
-              widths: [
-                125, 
-                "*",
-                "*",
-                "*",
-                "*" 
-              ],
-              layout: "innerTableLayout",
-              body: [
-                [
-                  {
-                    text: '14. Source of Income (Where the source is from, give a breakdown of your annual earnings from all sources for the last 3 years) ',
-                    style: ['header','defaultStyle',{"fontSize": 9}], 
-                    colSpan: 5,
-                  },
-                  {},{},{},{}
-                ],
-                [
-                  { text: '', style:["center", "cellHeader"] },
-                  { text: 'Earned Income', style:["center", "cellHeader"]},
-                  { text: 'Investment Income', style: ["center", "cellHeader"]},
-                  { text: 'Other Income', style:["center", "cellHeader"] },
-                  { text: 'Currency of Income', style:["center", "cellHeader"] },
-                ],
-                [
-                  { text: 'A. Current year’s income to date', style:["left", "cellHeader"] },
-                  { text: ''},
-                  { text: ''}, 
-                  { text: ''},
-                  { text: ''}
-                ],
-                [
-                  { text: 'B. Last year', style:["left", "cellHeader"] },
-                  { text: ''},
-                  { text: ''}, 
-                  { text: ''},
-                  { text: ''}
-                ],
-                [
-                  { text: 'C. Previous year', style:["left", "cellHeader"] },
-                  { text: ''},
-                  { text: ''}, 
-                  { text: ''},
-                  { text: ''}
-                ],
-              ],
-            }
-          }
-        ],
-        [
-          {
-            border: [false, false, false, false],
-            table: {
-              widths: [
-                "auto", 
-                "*",
-                "*",
-              ],
-              layout: "innerTableLayout",
-              body: [
-                [
-                  {
-                    text: '15. Source of Wealth (Origin of wealth acquired)',
-                    style: ['header','defaultStyle',{"fontSize": 9}]
-                  },
-                  {
-                    text: 'Proposer',
-                    style: ['header','defaultStyle',{"fontSize": 9}]
-                  },
-                  {
-                    text: 'Life to be Assured',
-                    style: ['header','defaultStyle',{"fontSize": 9}]
+                    border: [false, false, false, false],
+                    text:"Page 5",
+                    style: ["center", {fontSize: 10}, "bold", "Times"]
                   }
-                ],
-                [
-                  { text: 'Savings from income /salary /company profits/bonus', colSpan:3},{},{}
-                ],
-                [
-                  { text: 'A. Employer’s / Company Name ' },
-                  { text: ''}, { text: ''}
-                ],
-                [
-                  { text: 'B. Job Title / Nature of company business ' },
-                  { text: ''}, { text: ''}
-                ],
-                [
-                  { text: 'C. Number of years employed with company / Saving ' },
-                  { text: ''}, { text: ''}
-                ],
-                [
-                  { text: 'D. Annual Income (In USD) / Bonus (In USD)' },
-                  { text: ''}, { text: ''}
-                ],
-                [
-                  { text: 'Other (proceeds from shares / investment holdings / property sale', colSpan:3},{},{}
-                ],
-                [
-                  { text: 'E. Please include full details of where funds are from dates, currency and Amount' },
-                  { text: ''}, { text: ''}
-                ],
-                [
-                  { text: '', colSpan:3},{},{}
-                ],
-                [
-                  { text: 'Please provide the below documentary evidence for Source of Premium / Income / Wealth', colSpan:3, style:["cellHeader", {"bold": true}]},{},{}
-                ],
-                [
-                  { 
-                    text: [
-                      {text: 'Employees: ', style:{bold:true}},
-                      {text: 'Certified Salary Certificate (or) Last 3 months Bank Statement showing balance'}
-                    ], colSpan:3
-                  },{},{}
-                ],
-                [
-                  { 
-                    text: [
-                      {text: 'Business / Self Employed / Others: ', style:{bold:true}},
-                      {text: 'Certified Last 3 months bank statement (or) audited financial accounts.'}
-                    ], colSpan:3
-                  },{},{}
-                ],
+                ]
               ],
-            }
+            },
           }
-        ]
+        ],
       ]
     }
   }

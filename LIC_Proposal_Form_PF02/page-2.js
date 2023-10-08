@@ -265,13 +265,13 @@ const Page_2 = ({
               body: [
                 [
                   {
-                    text:[
+                    stack:[
                       {
                         text:convertTextToRtl("عملة إيداع الطلب: دينار بحريني/دولار أمريكي/درهم إماراتي/دينار كويتي/ريال قطري"),
                         style: ["left", {fontSize: 10}, "arabic"]
                       },
                       {
-                        text:"\nProposal Deposit Currency : BD / USD / AED / KD / OR / QR",
+                        text:"Proposal Deposit Currency : BD / USD / AED / KD / OR / QR",
                         style: ["left", {fontSize: 10}, "Times"]
                       },
                     ],
@@ -567,26 +567,61 @@ const Page_2 = ({
                       },
                     ],
                   },
-                  {text:[
-                    {
-                      text:convertTextToRtl("أنثى \t\t\t\t\t\t\t\t\t ذكر  "),
-                      style: ["left", {fontSize: 10}, "arabic"]
-                    },
-                    {
-                      text:"\nMale \t\t\t\t\t\t\t\t Female",
-                    },
-                  ],colSpan:8},
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("أنثى \t\t\t\t\t\t\t\t\t ذكر  "),
+                        style: ["left", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"Male \t\t\t\t\t\t\t\t Female",
+                      },
+                    ],colSpan:8
+                  },
                   {},{},{},{},{},{},{},
-                  {text:[
-                    {
-                      text:convertTextToRtl("أنثى \t\t\t\t\t\t\t\t\t ذكر  "),
-                      style: ["left", {fontSize: 10}, "arabic"]
-                    },
-                    {
-                      text:"\nMale \t\t\t\t\t\t\t\t Female",
-                    },
-                  ],colSpan:8},
-                  {},{},{},{},{},{},{},
+                  {
+                    columns:[
+                      {
+                        stack:[
+                          {
+                            text:convertTextToRtl("أنثى"),
+                            style: ["left", {fontSize: 10}, "arabic"]
+                          },
+                          {
+                            text:"Male",
+                          },
+                        ]
+                      },
+                      {
+                        image : "./assets/images/check.png",
+                        width: 10,
+                      }
+                    ],
+                    border:[true, true, false, true],
+                    colSpan:4
+                  },
+                  {},{},{},
+                  {
+                    columns:[
+                      {
+                        stack:[
+                          {
+                            text:convertTextToRtl("ذكر"),
+                            style: ["left", {fontSize: 10}, "arabic"]
+                          },
+                          {
+                            text:"Female",
+                          },
+                        ]
+                      },
+                      {
+                        image : "./assets/images/check.png",
+                        width: 10,
+                      }
+                    ],
+                    border:[false, true, true, true],
+                    colSpan:4
+                  },{},{},
                 ],
                 [
                   {text:"3.", rowSpan:2},

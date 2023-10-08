@@ -4,7 +4,6 @@ const Page_4 = ({
   return {
     layout : "customTableLayout",
     pageMargin : [0, 0, 0, 0],
-    pageBreak : "after",
     fontSize : 9.5,
     table : {
       body : [

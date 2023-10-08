@@ -246,7 +246,7 @@ const Page_12 = ({
               body: [
                 [
                   {
-                    text:"16."
+                    text:"16.", rowSpan: 11
                   },
                   {
                     text:[
