@@ -26,6 +26,7 @@ const fonts = {
 const printer = new PdfPrinter(fonts);
 const fs = require('fs');
 
+const Page_1 = require("./page-1");
 const Page_2 = require("./page-2");
 const Page_3 = require("./page-3");
 const Page_4 = require("./page-4");
@@ -41,9 +42,9 @@ const Page_13 = require("./page-13");
 const Page_14 = require("./page-14");
 const Page_15 = require("./page-15");
 const Page_16 = require("./page-16");
-const Page_17 = require("./page-17");
-const Page_18 = require("./page-18");
-const Page_19 = require("./page-19");
+// const Page_17 = require("./page-17");
+// const Page_18 = require("./page-18");
+// const Page_19 = require("./page-19");
 
 const convertTextToRtl = (text) => {
   return text.split(" ").reverse().join(" ");
@@ -62,8 +63,9 @@ const generateLICPF01Document = () => {
     const docDefinition = {
       pageMargins : [15,18,18,18],
       content: [
+        Page_1({ convertTextToRtl }),
         Page_2({ convertTextToRtl }),
-        Page_3({ convertTextToRtl }),
+        //Page_3({ convertTextToRtl }),
         Page_4({ convertTextToRtl }),
         Page_5({ convertTextToRtl }),
         Page_6({ convertTextToRtl }),
@@ -77,9 +79,9 @@ const generateLICPF01Document = () => {
         Page_14({ convertTextToRtl }),
         Page_15({ convertTextToRtl }),
         Page_16({ convertTextToRtl }),
-        Page_17({ convertTextToRtl }),
-        Page_18({ convertTextToRtl }),
-        Page_19({ convertTextToRtl }),
+        // Page_17({ convertTextToRtl }),
+        // Page_18({ convertTextToRtl }),
+        // Page_19({ convertTextToRtl }),
       ],
       defaultStyle: {
         font: 'Arial',

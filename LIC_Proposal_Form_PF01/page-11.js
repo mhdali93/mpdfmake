@@ -5,420 +5,104 @@ const Page_11 = ({
     layout : "customTableLayout",
     pageMargin : [0, 0, 0, 0],
     pageBreak : "after",
-    fontSize : 8,
+    fontSize : 8.5,
     table : {
       body : [
         [
           {
             border: [false, false, false, false],
             layout:{
+              paddingBottom: (i, node) => -5,
               paddingTop: (i, node) => 0,
-              paddingBottom: (i, node) => 0,
-              paddingLeft: (i, node) => 2,
-              paddingRight: (i, node) => 2,
             },
             table: {
-              widths: [10,200,125,48,47,48,47],
+              widths: [ 550 ],
               body: [
                 [
                   {
-                    text:"\n\nNo.",
-                    rowSpan:2,
-                    style:["center","header"]
+                    border:[false,false,false,false],
+                    stack:[
+                      { text :[
+                        {text:convertTextToRtl("أؤكد بموجب ذلك أن نموذج الطلب هذا قد تم تعبئته وتوقيعه بعد فهم كامل للأحكام ذات الصلة من تشريعات ولوائح مكافحة غسيل الأموال / متطلبات اعرف")},
+                        {text:"۶"},
+                      ]},
+                      { 
+                        text:convertTextToRtl("عميلك والالتزام بها"),
+                      },
+                      { text :[
+                        { text: "6. I/we hereby confirm that this proposal form is filled in and signed after understanding fully the relevant provisions of anti-money laundering legislations and regulations and know-your-customer (KYC) parameters/requirements and comply with the same." },
+                      ], style: ["justify", "Arial", {fontSize: 8}]},
+                    ],
+                    style: ["right", {fontSize: 10}, "arabic"]
                   },
-                  {
-                    stack:[
-                      {text:"\n"},
-                      {
-                        text:convertTextToRtl("السؤال"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Question", style:"center" },
-                    ],
-                    rowSpan:2,
-                    colSpan:2,
-                    style:["center","header", {fontSize: 9.5}]
-                  },{},
-                  {
-                    colSpan:2,
-                    stack:[
-                      {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ١"),
-                        style: ["center", {fontSize: 8}, "arabic"]
-                      },
-                      { text:"Proposer / Life to be Assured 1", style:["center", {fontSize: 7}] },
-                    ],
-                    style:"header",
-                  },{},
-                  {
-                    colSpan:2,
-                    stack:[
-                      {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ۲"),
-                        style: ["center", {fontSize: 8}, "arabic"]
-                      },
-                      { text:"Proposer / Life to be Assured 2", style:["center", {fontSize: 7}] },
-                    ],
-                    style:"header",
-                  },{}
                 ],
                 [
-                  {},{},{},
                   {
+                    border:[false,false,false,false],
                     stack:[
-                      {
-                        text:convertTextToRtl("نعم"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Yes", style:"center" },
+                      { text :[
+                        {text:convertTextToRtl("أقر أيضًا أنني لست مشاركًا في أي نشاط يمكن اعتباره غير قانوني بموجب تشريعات مكافحة غسيل الأموال، وأن الأموال التي أودعتها لسداد قسط وثيقة")},
+                        {text:"۷"},
+                      ]},
+                      { text :[
+                        {text:convertTextToRtl("التأمين هي من عائدات المعاملات القانونية والمشروعة. كما أخول الشركة للكشف عن المعلومات المتعلقة بي وبأموالي لدى أي سلطة تنظيمية. كما أنني أعلم")},
+                      ]},
+                      { text :[
+                        {text:convertTextToRtl("حقيقة أن السلطات التنظيمية / الحكومية قد تحجب أي أموال متعلقة بي وأن المعاملات قد يتم تعليقها نتيجة لأي تحقيق من جانب هذه السلطات التنظيمية.")},
+                      ]},
+                      { text :[
+                        {text:convertTextToRtl("وفي هذه الحالة، لن أحمل الشركة مسؤولية أي خسائر من أي نوع ناجمة عن هذا التعليق / تجميد الأموال / أموال وثيقة التأمين")},
+                      ]},
+                      { text :[
+                        { text: "7. I/we also declare that I am not engaged in any activity that may be considered illegal under anti-money laundering legislations and that funds deposited by me towards the premium for the life insurance proposal/policy are the proceeds of legal and legitimate transactions. I also authorize the Company to disclose information relating to me and my funds to any regulatory authority. I also know the fact that regulatory/ Government authorities may withhold any policy moneys/ funds to my credit and that transactions may be suspended as a result of any enquiry by such regulatory authorities. In the happening of such event, I will not hold the Company responsible for any losses of any kind arising out of or consequent thereto such holding/ freezing of funds/ policy monies." },
+                      ], style: ["justify", "Arial", {fontSize: 8}]},
                     ],
-                    style:"header",
+                    style: ["right", {fontSize: 9.5}, "arabic"]
                   },
+                ],
+                [
                   {
+                    border:[false,false,false,false],
                     stack:[
-                      {
-                        text:convertTextToRtl("لا"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"No", style:"center" },
+                      { text :[
+                        {text:convertTextToRtl("أفوض الشركة بإرسال المراسلات من خلال البريد الإلكتروني / الرسائل النصية القصيرة إلى البريد الإلكتروني الخاص بي أو أرقام الهواتف المحمولة المذكورة في")},
+                        {text:"۸"},
+                      ]},
+                      { text :[
+                        {text:convertTextToRtl("هذه الإستمارة، وسيتم إبلاغ الشركة بأي تغييرات لاحقة في البريد الإلكتروني أو أرقام الهواتف المحمولة")},
+                      ]},
+                      { text :[
+                        { text: "8. I/we authorize the company to send the correspondence through e-mail/ SMS to my email ids or mobile numbers provided in this form and any subsequent changes in e-mail-ids or mobile numbers will be notified to the company." },
+                      ], style: ["justify", "Arial", {fontSize: 8.5}]},
                     ],
-                    style:"header",
+                    style: ["right", {fontSize: 10}, "arabic"]
                   },
+                ],
+                [
                   {
+                    border:[false,false,false,false],
                     stack:[
-                      {
-                        text:convertTextToRtl("نعم"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Yes", style:"center" },
+                      { text :[
+                        {text:convertTextToRtl("أيضًا أنني في الوقت الحالي لست أحد مواطني الولايات المتحدة الأمريكية أو مقيماً في الولايات المتحدة الأمريكية. وفي حال حصولي على جنسية الولايات المتحدة")},
+                        {text:"۹"},
+                      ]},
+                      { text :[
+                        {text:convertTextToRtl("يمكنك شطب البند إذا")},
+                        {text:convertTextToRtl(")*")},
+                        {text:convertTextToRtl(" الأمريكية أو أصبحت مقيما بها، سأبلغ المكتب على الفور وسوف ألتزم بأي متطلبات بموجب لوائح قانون الامتثال الضريبي الأمريكي، إن وجدت.")},
+                      ]},
+                      { text :[
+                        {text:"("},
+                        {text:convertTextToRtl("كان لا ينطبق")},
+                      ]},
+                      { text :[
+                        { text: "9. I/we also declare that presently I am not citizen of USA or the resident of USA. In case I take citizenship of USA or become resident of USA I will inform the office immediately and will comply with any requirement under FATCA regulations, if applicable.* (*strike off if not applicable)" },
+                      ], style: ["justify", "Arial", {fontSize: 8.5}]},
                     ],
-                    style:"header",
+                    style: ["right", {fontSize: 9.5}, "arabic"]
                   },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("لا"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"No", style:"center" },
-                    ],
-                    style:"header",
-                  }
                 ],
-                [
-                  {text:"8."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"In the past 5 years, have you ever been admitted to a hospital or been absent from work for a period of more than five days due to any illness or injury?"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("في السنوات الخمس الماضية ، هل سبق لك أن "),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("دخلت المستشفى أو تغيبت عن العمل لمدة تزيد عن"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("خمسة أيام بسبب أي مرض أو إصابة؟"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                            ],
-                          },
-                        ]
-                      ]
-                    },
-                    colSpan:2,
-                  },{},
-                  {},{},{},{}
-                ],
-                [
-                  {text:"9."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"In the past 12 months, have you had any medical symptom, change in your physical or mental health for which you have not consulted a doctor, hospital or medical practitioner?"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("خلال الاثني عشر شهرًا الماضية ، هل عانيت من"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("أي أعراض طبية أو تغير في صحتك البدنية أو"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("العقلية لم تستشر طبيبًا أو مستشفى أو ممارسا"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("طبيا بسببه؟"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                            ],
-                          },
-                        ]
-                      ]
-                    },
-                    colSpan:2,
-                  },{},
-                  {},{},{},{}
-                ],
-                [
-                  {text:"10."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"Are you awaiting the result of any medical investigation, procedure follow up or any other medical or blood test?"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("هل تنتظر نتيجة أي فحص طبي أو متابعة إجراء أو"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("أي فحص طبي أو فحص دم؟"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                            ],
-                          },
-                        ]
-                      ]
-                    },
-                    colSpan:2,
-                  },{},
-                  {},{},{},{}
-                ],
-                [
-                  {text:"11."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"In the next 12 months, do you intend to have any consultation or check up in connection with any medical symptom or condition or are you waiting for the result of any medical investigation?"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("في الاثني عشر شهرًا القادمة ، هل تنوي إجراء أي"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("استشارة أو فحص فيما يتعلق بأي أعراض أو"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("حالة طبية أم أنك تنتظر نتيجة أي فحص طبي؟"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                            ],
-                          },
-                        ]
-                      ]
-                    },
-                    colSpan:2,
-                  },{},
-                  {},{},{},{}
-                ],
-                [
-                  {text:"12."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"What has been your usual state of health?"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("ماهي حالتك الصحية المعتادة؟"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              }
-                            ],
-                          },
-                        ]
-                      ]
-                    },
-                    colSpan:2,
-                  },{},
-                  {},{},{},{}
-                ],
-                [
-                  {text:"13.", rowSpan:4},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    colSpan:5,
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"Please provide details of the doctor/clinic / hospital you are visiting for your well-being (even if it is in a country other than your current country of residence)"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("يرجى تقديم تفاصيل عن الطبيب / العيادة / المستشفى الذي تزوره"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("من أجل صحتك )حتى لو كانت في بلد آخر غير بلد إقامتك الحالي("),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              }
-                            ],
-                          },
-                        ]
-                      ]
-                    },
-                    colSpan:6,
-                  },{},
-                  {},{},{},{}
-                ],
-                [
-                  {},
-                  {
-                    text:[
-                      {
-                        text:"Name of Doctor / ",
-                        style: ["center", {fontSize: 8}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("اسم الطبيب"),
-                        style: ["center", {fontSize: 8}, "arabic"]
-                      }
-                    ],
-                  },{text:"", colSpan:5},
-                  {},{},{},{}
-                ],
-                [
-                  {},
-                  {
-                    text:[
-                      {
-                        text:"Name of Clinic / Hospital  ",
-                        style: ["center", {fontSize: 8}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("المستشفى / اسم العيادة"),
-                        style: ["center", {fontSize: 8}, "arabic"]
-                      }
-                    ],
-                  },{text:"", colSpan:5},
-                  {},{},{},{}
-                ],
-                [
-                  {},
-                  {
-                    text:[
-                      {
-                        text:"Address / ",
-                        style: ["center", {fontSize: 8}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("العنوان"),
-                        style: ["center", {fontSize: 8}, "arabic"]
-                      }
-                    ],
-                  },{text:"", colSpan:5},
-                  {},{},{},{}
-                ],
-              ]
+              ],
             }
           }
         ],
@@ -426,236 +110,215 @@ const Page_11 = ({
           {
             border: [false, false, false, false],
             layout:{
-              paddingTop: (i, node) => 0,
-              paddingBottom: (i, node) => 0,
-              paddingLeft: (i, node) => 2,
-              paddingRight: (i, node) => 2,
+              paddingBottom: (i, node) => -5,
+              paddingTop: (i, node) => -5
             },
             table: {
-              widths: [10,80,70,75,80,90,120],
+              widths: [ 200,350 ],
               body: [
                 [
                   {
-                    text:"*Q. No. 15 and 16 are not applicable for minor lives.",
-                    colSpan:4,
-                    border:[true,true,false,true]
-                  },{},{},{},
+                    border:[false,false,false,false],
+                    stack:[
+                      { text :convertTextToRtl("التاريخ"), },
+                      { text :"Date" },
+                      { text :"-------------------------------------------------------------------" },
+                      { text :convertTextToRtl("المكان"), },
+                      { text :"Place" },
+                      { text :"-------------------------------------------------------------------" },
+                      { text :convertTextToRtl("توقيع الشاهد"), },
+                      { text :"Signature of Witness" },
+                      { text :"-------------------------------------------------------------------" },
+                    ],
+                    style: ["left", {fontSize: 9.5}, "arabic"]
+                  },
                   {
-                    text:convertTextToRtl("سؤال رقم ١٥ و ١٦ لا ينطبق على حياة القاصرين"),
-                    style: ["right", {fontSize: 8}, "arabic"],
-                    colSpan:3,
-                    border:[false,true,true,true]
-                  },{},{}
+                    border:[false,false,false,false],
+                    stack:[
+                      { text :convertTextToRtl("توقيع مقدم / مقدمي الطلب / المؤمن على حياته"), },
+                      { text :"Signature of Proposer/s/Life to be Assured" },
+                      { text:"\n" },
+                      { text :[
+                        { text :"---------------------------------------" },
+                        { text :"---------------------------------------" },
+                        { text :"---------------------------------------" },
+                      ]},
+                      { text :convertTextToRtl("اسم مقدم الطلب / المؤمن على حياته"), },
+                      { text :"Name of Proposer/Life to Assured" },
+                      { text:"\n" },
+                      { text :[
+                        { text :"---------------------------------------" },
+                        { text :"---------------------------------------" },
+                        { text :"---------------------------------------" },
+                      ]},
+                    ],
+                    style: ["left", {fontSize: 9.5}, "arabic"]
+                  }
                 ],
                 [
                   {
-                    text:"14.", rowSpan:9
+                    border:[false,false,false,false],
+                    stack:[
+                      { text :convertTextToRtl("اسم وعنوان الشاهد"), },
+                      { text :"Name & Address of Witness" },
+                      { text :[
+                        { text :"--------------------------------------" },
+                        { text :"--------------------------------------" },
+                        { text :"--------------------------------------" },
+                        { text :"--------------------------------------" },
+                        { text :"-------------------------------------" },
+                      ]},
+                    ],
+                    style: ["left", {fontSize: 9.5}, "arabic"],
+                    colSpan:2
+                  },{}
+                ],
+              ],
+            }
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingBottom: (i, node) => 0,
+              paddingTop: (i, node) => -3,
+            },
+            table: {
+              widths: [ 275,275 ],
+              body: [
+                [
+                  {
+                    text :"Specimen Signatures of proposer/s and Life to be assured",
+                    border: [false, false, false, false],
+                    style: ["left", {fontSize: 9.5}, "arial", "bold"]
                   },
                   {
-                    text:"Family History of Proposer/Life to be assured 1\nPlease provide details of your family history below. Particular importance is where your father, mother or any of your brothers or sisters had died or suffered from heart disease, cancer, stroke, multiple sclerosis, diabetes or any neurological disorders before age of 60 years or from a familial / hereditary disorder.",
-                    colSpan:3,
-                    style:"justify",
-                    border:[true,true,false,true]
-                  },{},{},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl(" التاريخ العائلي لمقدم الطلب / المؤمن على حياته ١"),
-                        style: ["right", {fontSize: 8}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("يرجى تقديم تفاصيل تاريخ عائلتك أدناه من الأهمية بمكان أن"),
-                        style: ["right", {fontSize: 8}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("يكون والدك أو والدتك أو أي من إخوتك أو أخواتك قد مات أو عانى من"),
-                        style: ["right", {fontSize: 8}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("أمراض القلب أو السرطان أو السكتة الدماغية أو التصلب المتعدد أو"),
-                        style: ["right", {fontSize: 8}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("مرض السكري أو أي اضطرابات عصبية قبل سن 60 عاما أو بسبب"),
-                        style: ["right", {fontSize: 8}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("اضطراب عائلي / وراثي"),
-                        style: ["right", {fontSize: 8}, "arabic"]
-                      },
-                    ],
-                    colSpan:3,
-                    border:[false,true,true,true]
-                  },{},{}
+                    text :convertTextToRtl("التوقيعات النموذجية لمقدم / مقدمي الطلب والمؤمن على حياته "),
+                    border: [false, false, false, false],
+                    style: ["right", {fontSize: 9.5}, "arabic", "bold"]
+                  }
                 ],
                 [
-                  {},
                   {
-                    stack:[
+                    text:[
                       {
-                        text:convertTextToRtl("صلة القرابة"),
+                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ١"),
                         style: ["center", {fontSize: 10}, "arabic"]
                       },
-                      { text:"Relationship", style:"center" },
+                      {
+                        text:"\nProposer / Life to be Assured 1",
+                        style: ["center", {fontSize: 10}, "Times"]
+                      },
                     ],
-                    style:["center","header", {fontSize: 9.5}]
                   },
                   {
-                    stack:[
+                    text:[
                       {
-                        text:convertTextToRtl("الحي"),
+                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ٢"),
                         style: ["center", {fontSize: 10}, "arabic"]
                       },
-                      { text:"Living", style:"center" },
+                      {
+                        text:"\nProposer / Life to be Assured 2",
+                        style: ["center", {fontSize: 10}, "Times"]
+                      },
+                      {
+                        text:"\n(not required, if the life to be assured is minor)",
+                        style: ["center", {fontSize: 8.5}, "Times"]
+                      }
                     ],
-                    style:["center","header", {fontSize: 9.5}],
-                    colSpan:3
-                  },{},{},
+                  }
+                ],
+                [
+                  {text:"\n\n\n"},{}
+                ],
+                [
                   {
+                    border:[false,false,false,false],
                     stack:[
-                      {
-                        text:convertTextToRtl("المتوفى"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Dead", style:"center" },
+                      { text :[
+                        {text:"\n", style:{fontSize:3}},
+                        {text:convertTextToRtl("إذا جاء توقيع مقدم الطلب و / أو الإجابة عن الأسئلة المتضمنة هنا بلغة غير تلك المحرر بها النموذج الماثل فإنه يتعين عليه عليها الإقرار بخط يدهم فوق التوقيع أنه قد تم")},
+                      ]},
+                      { text :[
+                        {text:convertTextToRtl("شرح جميع الأسئلة وأن الإجابات جاءت بعد فهمها فهما صحيحًا")},
+                      ]},
+                      { text :[
+                        { text: "If answer to the questions and/or signature of the proposer is in language other than from the proposal, he/she should declare in their own handwriting above their signature that all questions were explained and that their replies are given after fully and properly understanding the same." },
+                      ], style: ["justify", "Arial", {fontSize: 8.5}]},
                     ],
-                    style:["center","header", {fontSize: 9.5}],
+                    style: ["right", {fontSize: 9.5}, "arabic"],
+                    colSpan:2,
+                  },{}
+                ],
+                [
+                  { 
+                    border:[false,false,false,false],
+                    text :[
+                      {
+                        text:"AUTHORISATION LETTER FOR HANDING OVER POLICY DOCUMENT \t\t\t\t\t\t\t\t\t\t\t\t\t", 
+                        style:{fontSize:8.5}
+                      },
+                      {
+                        text:convertTextToRtl("خطاب تفويض لتسليم وثيقة بوليصة التأمين"),
+                        style: [{fontSize: 9.5}, "arabic"],
+                      },
+                    ],
+                    style:"bold",
                     colSpan:2
                   },{}
                 ],
                 [
-                  {},
                   {
-                    text:"",
-                    style:["center","header"]
-                  },
-                  {
-                    stack:[
+                    border: [false, false, false, false],
+                    canvas: [
                       {
-                        text:convertTextToRtl("السن"),
-                        style: ["center", {fontSize: 10}, "arabic"]
+                        type: 'line',
+                        x1: 0, y1: 0,
+                        x2: 555, y2: 0,
+                        lineWidth: 1
                       },
-                      { text:"Age", style:"center" },
                     ],
-                    style:["center","header", {fontSize: 9.5}]
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الحالة الصحية المعتادة"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Present State of Health", style:"center" },
-                    ],
-                    style:["center","header", {fontSize: 9.5}],
                     colSpan:2
-                  },{},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("السن عند الوفاة"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Age at Death", style:"center" },
-                    ],
-                    style:["center","header", {fontSize: 9.5}]
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("سبب الوفاة"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Cause of death", style:"center" },
-                    ],
-                    style:["center","header", {fontSize: 9.5}]
-                  }
+                  },{}
                 ],
                 [
-                  {},
                   {
+                    border:[false,false,false,false],
                     stack:[
-                      {
-                        text:convertTextToRtl("الأب"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Father", style:"center" },
+                      {text:"\n",style:{fontSize:4}},
+                      { text :[
+                        { text: "I hereby authorize __________________________(Name of consultant) to collect policy document/s on my behalf subsequent to the acceptance of risk under the subject proposal." },
+                      ], style: ["justify", "Arial", {fontSize: 8.5}]},
+                      { text :[
+                        {text:convertTextToRtl("لاستلام مستندات وثيقة/وثائق التأمين نيابة عني عقب الموافقة على التأمين ضد المخاطر تحت موضوع الطلب")},
+                        {text:"("},
+                        {text:convertTextToRtl("اسم الوكيل")},
+                        {text:")__________________________"},
+                        {text:convertTextToRtl("أفوض بموجب هذا")},
+                      ]},
                     ],
-                    style:["center", {fontSize: 9.5}]
-                  },{},
-                  { text:"", colSpan:2 },{},{},{}
+                    style: ["right", {fontSize: 9}, "arabic"],
+                    colSpan:2,
+                  },{}
                 ],
                 [
-                  {},
                   {
+                    border:[false,false,false,false],
                     stack:[
-                      {
-                        text:convertTextToRtl("الأم"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Mother", style:"center" },
+                      { text :[
+                        {text:"\n",style:{fontSize:4}},
+                        {text:"Signature of Proposer"},
+                        {text:"__________________________"},
+                        {text:"__________________________"},
+                        {text:convertTextToRtl("توقيع مقدم الطلب")},
+                      ]},
                     ],
-                    style:["center", {fontSize: 9.5}]
-                  },{},
-                  { text:"", colSpan:2 },{},{},{}
+                    style: ["right", {fontSize: 9}, "arabic"],
+                    colSpan:2,
+                  },{}
                 ],
-                [
-                  {},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الاخ"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Brother", style:"center" },
-                    ],
-                    style:["center", {fontSize: 9.5}]
-                  },{},
-                  { text:"", colSpan:2 },{},{},{}
-                ],
-                [
-                  {},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الاخ"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Brother", style:"center" },
-                    ],
-                    style:["center", {fontSize: 9.5}]
-                  },{},
-                  { text:"", colSpan:2 },{},{},{}
-                ],
-                [
-                  {},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الأخت"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Sister", style:"center" },
-                    ],
-                    style:["center", {fontSize: 9.5}]
-                  },{},
-                  { text:"", colSpan:2 },{},{},{}
-                ],
-                [
-                  {},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الأخت"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Sister", style:"center" },
-                    ],
-                    style:["center", {fontSize: 9.5}]
-                  },{},
-                  { text:"", colSpan:2 },{},{},{}
-                ]
-              ]
+              ],
             }
           }
         ],

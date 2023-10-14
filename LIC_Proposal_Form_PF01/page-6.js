@@ -4,272 +4,345 @@ const Page_6 = ({
   return {
     layout : "customTableLayout",
     pageMargin : [0, 0, 0, 0],
-    pageOrientation: 'portrait',
-    pageBreak : "before",
+    pageBreak : "after",
     fontSize : 9.5,
     table : {
-      body : [
+      body : [  
         [
           {
             border: [false, false, false, false],
-            layout:{
-              paddingBottom: (i, node) => 2,
-              paddingTop: (i, node) => 2,
-            },
+            margin:[0,-5,0,0],
             table: {
               widths: [
-                10,255,265
+                10,264,264
               ],
               body: [
                 [
                   {
+                    text:"22.",rowSpan:2
+                  },
+                  {
+                    border:[true, true, true, false],
                     text:[
                       {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ١"),
-                        style: ["center", {fontSize: 10}, "arabic"]
+                        text:"Have you or your company availed any loan facility\t\t\t\t\t\t",
                       },
                       {
-                        text:"\nProposer / Life to be Assured 1",
-                        style: ["center", {fontSize: 10}, "Times"]
+                        text:convertTextToRtl("هل حصلت انت او شركتك على اي تسهيلات اقتراض من اي بنك اذا كان"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"\nfrom any banks?   \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t",
+                      },
+                      {
+                        text:convertTextToRtl("كذلك، يرجى توضيح التفاصيل"),
+                        style: ["right", {fontSize: 10}, "arabic"]
                       },
                     ],
-                    colSpan:2,
-                    style: {fillColor: '#f8eff2'},
-                  },{},
+                    // border:[true, true, false, true],
+                    style:"justify",
+                    colSpan:2
+                  },{}
+                ],
+                [
+                  {
+                    text:" ",
+                  },
+                  {
+                    border: [false, false, false, true],
+                    margin:[0,5,0,30],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    }
+                  },
                   {
                     text:[
-                      {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ٢"),
-                        style: ["center", {fontSize: 10}, "arabic"]
+                      { text:convertTextToRtl(" "),
+                      style: ["right"],
                       },
                       {
-                        text:"\nProposer / Life to be Assured 2",
-                        style: ["center", {fontSize: 10}, "Times"]
+                        text:"\n",
                       },
-                    ],
-                    style: {fillColor: '#f8eff2'},
+                    ],border:[false,false,true,true],
                   },
                 ],
                 [
-                  {text:"23."},
+                  {text:"36."},
                   {
-                    text:"Have you ever had an application for life, disability or critical illness insurance declined, postponed or accepted at other than normal terms?",
+                    text:[
+                      {
+                        text:"Details of Nominee/ Beneficiary: I/we hereby appoint following person/s as nominee/beneficiary under this policy to whom policy monies will be paid in case of death of Life to be Assured.",
+                      }
+                    ],
                     border:[true, true, false, true],
                     style:"justify"
                   },
                   {
                     stack:[
                       {
-                        text:convertTextToRtl("هل سبق لك أن تم رفض أو تأجيل أو قبول طلب تأمين على الحياة"),
-                        style: ["right", {fontSize: 10}, "arabic"]
+                        text:convertTextToRtl("تفاصيل المرشح / المستفيد أنا / نحن أعين بموجبه هذا الشخص /"),
+                        style: ["right", {fontSize: 9.5}, "arabic"]
                       },
                       {
-                        text:convertTextToRtl("أو العجز أو الأمراض الخطيرة بسبب خلاف للشروط العادية؟"),
-                        style: ["right", {fontSize: 10}, "arabic"]
+                        text:convertTextToRtl("الأشخاص التالي بيانه / بيانهم كمرشح / مستفيد بموجب هذه البوليصة"),
+                        style: ["right", {fontSize: 9.5}, "arabic"]
                       },
+                      {
+                        text:convertTextToRtl("والذي سيتم دفع أموال البوليصة إليه في حالة وفاة المؤمن على حياته"),
+                        style: ["right", {fontSize: 9.5}, "arabic"]
+                      }
                     ],
                     border:[false, true, true, true],
-                  }
-                ],
-                [
-                  {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    colSpan:2,
-                    style: "center"
-                  },{},
-                  {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    style: "center"
-                  }
-                ],
-                [
-                  {text:"24."},
-                  {
-                    text:"Have you cancelled (under cooling off provision or otherwise) any policy of the Company during past one year as the same was not acceptable to you?",
-                    border:[true, true, false, true],
                     style:"justify"
-                  },
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("هل ألغيت (بموجب بند السماح أو غير ذلك) أي بوليصة تأمين للشركة"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"\n" },
-                      {
-                        text:convertTextToRtl("خلال العام الماضي لأنها لم تكن مقبولة لك؟ إذا كانت"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"\n" },
-                      {
-                        text:convertTextToRtl("م، أذكر التفاصيل الإجابة بنعم"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                    ],
-                    border:[false, true, true, true],
                   }
-                ],
-                [
-                  {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    colSpan:2,
-                    style: "center"
-                  },{},
-                  {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    style: "center"
-                  }
-                ],
-                [
-                  {text:"25."},
-                  {
-                    text:"Have you submitted any other proposal for insurance on your life or on the life of life to assured?",
-                    border:[true, true, false, true],
-                    style:"justify"
-                  },
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("هل قدمت أي طلب آخر للتأمين على حياتك أو على حياة المؤمن عليه؟"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"\n" },
-                      {
-                        text:convertTextToRtl("إذا كانت الإجابة بنعم، أذكر التفاصيل"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                    ],
-                    border:[false, true, true, true],
-                  }
-                ],
-                [
-                  {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    colSpan:2,
-                    style: "center"
-                  },{},
-                  {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    style: "center"
-                  }
-                ],
-                [
-                  {text:"26."},
-                  {
-                    text:"Is any application for revival of any of your policies or policies of Life to be assured is under Consideration?",
-                    border:[true, true, false, true],
-                    style:"justify"
-                  },
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("هل يوجد أي طلب لإبقاء أي من البوالص الخاصة بك أو بوالص"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"\n" },
-                      {
-                        text:convertTextToRtl("التأمين على الحياة قيد النظر؟ إذا كانت الإجابة بنعم، اذكر التفاصيل"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                    ],
-                    border:[false, true, true, true],
-                  }
-                ],
-                [
-                  {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    colSpan:2,
-                    style: "center"
-                  },{},
-                  {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    style: "center"
-                  }
-                ],
-                [
-                  {text:"27."},
-                  {
-                    text:"Does your occupation require you to work at heights over 10 meter, work underground, offshore, at remote locations, handling or transporting hazardous material or any other hazardous duties not mentioned here?",
-                    border:[true, true, false, true],
-                    style:"justify"
-                  },
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("هل تتطلب مهنتك العمل على ارتفاعات تزيد عن 10 أمتار، أو العمل تحت"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"\n" },
-                      {
-                        text:convertTextToRtl("أو في الخارج، أو في مواقع بعيدة، أو مناولة أو نقل المواد الخطرة"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"\n" },
-                      {
-                        text:convertTextToRtl("أو أي مهام خطرة أخرى غير مذكورة هنا؟"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                    ],
-                    border:[false, true, true, true],
-                  }
-                ],
-                [
-                  {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    colSpan:2,
-                    style: "center"
-                  },{},
-                  {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    style: "center"
-                  }
-                ],
-                [
-                  {
-                    text:"28."
-                  },
-                  { 
-                    text:"Name and address of Employer", 
-                    style: "left",
-                    border: [true, true, false, true] 
-                  },
-                  { 
-                    text:convertTextToRtl("اسم وعنوان الموظف"), 
-                    border: [false, true, true, true],
-                    style: ["right", {fontSize: 10}, "arabic"]
-                  }
-                ],
-                [
-                  {
-                    text:"\n\n\n\n\n\n\n\n",
-                    colSpan:2,
-                  },{},
-                  { text:"" }
-                ],
-                [
-                  {
-                    text:"29."
-                  },
-                  { 
-                    text:"Object of Insurance", 
-                    style: "left",
-                    border: [true, true, false, true] 
-                  },
-                  { 
-                    text:convertTextToRtl("هدف التأمين"), 
-                    border: [false, true, true, true],
-                    style: ["right", {fontSize: 10}, "arabic"]
-                  },
-                ],
-                [
-                  {
-                    text:"\n\n\n\n\n",
-                    colSpan:2,
-                  },{},
-                  { text:"" }
                 ],
               ],
             }
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingTop: (i, node) => 0
+            },
+            table: {
+              widths: [70,115,"*","*"],
+              body: [
+                [
+                  {
+                    colSpan:2,
+                    stack:[
+                      {
+                        text:convertTextToRtl("التفاصيل"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"Particulars",
+                        style: ["center", {fontSize: 10}, "Times"]
+                      },
+                    ],
+                    style:"header",
+                  },{},
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl(")تفاصيل المرشح ) بطاقة الهوية للمرشح"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"Details of Nominee",
+                        style: ["center", {fontSize: 10}, "Times"]
+                      },
+                    ],
+                    style:"header",
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("تفاصيل الوصي إذا كان المرشح قاصرًا"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"Details of Appointee (Appointee is required only if the Nominee is minor)",
+                        style: ["center", {fontSize: 10}, "Times"]
+                      },
+                    ],
+                    style:"header",
+                  }
+                ],
+                [
+                  {
+                    colSpan:2,
+                    stack:[
+                      { text:"\n" },
+                      {
+                        text:convertTextToRtl("الأسم"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Name/s \n\n\n", style:"center" },
+                    ],
+                  },{},{},{}
+                ],
+                [
+                  {
+                    colSpan:2,
+                    stack:[
+                      {
+                        text:convertTextToRtl("هل العنوان هو نفسه عنوان مقدم الطلب؟"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("إذا لم يكن كذلك ، يرجى ذكر العنوان "),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Whether the address is as same as given for proposer. YES / NO If not, please mention the address\n", style:"center" },
+                    ],
+                  },{},{},{}
+                ],
+                [
+                  {
+                    colSpan:2,
+                    stack:[
+                      {
+                        text:convertTextToRtl("الجنسية"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Nationality\n", style:"center" },
+                    ],
+                  },{},{},{}
+                ],
+                [
+                  {
+                    colSpan:2,
+                    stack:[
+                      {
+                        text:convertTextToRtl("السن / تاريخ الانتهاء"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Age\n", style:"center" },
+                    ],
+                  },{},{},{}
+                ],
+                [
+                  {
+                    colSpan:2,
+                    stack:[
+                      {
+                        text:convertTextToRtl("صلته بالمؤمن عليه"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Relation to Life to be Assured\n", style:"center" },
+                    ],
+                  },{},{},{}
+                ],
+                [
+                  {
+                    colSpan:2,
+                    stack:[
+                      {
+                        text:convertTextToRtl("رقم جواز السفر"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Passport Number\n", style:"center" },
+                    ],
+                  },{},{},{}
+                ],
+                [
+                  {
+                    colSpan:2,
+                    stack:[
+                      {
+                        text:convertTextToRtl("تاريخ الانتهاء"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Date Of Expiry\n", style:"center" },
+                    ],
+                  },{},{},{}
+                ],
+                [
+                  {
+                    colSpan:2,
+                    stack:[
+                      {
+                        text:convertTextToRtl("رقم البطاقة التعريفية / بطاقة الإقامة / بطاقة المواطنة"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"CPR / Civil ID / Citizen Card No.\n", style:"center" },
+                    ],
+                  },{},{},{}
+                ],
+                [
+                  {
+                    colSpan:2,
+                    stack:[
+                      {
+                        text:convertTextToRtl("بطاقة هوية المقيم وتاريخ الانتهاء "),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Expiry Date\n", style:"center" },
+                    ],
+                  },{},{},{}
+                ],
+                [
+                  {
+                    rowSpan:2,
+                    stack:[
+                      {
+                        text:convertTextToRtl("الهاتف / الجوال"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Tel./ Mob.", style:"center" },
+                    ],
+                  },
+                  {
+                    text:[
+                      { text:"Local Number", style:"center" },
+                      {
+                        text:convertTextToRtl("الرقم المحلي"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                    ],
+                  },{},{}
+                ],
+                [
+                  {},
+                  {
+                    text:[
+                      { text:"Home Country", style:"center" },
+                      {
+                        text:convertTextToRtl("البلد الأم"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                    ],
+                  },{},{}
+                ],
+                [
+                  {
+                    border:[false, true, false, false],
+                    colSpan:4,
+                    text:[
+                      {text: "\n\n\n\n\n\n____________________________________________________", style:"right"},
+                      {text: "\nSignature of Appointee (If applicable) ", style:"right"},
+                      {
+                        text:convertTextToRtl("إذا كان ينطبق توقيع المعين "),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                    ],
+                  },{},{},{},
+                ]
+              ],
+            },
           }
         ],
         [

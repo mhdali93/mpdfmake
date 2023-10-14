@@ -5,861 +5,328 @@ const Page_10 = ({
     layout : "customTableLayout",
     pageMargin : [0, 0, 0, 0],
     pageBreak : "after",
-    fontSize : 8,
+    fontSize : 8.5,
     table : {
       body : [
         [
           {
             border: [false, false, false, false],
             layout:{
-              paddingTop: (i, node) => 0,
               paddingBottom: (i, node) => 0,
-              paddingLeft: (i, node) => 2,
-              paddingRight: (i, node) => 2,
+              paddingTop: (i, node) => 1,
             },
             table: {
-              widths: [10,325,48,47,48,47],
+              widths: [
+                "*",200,"*","*","*"
+              ],
               body: [
                 [
                   {
-                    text:"\n\nNo.",
-                    rowSpan:2,
-                    style:["center","header"]
-                  },
-                  {
                     stack:[
-                      {text:"\n"},
-                      {
-                        text:convertTextToRtl("السؤال"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Question", style:"center" },
+                      {text: "\niv. Details of Husband's Insurance:"},
+                      {text: "\n"}
                     ],
-                    rowSpan:2,
-                    style:["center","header", {fontSize: 9.5}]
-                  },
-                  {
                     colSpan:2,
-                    stack:[
-                      {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ١"),
-                        style: ["center", {fontSize: 8}, "arabic"]
-                      },
-                      { text:"Proposer / Life to be Assured 1", style:["center", {fontSize: 7}] },
-                    ],
-                    style:"header",
+                    style:["justify"],
+                    border:[true, true, false, true]
                   },{},
                   {
-                    colSpan:2,
                     stack:[
+                      {text: "\n", style:{fontSize:6}},
                       {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ۲"),
-                        style: ["center", {fontSize: 8}, "arabic"]
+                        text:convertTextToRtl("اااا. تفاصيل تأمين الزوج:"),
+                        style: [{fontSize: 9}, "arabic"]
                       },
-                      { text:"Proposer / Life to be Assured 2", style:["center", {fontSize: 7}] },
                     ],
-                    style:"header",
-                  },{}
+                    colSpan:3,
+                    style:["right"],
+                    border:[false, true, true, true]
+                  },{},{}
                 ],
                 [
-                  {},{},
                   {
                     stack:[
                       {
-                        text:convertTextToRtl("نعم"),
+                        text:convertTextToRtl("رقم وثيقة التأمين"),
                         style: ["center", {fontSize: 10}, "arabic"]
                       },
-                      { text:"Yes", style:"center" },
-                    ],
-                    style:"header",
+                      { text:"Policy No.", style:"center" },
+                    ],style:"header",
                   },
                   {
                     stack:[
                       {
-                        text:convertTextToRtl("لا"),
+                        text:convertTextToRtl("شركات التأمين التي تم شراء وثائق"),
                         style: ["center", {fontSize: 10}, "arabic"]
                       },
-                      { text:"No", style:"center" },
-                    ],
-                    style:"header",
+                      {
+                        text:convertTextToRtl("التأمين السابقة منها وعنوانها"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Insurance companies from where previous policy / policies have been purchased with address*", style:"center" },
+                    ],style:"header",
                   },
                   {
                     stack:[
                       {
-                        text:convertTextToRtl("نعم"),
+                        text:convertTextToRtl("مبلغ التأمين"),
                         style: ["center", {fontSize: 10}, "arabic"]
                       },
-                      { text:"Yes", style:"center" },
-                    ],
-                    style:"header",
+                      { text:"Sum Assured", style:"center" },
+                    ],style:"header",
                   },
                   {
                     stack:[
                       {
-                        text:convertTextToRtl("لا"),
+                        text:convertTextToRtl("الخطة والمدة"),
                         style: ["center", {fontSize: 10}, "arabic"]
                       },
-                      { text:"No", style:"center" },
+                      { text:"Plan and Term", style:"center" },
+                    ],style:"header",
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("الوضع الحالي"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("لوثيقة التأمين"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Present status of the policy", style:"center" },
+                    ],style:"header",
+                  },
+                ],
+                [
+                  {text:"\n\n"},{},{},{},{}
+                ],
+                [
+                  {text:"\n\n"},{},{},{},{}
+                ],
+                [
+                  {text:"\n\n"},{},{},{},{}
+                ],
+                [
+                  {text:"\n\n"},{},{},{},{}
+                ]
+              ],
+            }
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingBottom: (i, node) => -3,
+              paddingTop: (i, node) => -2,
+            },
+            table: {
+              widths: [
+                "*","*"
+              ],
+              body: [
+                [
+                  {
+                    border:[false,false,false,false],
+                    text:"*If previous policies from LIC (International) BSC (C) please give name of the branch office"
+                  },
+                  {
+                    border:[false,false,false,false],
+                    stack:[
+                      {
+                        text:convertTextToRtl("إذا كانت البوالص السابقة من شركة التأمين على الحياة العالمية( ش.م.ب"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:[
+                          {text: "("},
+                          {text: "مقفلة"},
+                          {text: ")"},
+                          {text: "أذكر اسم مكتب الفرع"},
+                        ],
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
                     ],
-                    style:"header",
+                  },
+                ]
+              ],
+            }
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingBottom: (i, node) => 0,
+              paddingTop: (i, node) => 0,
+            },
+            table: {
+              widths: [
+                12,"*","*"
+              ],
+              body: [
+                [
+                  {
+                    border: [false, false, false, false],
+                    text:[
+                      {
+                        text:"Part C: ",
+                        style: ["left", {fontSize: 14}, "Arial", "bold"]
+                      },
+                      {
+                        text:"Declaration by Proposer/Life to be Assured",
+                        style: ["left", {fontSize: 11}, "Arial", "bold"]
+                      }
+                    ],
+                    colSpan:2
+                  },{},
+                  {
+                    border: [false, false, false, false],
+                    text:[
+                      {
+                        text:convertTextToRtl("إقرار مقدم الطلب / المؤمن على حياته العرض "),
+                        style: ["right", {fontSize: 12}, "arabic", "bold"]
+                      },
+                      {
+                        text:convertTextToRtl("الجزء جـ:"),
+                        style: ["right", {fontSize: 15}, "arabic", "bold"]
+                      }
+                    ]
                   }
                 ],
+              ],
+            }
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingBottom: (i, node) => 0,
+              paddingTop: (i, node) => -3,
+            },
+            table: {
+              widths: [ 550 ],
+              body: [
                 [
-                  {text:"a."},
                   {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            text:"Diabetes or raised blood sugar?", 
-                            style:"justify"
-                          },
-                          {
-                            border:[false,false,false,false],
-                            text:convertTextToRtl("مرض السكري أو ارتفاع السكر في الدم؟ "),
-                            style: ["right", {fontSize: 8}, "arabic"]
-                          },
-                        ]
-                      ]
-                    }
+                    border:[false,false,false,false],
+                    stack:[
+                      { text :[
+                        {text:"("},
+                        {text:convertTextToRtl("اسم مقدم الطلب")},
+                        {text:")_________________________________"},
+                        {text:"__________________________________"},
+                        {text:"__________________________________"},
+                        {text:"أقر ۱ "}
+                      ]},
+                      { text :[
+                        {text:convertTextToRtl("بموجب هذا أن البيانات والإجابات السابقة الواردة في جزء أ وب أعلاه قد قمت بتقديمها بعد فهمي الكامل لها وأقر بصحتها، كما أقر بعدم حجبي لأي معلومات ")},
+                      ]},
+                      { text :[
+                        {text:"("},
+                        {text:convertTextToRtl("المشار إليها فيما بعد باسم الشركة")},
+                        {text:")"},
+                        {text:"("},
+                        {text:"مقفلة"},
+                        {text:")"},
+                        {text:"ش.م.ب"},
+                        {text:"("},
+                        {text:"العالمية"},
+                        {text:")"},
+                        {text:convertTextToRtl("وأوافق أن تشكل هذه البيانات وهذا الإقرار أساسًا لعقد الضمان بيني وبين شركة التأمين على الحياة")},
+                      ]},
+                      { text :[
+                        {text:convertTextToRtl(" ، وكذلك جزءًا من أي عقد لوثيقة التأمين يُصدر بموجبها. كما أنني أدرك تماما وأوافق على أنه في وجود أي معلومات غير صحيحة في هذا العقد، يكون العقد")},
+                      ]},
+                      { text :[
+                        {text:convertTextToRtl("المذكور باطلا، ويحق للشركة مصادرة الأموال المدفوعة")},
+                      ]},
+                      { text :[
+                        { text: "1. I/we ______________________" },
+                        { text: "______________________________" },
+                        { text: "______________________________" },
+                        { text: "(Name of the proposer/s)," },
+                        { text:"do hereby declare that the foregoing statements and answers in part A and part B above have been given by me after fully understanding the questions and the same are true and complete in every particular and that I have not withheld any information and do hereby agree and declare that these statements and this declaration shall be basis of the contract of assurance between me and Life Insurance Corporation (International) B.S.C.(C) (referred as 'the Company' hereinafter). I agree that they shall form a part of any Policy contract that may be issued on the strength thereof. I am also fully aware and agreeing that if any untrue information be contained therein, the said contract shall be absolutely Null and Void and moneys which shall have been paid in respect thereof shall stand forfeited to the Company." },
+                      ], style: ["justify", "Arial", {fontSize: 8.5}]},
+                    ],
+                    style: ["right", {fontSize: 10}, "arabic"]
                   },
-                  {},{},{},{}
                 ],
                 [
-                  {text:"b."},
                   {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"Any disease, disorder or condition related to heart or circulatory system?",
-                              },
-                              {
-                                text:"(including high blood pressure, chest pain heart attack, murmur, palpitations etc.)"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("أي مرض أو اضطراب أو حالة تتعلق بالقلب أو"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("الدورة الدموية؟"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("بما في ذلك ارتفاع ضغط الدم ، ألم الصدر ، النوبة"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("القلبية ، النفخات ، الخفقان ، الخ("),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              }
-                            ],
-                            style: ["right", {fontSize: 8}, "arabic"]
-                          },
-                        ]
-                      ]
-                    }
+                    border:[false,false,false,false],
+                    stack:[
+                      { text :[
+                        {text:convertTextToRtl(". لقد فهمت بالكامل شروط وأحكام الخطة المقترحة ومزايا الاستحقاق والوفاة المتاحة في إطار الخطة المقترحة.")},
+                        {text:"۲"},
+                      ]},
+                      { text :[
+                        { text: "2. I/we have fully understood the terms and conditions of the proposed plan and maturity and death benefits available under the proposed plan." },
+                      ], style: ["justify", "Arial", {fontSize: 8.5}]},
+                    ],
+                    style: ["right", {fontSize: 10}, "arabic"]
                   },
-                  {},{},{},{}
                 ],
                 [
-                  {text:"c."},
                   {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"Any type of cancer, pre-cancerous conditions, tumor, lump, cyst or enlarged glands?"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("أي نوع من السرطان ، حالات ما قبل السرطان ،"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("ورم، كتل ، كيس أو تضخم الغدد؟"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              }
-                            ],
-                            style: ["right", {fontSize: 8}, "arabic"]
-                          },
-                        ]
-                      ]
-                    }
+                    border:[false,false,false,false],
+                    stack:[
+                      { text :[
+                        {text:convertTextToRtl("أوافق على أن الضمانات المقترحة في هذه الوثيقة لن يسري العمل بها إلا على أساس الاتصال الرسمي لتحمل المخاطر من قبل الشركة وفقًا لهذا الاقتراح والبيان")},
+                        {text:"۳"},
+                      ]},
+                      { text :[
+                        {text:convertTextToRtl("الشخصي والتقارير الطبية الخاصة بحالتي الصحية التي قد تطلبها الشركة")},
+                      ]},
+                      { text :[
+                        { text: "3. I/we further agree that the assurance proposed herein shall commence only on formal communication of assumption of risk by the Company on the basis of this proposal and personal statement and such medical reports on my state of health as may be required by the Company." },
+                      ], style: ["justify", "Arial", {fontSize: 8.5}]},
+                    ],
+                    style: ["right", {fontSize: 10}, "arabic"]
                   },
-                  {},{},{},{}
                 ],
                 [
-                  {text:"d."},
                   {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"Any disease or disorder of lung or respiratory system?"
-                              },
-                              {
-                                text:"(Including shortness of breath, asthma, bronchitis, persistent cough, tuberculosis etc.)"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("أي مرض أو اضطراب في الرئة أو الجهاز التنفسي؟"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("بما في ذلك ضيق التنفس ، والربو ، والتهاب"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("الشعب الهوائية ، والسعال المستمر ، والسل ، إلخ"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              }
-                            ],
-                            style: ["right", {fontSize: 8}, "arabic"]
-                          },
-                        ]
-                      ]
-                    }
+                    border:[false,false,false,false],
+                    stack:[
+                      { text :[
+                        {text:convertTextToRtl("وأوافق كذلك أن أبلغ الشركة على الفور، بعد تاريخ تقديم الطلب وقبل إصدار إيصال الاستلام الأول، كتابة بأي تغيير يطرأ على مهنتي أو مركزي المالي أو صحتي ")},
+                        {text:"۴"},
+                      ]},
+                      { text :[
+                        {text:convertTextToRtl("العامة أو أي تغيير يطرأ على أي فرد من أفراد أسرتي، لإعادة النظر في شروط قبول الضمان أي تقصير من جانبي في أداء ذلك يجعل هذا الضمان باطلا ويحق")},
+                      ]},
+                      { text :[
+                        {text:convertTextToRtl("ويحق للشركة مصادرة كافة الأموال المدفوعة")},
+                      ]},
+                      { text :[
+                        { text: "4. I/we further agree that after the date of submission of the proposal but before the issue of First Premium Receipt, any change in my occupation, financial position and the general health or that of any member of my family occur, I shall forthwith intimate the same to the Company in writing to reconsider the terms of acceptance of assurance. Any omission on my part to do so shall render this assurance invalid and all money which shall have been paid in respect thereof shall stand forfeited to the company." },
+                      ], style: ["justify", "Arial", {fontSize: 8.5}]},
+                    ],
+                    style: ["right", {fontSize: 10}, "arabic"]
                   },
-                  {},{},{},{}
                 ],
                 [
-                  {text:"e."},
                   {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"Any disease or disorder of lung or respiratory system?"
-                              },
-                              {
-                                text:"(Including shortness of breath, asthma, bronchitis, persistent cough, tuberculosis etc.)"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("أي مرض أو اضطراب في الرئة أو الجهاز التنفسي؟"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("بما في ذلك ضيق التنفس ، والربو ، والتهاب"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("الشعب الهوائية ، والسعال المستمر ، والسل ، إلخ"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              }
-                            ],
-                            style: ["right", {fontSize: 8}, "arabic"]
-                          },
-                        ]
-                      ]
-                    }
+                    border:[false,false,false,false],
+                    stack:[
+                      { text :[
+                        {text:convertTextToRtl("أفوض بموجب هذا أي طبيب أو مستشفى أو شركة تأمين أو أي منظمة أخرى لديها أي سجلات أو معلومات ذات صلة بصحتي بتقديم أي وجميع هذه المعلومات")},
+                        {text:"۵"},
+                      ]},
+                      { text :[
+                        {text:convertTextToRtl("إلى الشركة على أن تكون صورة هذا التفويض مطابقة للأصل")},
+                      ]},
+                      { text :[
+                        { text: "5. I/we hereby authorize any medical practitioner, physician, hospital, Insurance Company or any other organization, which has any records or knowledge of me or my health to provide any and all such information to the Company. A photocopy of this authorization shall be as valid as the original." },
+                      ], style: ["justify", "Arial", {fontSize: 8.5}]},
+                    ],
+                    style: ["right", {fontSize: 10}, "arabic"]
                   },
-                  {},{},{},{}
                 ],
-                [
-                  {text:"f."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"Any disease, disorder or condition related to kidneys or bladder? (including blood or protein in urine, kidney or bladder stones etc.)"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("أي مرض أو اضطراب أو حالة تتعلق بالكلى أو "),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("ثانة؟ ) بما في ذلك الدم أو البروتين في البول أو "),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("حصوات الكلى أو المثانة وما إلى ذلك("),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              }
-                            ],
-                          },
-                        ]
-                      ]
-                    }
-                  },
-                  {},{},{},{}
-                ],
-                [
-                  {text:"g."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"Any condition affecting your liver or pancreas  (including fatty liver, hepatitis etc.)"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("أي حالة تؤثر على الكبد أو البنكرياس ) بما في"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("لك الكبد الدهني والتهاب الكبد وما إلى ذلك("),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              }
-                            ],
-                          },
-                        ]
-                      ]
-                    }
-                  },
-                  {},{},{},{}
-                ],
-                [
-                  {text:"h."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"Any disorder or disease of the muscles, bones, joints, limbs or spine ? (including arthritis, rheumatism, slipped disc, paralysis etc.)"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("أي اضطراب أو مرض في العضلات أو العظام أو"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("المفاصل أو الأطراف أو العمود الفقري؟ )بما في"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("ذلك التهاب المفاصل والروماتيزم وانزلاق "),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("الغضروف والشلل وما إلى ذلك("),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              }
-                            ],
-                          },
-                        ]
-                      ]
-                    }
-                  },
-                  {},{},{},{}
-                ],
-                [
-                  {text:"i."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"Any neurological, psychiatric, mental illness? (Including epilepsy, fits, persistent headache, anxiety, depression, stroke etc)"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("أي مرض عصبي أو نفسي أو عقلي؟"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl(")بما في ذلك النوبات والصرع والصداع المستمر"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("والقلق والاكتئاب والسكتة الدماغية وما إلى ذلك("),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              }
-                            ],
-                          },
-                        ]
-                      ]
-                    }
-                  },
-                  {},{},{},{}
-                ],
-                [
-                  {text:"j."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"Any disorder of the blood, skin or auto immune disease? thalassemia, sickle cell disease, Lupus etc.)"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("أي اضطراب في الدم أو الجلد أو أمراض المناعة"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("الذاتية؟ )بما في ذلك فقر الدم، الثلاسيميا ، مرض"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("فقر الدم المنجلي ، الذئبة ، إلخ ("),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              }
-                            ],
-                          },
-                        ]
-                      ]
-                    }
-                  },
-                  {},{},{},{}
-                ],
-                [
-                  {text:"k."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"Disease or disorder of thyroid, ear, eye, nose? (including partial or total hearing loss, tinnitus, partial or total loss of vision, optic neuritis etc.)"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("مرض أو اضطراب الغدة الدرقية والأذن والعين والأنف؟"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl(" )بما في ذلك فقدان السمع الجزئي أو الكلي ، وطنين"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("الأذن، وفقدان الرؤية الجزئي أو الكلي، والتهاب"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("العصب البصري ، إلخ("),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              }
-                            ],
-                          },
-                        ]
-                      ]
-                    }
-                  },
-                  {},{},{},{}
-                ],
-                [
-                  {text:"l."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"Have you ever tested positive for Hepatitis B or C or HIV or are you awaiting the results of such tests ?"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:[
-                                  {text:convertTextToRtl("أو فيروس نقص المناعة البشرية أو")},
-                                  {text:convertTextToRtl(" B أو C ")},
-                                  {text:convertTextToRtl(" الكبد")},
-
-                                ],
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("هل تنتظر نتائج هذه الاختبارات؟"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              }
-                            ],
-                          },
-                        ]
-                      ]
-                    }
-                  },
-                  {},{},{},{}
-                ],
-                [
-                  {text:"m."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"For male only : Have you ever had a prostate condition?"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("للذكور فقط هل عانيت من قبل من حالة مرضية"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("في البروستاتا؟"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              }
-                            ],
-                          },
-                        ]
-                      ]
-                    }
-                  },
-                  {},{},{},{}
-                ],
-                [
-                  {text:"n."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"Any symptoms of illness, any physical defect or any condition not mentioned above?"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("هل من أعراض مرضية أو عيب جسدي أو أي حالة"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("غير مذكورة أعلاه؟"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              }
-                            ],
-                          },
-                        ]
-                      ]
-                    }
-                  },
-                  {},{},{},{}
-                ],
-                [
-                  {text:"o."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"Did you ever have any accident or injury?"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("هل تعرضت من قبل لأي حادث أو إصابة؟"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              }
-                            ],
-                          },
-                        ]
-                      ]
-                    }
-                  },
-                  {},{},{},{}
-                ],
-                [
-                  {text:"6."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"Are you currently taking any medication?"
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("هل تأخذ حاليا أي أدوية؟"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              }
-                            ],
-                          },
-                        ]
-                      ]
-                    }
-                  },
-                  {},{},{},{}
-                ],
-                [
-                  {text:"7."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:"In the past 5 years, have you been under medical review or follow ups with medical specialist or undergone any medical test or special examination such as but not limited to ECG, blood tests, biopsies, MRI/CT scan, PSA screening, mammography etc."
-                              }
-                            ],
-                            style:["justify",{fontSize:8}]
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("في السنوات الخمس الماضية، هل خضعت للمراجعة الطبية"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("أو المتابعة مع أخصائي طبي أو خضعت لأي اختبار طبي أو"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("فحص خاص مثل، على سبيل المثال لا الحصر تخطيط"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("ب، واختبارات الدم والخزعات والتصوير بالرنين "),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("غناطيسي / التصوير المقطعي المحوسب، واختبار مستضد"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("البروستاتا النوعي، والتصوير الشعاعي للثدي وما إلى ذلك."),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                            ],
-                          },
-                        ]
-                      ]
-                    }
-                  },
-                  {},{},{},{}
-                ],
-              ]
+              ],
             }
           }
         ],

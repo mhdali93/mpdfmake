@@ -4,357 +4,593 @@ const Page_4 = ({
   return {
     layout : "customTableLayout",
     pageMargin : [0, 0, 0, 0],
+    pageBreak : "after",
     fontSize : 9.5,
     table : {
-      body : [
+      body : [  
         [
           {
             border: [false, false, false, false],
-            layout:{
-              paddingBottom: (i, node) => 2,
-              paddingTop: (i, node) => 2,
-            },
+            margin:[0,-5,0,0],
             table: {
               widths: [
-                10,90,100,40,50,50,50,95
+                10,258,258
               ],
               body: [
                 [
                   {
-                    text:[
-                      {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ١"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"\nProposer / Life to be Assured 1",
-                        style: ["center", {fontSize: 10}, "Times"]
-                      },
-                    ],
-                    colSpan:4,
-                    style: {fillColor: '#f8eff2'},
-                  },{},{},{},
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ٢"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"\nProposer / Life to be Assured 2",
-                        style: ["center", {fontSize: 10}, "Times"]
-                      },
-                    ],
-                    colSpan:4,
-                    style: {fillColor: '#f8eff2'},
-                  },{},{},{}
-                ],
-                [
-                  {
-                    text:"14."
+                    text:" ",rowSpan:2
                   },
-                  { 
-                    text:"Permanent Address in Home country\nPlease provide address proof", 
-                    style: "left",
-                    border: [true, true, false, true] ,
-                    colSpan:3
-                  },{},{},
-                  { 
-                    text:convertTextToRtl("العنوان الدائم في البلد الأم"), 
-                    colSpan: 4,
-                    border: [false, true, true, true],
-                    style: ["right", {fontSize: 10}, "arabic"]
-                  },{},{},{}
-                ],
-                [
                   {
-                    text:"\n\n\n\n\n",
-                    colSpan:4,
-                  },{},{},{},
-                  {
-                    text:"",
-                    colSpan:4,
-                  },{},{},{}
-                ],
-                [
-                  {
-                    text:"15."
+                    text:"b. Have you ever had an application for life, disability or critical illness insurance declined, postponed or accepted at other than normal terms?",
+                    border:[true, true, false, false],
+                    style:"justify"
                   },
-                  { 
-                    text:"Contact Phone Numbers (If multiple\nphone numbers are present, kindly provide the same.)", 
-                    style: "left",
-                    border: [true, true, false, true] ,
-                    colSpan:3
-                  },{},{},
-                  { 
-                    text:[
-                      {text: "("},
-                      {text: convertTextToRtl("أرقام هواتف الاتصال )في حالة وجود عدة أرقام هاتف، أذكرها.")},
-                    ],
-                    colSpan: 4,
-                    border: [false, true, true, true],
-                    style: ["right", {fontSize: 10}, "arabic"]
-                  },{},{},{}
-                ],
-                [
-                  { 
-                    text:"",
-                    colSpan:3,
-                    style:{fillColor:"#f8eff2"}
-                  },{},{},
-                  { 
-                    text:[
+                  {
+                    stack:[
                       {
-                        text:convertTextToRtl(" رمز الاتصال الدولي بالمشتركين ورقم الجوال"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"\nISD Code and Mobile No."},
-                    ], 
-                    colSpan: 3,
-                    style:[{fillColor:"#f8eff2"}, "center"]
-                  },{},{},
-                  { 
-                    text:[
-                      {
-                        text:convertTextToRtl(" رمز الاتصال الدولي بالمشتركين ورقم الجوال"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"\nISD Code and Mobile No."},
-                    ], 
-                    colSpan: 2,
-                    style:[{fillColor:"#f8eff2"}, "center"]
-                  },{},
-                ],
-                [
-                  { 
-                    text:[
-                      {text:"a. Mobile Number/s at \t\t"},
-                      {
-                        text:convertTextToRtl("أ- رقم/أرقام الهاتف المحمول"),
+                        text:convertTextToRtl("هل سبق لك أن تم رفض أو تأجيل أو قبول طلب تأمين على الحياة"),
                         style: ["right", {fontSize: 10}, "arabic"]
                       },
-                      {text:"\npresent place of residence \t\t"},
                       {
-                        text:convertTextToRtl("في محل الإقامة الحالي"),
+                        text:convertTextToRtl("أو العجز أو الأمراض الخطيرة بسبب خلاف للشروط العادية؟"),
                         style: ["right", {fontSize: 10}, "arabic"]
                       },
                     ],
-                    colSpan:3,
-                  },{},{},
-                  { text:"", colSpan: 3 },{},{},
-                  { text:"", colSpan: 2 },{},
-                ],
-                [
-                  { 
-                    text:[
-                      {text:"b. Mobile Number \t\t\t\t"},
-                      {
-                        text:convertTextToRtl("ب - رقم الجوال في موطنك"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                      {text:"\nin home Country \t\t"}
-                    ],
-                    colSpan:3,
-                  },{},{},
-                  { text:"", colSpan: 3 },{},{},
-                  { text:"", colSpan: 2 },{},
-                ],
-                [
-                  { 
-                    text:[
-                      {text:"c. Office Telephone    \t\t\t\t"},
-                      {
-                        text:convertTextToRtl("ت - أرقام هاتف المكتب"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                      {text:"\nNumbers \t\t"}
-                    ],
-                    colSpan:3,
-                  },{},{},
-                  { text:"", colSpan: 3 },{},{},
-                  { text:"", colSpan: 2 },{},
-                ],
-                [
-                  { 
-                    text:[
-                      {text:"d. Residence Telephone   \t\t\t"},
-                      {
-                        text:convertTextToRtl("ث - رقم هاتف السكن"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                      {text:"\nnumber (Present Address) \t\t\t\t ("},
-                      {
-                        text:convertTextToRtl(")العنوان الحالي"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                    ],
-                    colSpan:3,
-                  },{},{},
-                  { text:"", colSpan: 3 },{},{},
-                  { text:"", colSpan: 2 },{},
-                ],
-                [
-                  { 
-                    text:[
-                      {text:"e. Residence Telephone   \t\t\t"},
-                      {
-                        text:convertTextToRtl("ج - رقم هاتف السكن"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                      {text:"\nnumber (Home Country) \t\t\t\t\t\t("},
-                      {
-                        text:convertTextToRtl(")بلد الموطن"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                    ],
-                    colSpan:3,
-                  },{},{},
-                  { text:"", colSpan: 3 },{},{},
-                  { text:"", colSpan: 2 },{},
+                    border:[false, true, true, false],
+                  }
                 ],
                 [
                   {
-                    text:"16."
+                    text:" ",
                   },
-                  { 
-                    text:"Email-id/s", 
-                    style: "left",
-                    colSpan:3,
-                    border: [true, true, false, true] 
-                  },{},{},
-                  { 
-                    text:convertTextToRtl("عنوان / عناوين البريد الإلكتروني"), 
-                    colSpan: 4,
-                    border: [false, true, true, true],
-                    style: ["right", {fontSize: 10}, "arabic"]
-                  },{},{},{}
-                ],
-                [
                   {
-                    text:"\n\n\n",
-                    colSpan:4,
-                  },{},{},{},
-                  {
-                    text:"",
-                    colSpan:4,
-                  },{},{},{}
-                ],
-                [
-                  {
-                    text:"17."
+                    border: [false, false, false, true],
+                    margin:[0,5,0,30],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    }
                   },
-                  { 
+                  {
                     text:[
-                      {text: "Educational Qualifications \t"},
-                      {text:convertTextToRtl("مؤهلات التعليمية "),style: [{fontSize: 10}, "arabic"]},
-                    ] ,
-                    style: "left",
-                    colSpan:2,
-                    border: [true, true, false, true] 
-                  },{},
-                  { 
-                    text:[
-                      {text: "Class of Study for minor life to be assured"},
-                      {text: "("},
-                      {text:convertTextToRtl("فئة الدراسة)للمؤمن على حياته فقط"),style: [{fontSize: 10}, "arabic"]},
-                    ] , 
-                    colSpan: 5,
-                    border: [false, true, true, true],
-                  },{},{},{},{}
-                ],
-                [
-                  {
-                    text:"\n\n\n",
-                    colSpan:4,
-                  },{},{},{},
-                  {
-                    text:"",
-                    colSpan:4,
-                  },{},{},{}
-                ],
-                [
-                  {
-                    text:"18."
+                      { text:convertTextToRtl(" "),
+                      style: ["right"],
+                      },
+                      {
+                        text:"\n",
+                      },
+                    ],border:[false,false,true,true],
                   },
-                  { 
-                    text:"Annual Income from all sources:", 
-                    style: "left",
-                    colSpan:3,
-                    border: [true, true, false, true] 
-                  },{},{},
-                  { 
-                    text:convertTextToRtl("الدخل السنوي من كافة المصادر"), 
-                    colSpan: 4,
-                    border: [false, true, true, true],
-                    style: ["right", {fontSize: 10}, "arabic"]
-                  },{},{},{}
                 ],
                 [
                   {
-                    text:"USD\t\t\tBD\t\t\tAED\t\t\tKD\t\t\tOR\t\t\tQR\t\t\tUSD\t\t\tBD\t\t\tAED\t\t\tKD\t\t\tOR\t\t\tQR",
-                    colSpan:8,
-                  },{},{},{},{},{},{},{}
-                ],
-                [
-                  {
-                    text:"19."
+                    text:"17.",rowSpan:2
                   },
-                  { 
+                  {
+                    text:"Have you cancelled (under cooling off provision or otherwise) any policy of the Company during past one year as the same was not acceptable to you?",
+                    border:[true, true, false, false],
+                    style:"justify"
+                  },
+                  {
                     text:[
-                      {text: "Sources of Income / Funds for payment of premium"},
-                      {text: "\n(Please specify and submit self-attested documentary proof)"}
-                    ], 
-                    style: "left",
-                    colSpan:4,
-                    border: [true, true, false, true] 
-                  },{},{},{},
-                  { 
-                    text:[
-                      {text: convertTextToRtl("مصدر الدخل / الأموال لدفع مبلغ أو أقساط التأمين ")},
-                      {text: "\n("},
-                      {text: convertTextToRtl("يرجى تحديد مصدر وتقديم دليل موثق ذاتيا لمصدر الأموال")},
-                      {text: ")"},
+                      {
+                        text:convertTextToRtl("هل ألغيت (بموجب بند السماح أو غير ذلك) أي بوليصة تأمين للشركة"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"\n" },
+                      {
+                        text:convertTextToRtl("خلال العام الماضي لأنها لم تكن مقبولة لك؟ إذا كانت"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"\n" },
+                      {
+                        text:convertTextToRtl("م، أذكر التفاصيل الإجابة بنعم"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
                     ],
-                    colSpan: 3,
-                    border: [false, true, true, true],
-                    style: ["right", {fontSize: 10}, "arabic"]
-                  },{},{}
-                ],
-                [
-                  { text: "Salary Income\t\t\t\tBusiness Income\nOther sources .....................",
-                    colSpan:4,
-                  },{},{},{},
-                  {
-                    text: "Salary Income\t\t\t\tBusiness Income\nOther sources .....................",
-                    colSpan:4,
-                  },{},{},{}
+                    border:[false, true, true, false],
+                  }
                 ],
                 [
                   {
-                    text:"20."
+                    text:" ",
                   },
-                  { 
-                    text:"Occupation / Profession and Nature of Duties", 
-                    style: "left",
-                    colSpan:3,
-                    border: [true, true, false, true] 
-                  },{},{},
-                  { 
-                    text:convertTextToRtl("الوظيفة / المهنة وطبيعة الواجبات"), 
-                    colSpan: 4,
-                    border: [false, true, true, true],
-                    style: ["right", {fontSize: 10}, "arabic"]
-                  },{},{},{}
+                  {
+                    border: [false, false, false, true],
+                    margin:[0,5,0,30],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    }
+                  },
+                  {
+                    text:[
+                      { text:convertTextToRtl(" "),
+                      style: ["right"],
+                      },
+                      {
+                        text:"\n",
+                      },
+                    ],border:[false,false,true,true],
+                  },
                 ],
                 [
                   {
-                    text:"\n\n\n",
-                    colSpan:4,
-                  },{},{},{},
+                    text:"18.",rowSpan:2
+                  },
                   {
-                    text:"",
-                    colSpan:4,
-                  },{},{},{}
+                    text:"Have you submitted any other proposal for insurance on your life or on the life of life to assured?",
+                    border:[true, true, false, false],
+                    style:"justify"
+                  },
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("هل قدمت أي طلب آخر للتأمين على حياتك أو على حياة المؤمن عليه؟"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"\n" },
+                      {
+                        text:convertTextToRtl("إذا كانت الإجابة بنعم، أذكر التفاصيل"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                    ],
+                    border:[false, true, true, false],
+                  }
+                ],
+                [
+                  {
+                    text:" ",
+                  },
+                  {
+                    border: [false, false, false, true],
+                    margin:[0,5,0,30],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    }
+                  },
+                  {
+                    text:[
+                      { text:convertTextToRtl(" "),
+                      style: ["right"],
+                      },
+                      {
+                        text:"\n",
+                      },
+                    ],border:[false,false,true,true],
+                  },
+                ],
+                [
+                  {
+                    text:"19.",rowSpan:4
+                  },
+                  {
+                    text:"a). Are you a member of the armed forces, either full time or part time?\t\t\t",
+                    border:[true, true, false, false],
+                    style:"justify"
+                  },
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("هل أنت من أفراد القوات المسلحة، سواء بدوام كامل أو جزئي؟"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                      
+                    ],
+                    border:[false, true, true, false],
+                  }
+                ],
+                [
+                  {
+                    text:" ",
+                  },
+                  {
+                    border: [false, false, false, true],
+                    margin:[0,5,0,30],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    }
+                  },
+                  {
+                    text:[
+                      { text:convertTextToRtl(" "),
+                      style: ["right"],
+                      },
+                      {
+                        text:"\n",
+                      },
+                    ],border:[false,false,true,true],
+                  },
+                ],
+                [
+                  {
+                    text:" ",
+                  },
+                  {
+                    text:[
+                      {
+                        text:"Do you take part in or have definite plans to take part in any sports, recreations, pastime or activities that may be considered hazardous? For example Scuba diving, motor racing, rock climbing, private flying etc.?",
+                      }
+                    ],
+                    border:[true, true, false, false],
+                    style:"justify"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("هل تشارك في أو لديك خطط محددة للمشاركة في أي رياضة أو"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl(" تسلية أو أنشطة يمكن اعتبارها خطرة؟ على سبيل المثال"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("غوص سكوبا، أو سباق السيارات أو تسلق الصخور أو الطيران الخاص"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl(" ذلك؟ إذا كانت الإجابة بنعم، أكمل الاستبيان ذي الصلة."),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                    ],
+                    border:[false, true, true, false],
+                    style:"justify",
+                  },
+                ],
+                [
+                  {
+                    text:" ",
+                  },
+                  {
+                    border: [false, false, false, true],
+                    margin:[0,5,0,30],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    }
+                  },
+                  {
+                    text:[
+                      { text:convertTextToRtl(" "),
+                      style: ["right"],
+                      },
+                      {
+                        text:"\n",
+                      },
+                    ],border:[false,false,true,true],
+                  },
+                ],
+                [
+                  {
+                    text:"20.",rowSpan:2
+                  },
+                  {
+                    text:[
+                      {
+                        text:"Are you holding any honorary or regulatory or legisla- tive, government authority or position?",
+                      }
+                    ],
+                    border:[true, true, false, false],
+                    style:"justify"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("هل تتقلد أي سلطة أو منصب حكومي فخري أو تنظيمي أو تشريعي؟"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      }
+                    ],
+                    border:[false, true, true, false],
+                    style:"justify",
+                  }
+                ],
+                [
+                  {
+                    text:" ",
+                  },
+                  {
+                    border: [false, false, false, true],
+                    margin:[0,5,0,30],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    }
+                  },
+                  {
+                    text:[
+                      { text:convertTextToRtl(" "),
+                      style: ["right"],
+                      },
+                      {
+                        text:"\n",
+                      },
+                    ],border:[false,false,true,true],
+                  },
+                ],
+                [
+                  {
+                    text:"21.",rowSpan:3
+                  },
+                  {
+                    text:[
+                      {
+                        text:"Are any of your close relatives - parents, spouse, children brothers, sisters are holding any Government, Judiciary or Military position or holding a political position?",
+                      }
+                    ],
+                    border:[true, true, false, false],
+                    style:"justify"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("هل يعمل أي من اقربائك من الدرجة الأولى -  الوالدين"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("الزوج الزوجة، الأبناء، الاخوة ، أو الاخوات في أي وظيفة قضائية أو"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("عسكرية أو لهم منصب سياسي؟"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      }
+                    ],
+                    border:[false, true, true, false],
+                    style:"justify",
+                  },
+                ],
+                [
+                  {
+                    text:" ",
+                  },
+                  {
+                    border: [false, false, false, true],
+                    margin:[0,5,0,30],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    }
+                  },
+                  {
+                    text:[
+                      { text:convertTextToRtl(" "),
+                      style: ["right"],
+                      },
+                      {
+                        text:"\n",
+                      },
+                    ],border:[false,false,true,true],
+                  },
+                ],
+                [
+                  {
+                    text:" ",
+                  },
+                  {
+                    text:[
+                      {
+                        text:"Name \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Relation",
+                      }
+                    ],
+                    border:[true, true, false, true],
+                    style:"justify"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:"Position",
+                      }
+                    ],
+                    border:[false, true, true, true],
+                    style:"center",
+                  },
                 ],
               ],
             }

@@ -5,230 +5,55 @@ const Page_12 = ({
     layout : "customTableLayout",
     pageMargin : [0, 0, 0, 0],
     pageBreak : "after",
-    fontSize : 8,
+    fontSize : 8.5,
     table : {
       body : [
         [
           {
             border: [false, false, false, false],
             layout:{
+              paddingBottom: (i, node) => -5,
               paddingTop: (i, node) => 0,
-              paddingBottom: (i, node) => 0,
-              paddingLeft: (i, node) => 2,
-              paddingRight: (i, node) => 2,
             },
             table: {
-              widths: [10,80,70,75,80,90,120],
+              widths: [ 275,275 ],
               body: [
                 [
                   {
-                    text:"15.", rowSpan:9
-                  },
-                  {
-                    text:"Family History of Proposer/Life to be assured 2\nPlease provide details of your family history below. Particular importance is where your father, mother or any of your brothers or sisters had died or suffered from heart disease, cancer, stroke, multiple sclerosis, diabetes or any neurological disorders before age of 60 years or from a familial / hereditary disorder.",
-                    colSpan:3,
-                    style:"justify",
-                    border:[true,true,false,true]
-                  },{},{},
-                  {
+                    border:[false,false,false,false],
                     stack:[
-                      {
-                        text:convertTextToRtl("التاريخ العائلي لمقدم الطلب / المؤمن على حياته ٢"),
-                        style: ["right", {fontSize: 8}, "arabic"]
+                      { 
+                        text:convertTextToRtl("التصديق الذاتي للعملاء"),
                       },
-                      {
-                        text:convertTextToRtl("يرجى تقديم تفاصيل تاريخ عائلتك أدناه من الأهمية بمكان أن"),
-                        style: ["right", {fontSize: 8}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("يكون والدك أو والدتك أو أي من إخوتك أو أخواتك قد مات أو عانى من"),
-                        style: ["right", {fontSize: 8}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("أمراض القلب أو السرطان أو السكتة الدماغية أو التصلب المتعدد أو"),
-                        style: ["right", {fontSize: 8}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("مرض السكري أو أي اضطرابات عصبية قبل سن 60 عاما أو بسبب"),
-                        style: ["right", {fontSize: 8}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("اضطراب عائلي / وراثي"),
-                        style: ["right", {fontSize: 8}, "arabic"]
+                      { 
+                        text : "Common Reporting Standard - (CRS) Certification Declaration",
+                        style: ["center", "Times", {fontSize: 12}]
                       },
                     ],
-                    colSpan:3,
-                    border:[false,true,true,true]
-                  },{},{}
-                ],
-                [
-                  {},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("صلة القرابة"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Relationship", style:"center" },
-                    ],
-                    style:["center","header", {fontSize: 9.5}]
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الحي"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Living", style:"center" },
-                    ],
-                    style:["center","header", {fontSize: 9.5}],
-                    colSpan:3
-                  },{},{},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("المتوفى"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Dead", style:"center" },
-                    ],
-                    style:["center","header", {fontSize: 9.5}],
+                    style: ["center", "bold",{fontSize: 14}, "arabic"],
                     colSpan:2
                   },{}
                 ],
                 [
-                  {},
-                  {
-                    text:"",
-                    style:["center","header"]
+                  { 
+                    text:"Please complete and sign this form. For Joint Life Policies, each Life to be Assured will have to complete a separate form.", 
+                    style: "left",
+                    border: [false, false, false, false] ,
                   },
-                  {
+                  { 
                     stack:[
-                      {
-                        text:convertTextToRtl("السن"),
-                        style: ["center", {fontSize: 10}, "arabic"]
+                      { 
+                        text:convertTextToRtl("يرجى ملئ وتوقيع الاستمارة. بوليصات التأمين على الحياة المشتركة، يجب على"),
                       },
-                      { text:"Age", style:"center" },
-                    ],
-                    style:["center","header", {fontSize: 9.5}]
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الحالة الصحية المعتادة"),
-                        style: ["center", {fontSize: 10}, "arabic"]
+                      { 
+                        text:convertTextToRtl("كل حياة مؤمن عليها ان يكون لها استمارة كاملة مستقلة"),
                       },
-                      { text:"Present State of Health", style:"center" },
                     ],
-                    style:["center","header", {fontSize: 9.5}],
-                    colSpan:2
-                  },{},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("السن عند الوفاة"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Age at Death", style:"center" },
-                    ],
-                    style:["center","header", {fontSize: 9.5}]
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("سبب الوفاة"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Cause of death", style:"center" },
-                    ],
-                    style:["center","header", {fontSize: 9.5}]
+                    border: [false, false, false, false],
+                    style: ["right", {fontSize: 10}, "arabic"]
                   }
-                ],
-                [
-                  {},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الأب"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Father", style:"center" },
-                    ],
-                    style:["center", {fontSize: 9.5}]
-                  },{},
-                  { text:"", colSpan:2 },{},{},{}
-                ],
-                [
-                  {},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الأم"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Mother", style:"center" },
-                    ],
-                    style:["center", {fontSize: 9.5}]
-                  },{},
-                  { text:"", colSpan:2 },{},{},{}
-                ],
-                [
-                  {},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الاخ"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Brother", style:"center" },
-                    ],
-                    style:["center", {fontSize: 9.5}]
-                  },{},
-                  { text:"", colSpan:2 },{},{},{}
-                ],
-                [
-                  {},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الاخ"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Brother", style:"center" },
-                    ],
-                    style:["center", {fontSize: 9.5}]
-                  },{},
-                  { text:"", colSpan:2 },{},{},{}
-                ],
-                [
-                  {},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الأخت"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Sister", style:"center" },
-                    ],
-                    style:["center", {fontSize: 9.5}]
-                  },{},
-                  { text:"", colSpan:2 },{},{},{}
-                ],
-                [
-                  {},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الأخت"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Sister", style:"center" },
-                    ],
-                    style:["center", {fontSize: 9.5}]
-                  },{},
-                  { text:"", colSpan:2 },{},{},{}
                 ]
-              ]
+              ],
             }
           }
         ],
@@ -236,310 +61,482 @@ const Page_12 = ({
           {
             border: [false, false, false, false],
             layout:{
-              paddingTop: (i, node) => 0,
               paddingBottom: (i, node) => 0,
-              paddingLeft: (i, node) => 2,
-              paddingRight: (i, node) => 2,
+              paddingTop: (i, node) => 0,
             },
             table: {
-              widths: [10,"*",100,"*",100],
+              widths: [ 70,10,10,10,10,10,10,10,10,"*","*","*","*" ],
               body: [
                 [
                   {
-                    text:"16.", rowSpan: 11
+                    stack:[
+                      { 
+                        text:convertTextToRtl("لاسم بالكامل"),
+                      },
+                      { 
+                        text : "Full Name",
+                        style: ["center", "Times", {fontSize: 8}]
+                      },
+                    ],
+                    style: ["center",{fontSize: 9.5,fillColor: '#f8eff2'}, "arabic"],
+                  },{
+                    text:"",colSpan:12
+                  },{},{},{},{},{},{},{},{},{},{},{}
+                ],
+                [
+                  {
+                    stack:[
+                      { 
+                        text:convertTextToRtl("تاريخ الميلاد"),
+                      },
+                      { 
+                        text : "Date of Birth",
+                        style: ["center", "Times", {fontSize: 8}]
+                      },
+                    ],
+                    style: ["center",{fontSize: 9.5,fillColor: '#f8eff2'}, "arabic"],
+                    rowSpan:2
+                  },{text:"\n"},{},{},{},{},{},{},{},
+                  {
+                    stack:[
+                      { 
+                        text:convertTextToRtl("محل الميلاد"),
+                      },
+                      { 
+                        text : "Place  of Birth",
+                        style: ["center", "Times", {fontSize: 8}]
+                      },
+                    ],
+                    style: ["center",{fontSize: 9.5,fillColor: '#f8eff2'}, "arabic"],
+                    rowSpan:2
                   },
-                  {
-                    text:[
-                      {text: "For Female Proposer only: ", style:"bold"},
-                      {text: "(Kindly fill in if applicable)"},
-                    ],
-                    colSpan:2,
-                    style:"justify",
-                    border:[true, true, false, true]
-                  },{},
-                  {
-                    text:[
-                      {text:"("},
-                      {
-                        text:convertTextToRtl("يُرجى ملء هذا الطلب، إن أمكن"),
-                        style: [{fontSize: 9}, "arabic"]
-                      },
-                      {text:")"},
-                      {
-                        text:convertTextToRtl("فقط لمقدمي الطلب النساء"),
-                        style: [{fontSize: 9}, "arabic", "bold"]
-                      },
-                    ],
-                    colSpan:2,
-                    style:"right",
-                    border:[false, true, true, true]
-                  },{}
+                  {text:"\n", colSpan:3, rowSpan:2},{},{}
                 ],
                 [
                   {},
+                  {text:"D", style:"center"},
+                  {text:"D", style:"center"},
+                  {text:"M", style:"center"},
+                  {text:"M", style:"center"},
+                  {text:"Y", style:"center"},
+                  {text:"Y", style:"center"},
+                  {text:"Y", style:"center"},
+                  {text:"Y", style:"center"},
+                  {},{},{},{}
+                ],
+                [
                   {
-                    text:[
-                      {text: "a. Personal Details:"},
-                    ],
-                    colSpan:2,
-                    style:["justify", "header"],
-                    border:[true, true, false, true]
-                  },{},
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("أ - البيانات الشخصية"),
-                        style: [{fontSize: 9}, "arabic"]
+                    stack:[
+                      { 
+                        text:convertTextToRtl("المدينة او البلدة"),
+                      },
+                      { 
+                        text : "Town or City",
+                        style: ["center", "Times", {fontSize: 8}]
                       },
                     ],
-                    colSpan:2,
-                    style:["right", "header"],
-                    border:[false, true, true, true]
+                    style: ["center",{fontSize: 9.5,fillColor: '#f8eff2'}, "arabic"],
+                  },{
+                    text:"",colSpan:8
+                  },{},{},{},{},{},{},{},
+                  {
+                    stack:[
+                      { 
+                        text:convertTextToRtl("الدولة"),
+                      },
+                      { 
+                        text : "Country",
+                        style: ["center", "Times", {fontSize: 8}]
+                      },
+                    ],
+                    style: ["center",{fontSize: 9.5,fillColor: '#f8eff2'}, "arabic"], 
+                  },{},{
+                    stack:[
+                      { 
+                        text:convertTextToRtl("الجنسية"),
+                      },
+                      { 
+                        text : "Nationality",
+                        style: ["center", "Times", {fontSize: 8}]
+                      },
+                    ],
+                    style: ["center",{fontSize: 9.5,fillColor: '#f8eff2'}, "arabic"], 
                   },{}
                 ],
                 [
-                  {},
                   {
                     stack:[
-                      {text:[
-                        {
-                          text:convertTextToRtl("إذا كانت الإجابة"),
-                          style: [{fontSize: 9}, "arabic"]
-                        },
-                        { text:")" },
-                        {
-                          text:convertTextToRtl("هل أنت حامل الآن؟"),
-                          style: [{fontSize: 9}, "arabic"]
-                        },
-                      ]},
-                      {text:[
-                        { text:"(" },
-                        {
-                          text:convertTextToRtl("نعم، يُرجى ذكر عدد أشهر الحمل"),
-                          style: [{fontSize: 9}, "arabic"]
-                        },
-                      ]},
-                      {
-                        text:"Are you pregnant now? (If yes, how many months)"
-                      }
+                      { 
+                        text:convertTextToRtl("دولة الإقامة الحالية"),
+                      },
+                      { 
+                        text : "Present Country of Residence",
+                        style: ["center", "Times", {fontSize: 8}]
+                      },
                     ],
-                    style:["center"],
+                    style: ["center",{fontSize: 9.5,fillColor: '#f8eff2'}, "arabic"],
+                    colSpan:5
+                  },{},{},{},{},
+                  {
+                    text:"",colSpan:8
+                  },{},{},{},{},{},{},{}
+                ],
+              ],
+            }
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingBottom: (i, node) => -2,
+              paddingTop: (i, node) => 0,
+            },
+            table: {
+              widths: [ 275,275 ],
+              body: [
+                [
+                  { 
+                    text:"Are you a tax resident in any other country other than present country mentioned above?", 
+                    style: "left",
+                    border: [false, false, false, false] ,
                   },
-                  {
+                  { 
                     stack:[
-                      {text:"\n"},
-                      {
-                        text:convertTextToRtl("تاريخ آخر ولادة"),
-                        style: [{fontSize: 9}, "arabic"]
+                      { 
+                        text:convertTextToRtl("هل انت مسدد لضريبة اقامة في أي دولة أخرى غير المذكورة أعلاه؟"),
                       },
-                      {
-                        text:"State date of last delivery"
-                      }
                     ],
-                    style:["center"],
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("هل أجريت أي عملية إجهاض أو عملية قيصرية؟"),
-                        style: [{fontSize: 9}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("إذا كان الأمر كذلك، يُرجى إعطاء التفاصيل"),
-                        style: [{fontSize: 9}, "arabic"]
-                      },
-                      {
-                        text:"Have you had any abortion or miscarriage or Caesarian section? If so please give details.",
-                      }
-                    ],
-                    style:["center"],
-                    border:[false, true, true, true]
-                  },
-                  {
-                    stack:[
-                      {text:"\n"},
-                      {
-                        text:convertTextToRtl("تاريخ آخر حيض"),
-                        style: [{fontSize: 9}, "arabic"]
-                      },
-                      {
-                        text:"Date of last Menstruation",
-                      }
-                    ],
-                    style:["center"],
-                    border:[false, true, true, true]
+                    border: [false, false, false, false],
+                    style: ["right", {fontSize: 10}, "arabic"]
                   }
                 ],
                 [
-                  {},{text:"\n\n"},{},{},{}
+                  { 
+                    stack:[
+                      { 
+                        text:"Yes", 
+                        style: "right",
+                        border: [false, false, false, false] ,
+                      },
+                      { 
+                        text:convertTextToRtl("نعم"),
+                      },
+                    ],
+                    border: [false, false, false, false],
+                    style: ["right"],
+                  },
+                  { 
+                    stack:[
+                      { 
+                        text:"No", 
+                        style: "left",
+                        border: [false, false, false, false] ,
+                      },
+                      { 
+                        text:convertTextToRtl("لا"),
+                      },
+                    ],
+                    border: [false, false, false, false],
+                    style: ["left"]
+                  }
                 ],
                 [
-                  {},
-                  {
-                    text:"b. Any Disease or disorder of the breasts, cervix, uterus, ovaries or fallopian tubes? (Yes/No) If yes, please provide details.",
-                    colSpan:2,
-                    border:[true, true, false, true]
-                  },{},
-                  {
+                  { 
+                    text:"For details on tax residency of a country please refer to OECD site:", 
+                    style: "left",
+                    border: [false, false, false, false] ,
+                  },
+                  { 
                     stack:[
-                      {
-                        text:convertTextToRtl("ب. أي مرض أو اضطراب في الثدي أو عنق الرحم أو الرحم أو"),
+                      { 
+                        text:convertTextToRtl("لمزيد من التفاصيل عن ضريبة إقامة الدول يرجى الاطلاع على الموقع "),
                       },
-                      {
+                      { 
+                        text:convertTextToRtl("الالكتروني الخاص بمنظمة التعاون الاقتصادي والتنمية على الرابط التالي"),
+                      },
+                    ],
+                    border: [false, false, false, false],
+                    style: ["right", {fontSize: 10}, "arabic"]
+                  }
+                ],
+                [
+                  {
+                    text:"(http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-residency)",
+                    link:"http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-residency",
+                    colSpan:2,
+                    border: [false, false, false, false],
+                    style:"center"
+                  },{}
+                ],
+                [
+                  { 
+                    stack:[
+                      { text:"\n", style:{fontSize:4}},
+                      { text:"If Yes Please complete the following table indicating:"},
+                      { text:"- where the Account Holder is tax resident and"},
+                      { text:"- The Account Holder's TIN (Tax Identification Number e.g. PAN) for each country/jurisdiction indicated."},
+                    ],
+                    style: "justify",
+                    border: [false, false, false, false] ,
+                  },
+                  { 
+                    stack:[
+                      { text:"\n", style:{fontSize:4}},
+                      { 
+                        text:convertTextToRtl("في حالة الإجابة بنعم يرجى اكمال الجدول التالي الذي يوضح:"),
+                      },
+                      { 
                         text:[
-                          {text:convertTextToRtl(")نعم / لا(")},
-                          {text:convertTextToRtl("المبايض أو قناتي فالوب؟")},
-                        ],
+                          {text:convertTextToRtl("المحل الذي يسدد فيه صاحب الحساب ضريبة الإقامة")},
+                          {text:" -"}
+                        ]
                       },
-                      {text:"\n\n"}
+                      { 
+                        text:[
+                          {text:convertTextToRtl("الرقم التعريفي الضريبي لصاحب الحساب موضحا كل دولة / ولاية قضائية")}, 
+                          {text:" -"}
+                        ]
+                      },
                     ],
-                    colSpan:2,
-                    style: [{fontSize: 9}, "arabic", "right"],
-                    border:[false, true, true, true]
-                  },{}
+                    border: [false, false, false, false],
+                    style: ["right", {fontSize: 10}, "arabic"]
+                  }
                 ],
                 [
-                  {},
                   {
-                    text:"c. Any complication of pregnancy or childbirth or a child with congenital abnormalities? (Yes/No) If yes, please provide details.",
-                    colSpan:2,
-                    border:[true, true, false, true]
-                  },{},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("ج. هل من مضاعفات الحمل أو الولادة أو إصابة الطفل بتشوهات خلقية؟ "),
-                      },
-                      {
-                        text:convertTextToRtl(")نعم / لا(")
-                      },
-                      {text:"\n\n"}
-                    ],
-                    colSpan:2,
-                    style: [{fontSize: 9}, "arabic", "right"],
-                    border:[false, true, true, true]
-                  },{}
+                    text:"\n",colSpan:2,
+                    border: [false, false, false, false],
+                  },
+                  {}
                 ],
                 [
-                  {},
-                  {
-                    text:[
-                      {text: "d. If you are married, kindly furnish following details."},
+                  { 
+                    stack:[
+                      { text:"If a TIN is unavailable please provide the appropriate reason A, B or C where indicated below:"},
+                      { text:"Reason A The country/jurisdiction where the Account Holder is resident does not issue TINs to its residents"},
+                      { text:"Reason B The Account Holder is otherwise unable to obtain a TIN or equivalent number (Please explain)"},
+                      { text:"Reason C No TIN is required."},
                     ],
-                    colSpan:2,
-                    style:["justify", "header"],
-                    border:[true, true, false, true]
-                  },{},
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("د - إذا كنت متزوجة، يُرجى ذكر التفاصيل التالية:"),
-                        style: [{fontSize: 9}, "arabic"]
+                    style: "justify",
+                    border: [false, false, false, false] ,
+                  },
+                  { 
+                    stack:[
+                      { 
+                        text:convertTextToRtl(" في حالة عدم توفر الرقم التعريفي الضريبي يرجى توضيح السبب الملائم من"),
+                      },
+                      { 
+                        text:convertTextToRtl("أ، ب، أو ت فيما يلي"),
+                      },
+                      { 
+                        text:convertTextToRtl("السبب أ الدولة / الولاية القضائية التي يقيم فيها صاحب الحساب لا تصدر "),
+                      },
+                      { 
+                        text:convertTextToRtl("رقم تعريفي ضريبي للمقيمين فيها"),
+                      },
+                      { 
+                        text:convertTextToRtl("السبب ب صاحب الحساب غير قادر على الحصول على الرقم التعريفي الضريبي"),
+                      },
+                      { 
+                        text:convertTextToRtl("أو ما يعادله يرجى التوضيح"),
+                      },
+                      { 
+                        text:convertTextToRtl("السبب ج غير مطلوب رقم تعريفي ضريبي"),
                       },
                     ],
-                    colSpan:2,
-                    style:["right", "header"],
-                    border:[false, true, true, true]
-                  },{}
+                    border: [false, false, false, false],
+                    style: ["right", {fontSize: 10}, "arabic"]
+                  }
                 ],
                 [
-                  {},
-                  {
+                  { 
+                    text:"(Note. Only select this reason if the domestic law of the relevant jurisdiction does not require the collection of the TIN issued by such jurisdiction)", 
+                    style: "left",
+                    border: [false, false, false, false] ,
+                  },
+                  { 
                     stack:[
-                      {text: "\ni. Husband's full name:"},
-                      {text: "\n"}
-                    ],
-                    colSpan:2,
-                    style:["justify"],
-                    border:[true, true, false, true]
-                  },{},
-                  {
-                    stack:[
-                      {text: "\n", style:{fontSize:6}},
-                      {
-                        text:convertTextToRtl("ا. اسم الزوج بالكامل:"),
-                        style: [{fontSize: 9}, "arabic"]
+                      { 
+                        text:convertTextToRtl("ملحوظة : يتم اختيار هذا السبب فقط في حالة لم يستلزم القانون المحلي او"),
+                      },
+                      { 
+                        text:convertTextToRtl("التشريعات ذات الصلة الحصول على الرقم التعريفي الضريبي الصادر من الولاية"),
+                      },
+                      { 
+                        text:convertTextToRtl("القضائية ذات الصلة"),
                       },
                     ],
-                    colSpan:2,
-                    style:["right"],
-                    border:[false, true, true, true]
-                  },{}
+                    border: [false, false, false, false],
+                    style: ["right", {fontSize: 10}, "arabic"]
+                  }
                 ],
-                [
-                  {},
-                  {
-                    stack:[
-                      {text: "\nii. His occupation:"},
-                      {text: "\n"}
-                    ],
-                    colSpan:2,
-                    style:["justify"],
-                    border:[true, true, false, true]
-                  },{},
-                  {
-                    stack:[
-                      {text: "\n", style:{fontSize:6}},
-                      {
-                        text:convertTextToRtl("اا. مهنته:"),
-                        style: [{fontSize: 9}, "arabic"]
-                      },
-                    ],
-                    colSpan:2,
-                    style:["right"],
-                    border:[false, true, true, true]
-                  },{}
-                ],
-                [
-                  {},
-                  {
-                    stack:[
-                      {text: "\niii. His annual Income:"},
-                      {text: "\n"}
-                    ],
-                    colSpan:2,
-                    style:["justify"],
-                    border:[true, true, false, true]
-                  },{},
-                  {
-                    stack:[
-                      {text: "\n", style:{fontSize:6}},
-                      {
-                        text:convertTextToRtl("ااا.دخله السنوي:"),
-                        style: [{fontSize: 9}, "arabic"]
-                      },
-                    ],
-                    colSpan:2,
-                    style:["right"],
-                    border:[false, true, true, true]
-                  },{}
-                ],
-                [
-                  {},
-                  {
-                    stack:[
-                      {text: "\niv. Details of Husband's Insurance:"},
-                      {text: "\n"}
-                    ],
-                    colSpan:2,
-                    style:["justify"],
-                    border:[true, true, false, true]
-                  },{},
-                  {
-                    stack:[
-                      {text: "\n", style:{fontSize:6}},
-                      {
-                        text:convertTextToRtl("اااا. تفاصيل تأمين الزوج:"),
-                        style: [{fontSize: 9}, "arabic"]
-                      },
-                    ],
-                    colSpan:2,
-                    style:["right"],
-                    border:[false, true, true, true]
-                  },{}
-                ],
-              ]
+              ],
             }
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingTop: (i, node) => 0
+            },
+            table: {
+              widths: [15,"*","*",20,20,20,175],
+              body: [
+                [
+                  {
+                    stack:[
+                      { text:"\n\n" },
+                      { text:convertTextToRtl("دولة / جهة الضريب") },
+                      { text:convertTextToRtl("على الإقامة") },
+                      { text:"Country/Jurisdiction of" },
+                      { text:"Tax Residence" },
+                    ],
+                    style: ["center"],
+                    colSpan:2,
+                    rowSpan:2
+                  },{},
+                  {
+                    stack:[
+                      { text:"\n\n" },
+                      { text:convertTextToRtl("الرقم التعريفي الضريبي") },
+                      { text:convertTextToRtl("او ما يعادله") },
+                      { text:"TIN or Equivalent" },
+                    ],
+                    style: ["center"],
+                    rowSpan:2
+                  },
+                  {
+                    stack:[
+                      { text:convertTextToRtl("في حالة عدم") },
+                      { text:convertTextToRtl("توفر رقم تعريفي") },
+                      { text:convertTextToRtl("ضريبي يرجى") },
+                      { text:convertTextToRtl("اختيار السبب") },
+                      { text:"If no TIN available" },
+                      { text:"tick the Reason" },
+                    ],
+                    style: ["center"],
+                    colSpan:3,
+                  },{},{},
+                  {
+                    stack:[
+                      { text:"\n" },
+                      { text:convertTextToRtl("يرجى توضيح أسباب عدم توفر رقم تعريفي الضريبي") },
+                      { text:convertTextToRtl("في هذه الخانات في حالة اختيار السبب)ب(") },
+                      { text:"Please explain in the following boxes why you are unable to obtain a TIN if you selected Reason B" },
+                    ],
+                    style: ["center"],
+                    rowSpan:2
+                  },
+                ],
+                [
+                  {},{},{},
+                  {
+                    stack:[
+                      { text:convertTextToRtl("أ") },
+                      { text:"A" },
+                    ],
+                    style: ["center"],
+                  }, 
+                  {
+                    stack:[
+                      { text:convertTextToRtl("ب") },
+                      { text:"B" },
+                    ],
+                    style: ["center"],
+                  },
+                  {
+                    stack:[
+                      { text:convertTextToRtl("ج") },
+                      { text:"C" },
+                    ],
+                    style: ["center"],
+                  },
+                  {}
+                ],
+                [
+                  {text:"\n"},{},{},
+                  {border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },
+                  {
+                    border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },
+                  {
+                    border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },{}
+                ],
+                [
+                  {text:"\n"},{},{},
+                  {border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },
+                  {
+                    border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },
+                  {
+                    border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },{}
+                ],
+                [
+                  {text:"\n"},{},{},
+                  {border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },
+                  {
+                    border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },
+                  {
+                    border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },{}
+                ],
+                [
+                  {text:"\n"},{},{},
+                  {border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },
+                  {
+                    border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },
+                  {
+                    border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },{}
+                ],
+              ],
+            },
           }
         ],
         [

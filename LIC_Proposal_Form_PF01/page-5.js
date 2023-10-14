@@ -4,277 +4,617 @@ const Page_5 = ({
   return {
     layout : "customTableLayout",
     pageMargin : [0, 0, 0, 0],
-    pageOrientation: 'landscape',
-    pageBreak : "before",
+    pageBreak : "after",
     fontSize : 9.5,
     table : {
-      body : [
+      body : [  
+        [
+          {
+            border: [false, false, false, false],
+            margin:[0,-5,0,0],
+            table: {
+              widths: [
+                10,258,258
+              ],
+              body: [
+                [
+                  {
+                    text:"22.",rowSpan:2
+                  },
+                  {
+                    text:"Is any application for revival of any of your policies or policies of Life to be assured is under Consideration?",
+                    border:[true, true, false, false],
+                    style:"justify"
+                  },
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("هل يوجد أي طلب لإبقاء أي من البوالص الخاصة بك أو بوالص"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"\n" },
+                      {
+                        text:convertTextToRtl("التأمين على الحياة قيد النظر؟ إذا كانت الإجابة بنعم، اذكر التفاصيل"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                    ],
+                    border:[false, true, true, false],
+                  }
+                ],
+                [
+                  {
+                    text:" ",
+                  },
+                  {
+                    border: [false, false, false, true],
+                    margin:[0,5,0,30],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    }
+                  },
+                  {
+                    text:[
+                      { text:convertTextToRtl(" "),
+                      style: ["right"],
+                      },
+                      {
+                        text:"\n",
+                      },
+                    ],border:[false,false,true,true],
+                  },
+                ],
+                [
+                  {
+                    text:"23.",rowSpan:4
+                  },
+                  {
+                    text:"Travel : a). Please provide details of travel that you have taken over the last 12 months:",
+                    border:[true, true, false, true],
+                    style:"justify"
+                  },
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("السفر يرجى تقديم تفاصيل السفر التي قمت بها خلال الـ 12 شهرًا "),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"\n" },
+                      {
+                        text:convertTextToRtl("الماضية"),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                    ],
+                    border:[false, true, true, true],
+                  }
+                ],
+                [
+                  {
+                    text:" ",
+                  },
+                  {
+                    border: [false, false, false, true],
+                    margin:[-5,-3,-5,0],
+                    
+                    table: {
+                      widths: [
+                        125,124
+                      ],
+                      body: [
+                        [
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl("الدولة و المدينة١"),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\nCountry & City",
+                                style: ["center", {fontSize: 8}, ]
+                              },
+                            ],
+                            style: {fillColor: '#f8eff2'},
+                          },
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl("مدة البقاء خلال الرحلة"),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\nDuration of Stay Per Visit",
+                                style: ["center", {fontSize: 8}, "Times"]
+                              },
+                            ],
+                            style: {fillColor: '#f8eff2'},
+                          },
+                        ],
+                        [
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl(""),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\n\n",
+                                style: ["center", {fontSize: 10}, "Times"]
+                              },
+                            ],
+                          },
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl(" "),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\n\n",
+                                style: ["center", {fontSize: 10}, "Times"]
+                              },
+                            ],
+                          },
+                        ],
+                        [
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl(" "),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\n\n",
+                                style: ["center", {fontSize: 10}, "Times"]
+                              },
+                            ],border:[true,true,true,false],
+                          },
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl(" "),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\n",
+                                style: ["center", {fontSize: 10}, "Times"]
+                              },
+                            ],border:[true,true,true,false],
+                          },
+                        ],
+                      ],
+                    }
+                  },
+                  {
+                    border: [false, false, false, true],
+                    margin:[-5,-3,-5,0],
+                    
+                    table: {
+                      widths: [
+                        100,149
+                      ],
+                      body: [
+                        [
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl("عدد الرحلات سنويا"),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\nNumber of visits per year",
+                                style: ["center", {fontSize: 8}, "Times"]
+                              },
+                            ],
+                            style: {fillColor: '#f8eff2'},
+                          },
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl("سبب السفر ( عمل ، سياحة)"),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\nPurpose of Travel (Business, Vacation)",
+                                style: ["center", {fontSize: 8}, "Times"]
+                              },
+                            ],
+                            style: {fillColor: '#f8eff2'},
+                          },
+                        ],
+                        [
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl(" "),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\n\n",
+                                style: ["center", {fontSize: 10}, "Times"]
+                              },
+                            ],
+                          },
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl(" "),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\n\n",
+                                style: ["center", {fontSize: 10}, "Times"]
+                              },
+                            ],
+                          },
+                        ],
+                        [
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl(" "),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\n\n",
+                                style: ["center", {fontSize: 10}, "Times"]
+                              },
+                            ],border:[true,true,true,false],
+                          },
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl(" "),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\n",
+                                style: ["center", {fontSize: 10}, "Times"]
+                              },
+                            ],border:[true,true,true,false],
+                          },
+                        ],
+                      ],
+                    }
+                  },
+                ],
+                [
+                  {
+                    text:"",
+                  },
+                  {
+                    text:"Please provide details of travel that you intend to undertake in the following 12 months:",
+                    border:[true, true, false, true],
+                    style:"justify"
+                  },
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("اذا كنت تنوي السفر خلال الـ 12 شهراً القادمة. يرجى ذكر التفاصيل : "),
+                        style: ["right", {fontSize: 10}, "arabic"]
+                      },
+                    ],
+                    border:[false, true, true, true],
+                  }
+                ],
+                [
+                  {
+                    text:" ",
+                  },
+                  {
+                    border: [false, false, false, true],
+                    margin:[-5,-3,-5,0],
+                    
+                    table: {
+                      widths: [
+                        125,124
+                      ],
+                      body: [
+                        [
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl("الدولة و المدينة١"),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\nCountry & City",
+                                style: ["center", {fontSize: 8}, ]
+                              },
+                            ],
+                            style: {fillColor: '#f8eff2'},
+                          },
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl("مدة البقاء خلال الرحلة"),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\nDuration of Stay Per Visit",
+                                style: ["center", {fontSize: 8}, "Times"]
+                              },
+                            ],
+                            style: {fillColor: '#f8eff2'},
+                          },
+                        ],
+                        [
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl(""),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\n\n",
+                                style: ["center", {fontSize: 10}, "Times"]
+                              },
+                            ],
+                          },
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl(" "),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\n\n",
+                                style: ["center", {fontSize: 10}, "Times"]
+                              },
+                            ],
+                          },
+                        ],
+                        [
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl(" "),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\n\n",
+                                style: ["center", {fontSize: 10}, "Times"]
+                              },
+                            ],border:[true,true,true,false],
+                          },
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl(" "),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\n",
+                                style: ["center", {fontSize: 10}, "Times"]
+                              },
+                            ],border:[true,true,true,false],
+                          },
+                        ],
+                      ],
+                    }
+                  },
+                  {
+                    border: [false, false, false, true],
+                    margin:[-5,-3,-5,0],
+                    
+                    table: {
+                      widths: [
+                        100,149
+                      ],
+                      body: [
+                        [
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl("عدد الرحلات سنويا"),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\nNumber of visits per year",
+                                style: ["center", {fontSize: 8}, "Times"]
+                              },
+                            ],
+                            style: {fillColor: '#f8eff2'},
+                          },
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl("سبب السفر ( عمل ، سياحة)"),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\nPurpose of Travel (Business, Vacation)",
+                                style: ["center", {fontSize: 8}, "Times"]
+                              },
+                            ],
+                            style: {fillColor: '#f8eff2'},
+                          },
+                        ],
+                        [
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl(" "),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\n\n",
+                                style: ["center", {fontSize: 10}, "Times"]
+                              },
+                            ],
+                          },
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl(" "),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\n\n",
+                                style: ["center", {fontSize: 10}, "Times"]
+                              },
+                            ],
+                          },
+                        ],
+                        [
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl(" "),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\n\n",
+                                style: ["center", {fontSize: 10}, "Times"]
+                              },
+                            ],border:[true,true,true,false],
+                          },
+                          {
+                            text:[
+                              {
+                                text:convertTextToRtl(" "),
+                                style: ["center", {fontSize: 10}, "arabic"]
+                              },
+                              {
+                                text:"\n",
+                                style: ["center", {fontSize: 10}, "Times"]
+                              },
+                            ],border:[true,true,true,false],
+                          },
+                        ],
+                      ],
+                    }
+                  },
+                ],
+              ],
+            }
+          }
+        ],
         [
           {
             border: [false, false, false, false],
             layout:{
-              paddingBottom: (i, node) => 2,
-              paddingTop: (i, node) => 2,
+              paddingBottom: (i, node) => 0,
+              paddingTop: (i, node) => 1,
             },
+            margin:[0,-5,0,0],
             table: {
               widths: [
-                10,50,50,55,"*","*","*","*","*","*"
+                10,140,376
               ],
               body: [
                 [
-                  {text:"21."},
+                  {text:"24.", rowSpan:4},
                   {
-                    columns:[
-                      {text:"Particulars of the Plan/s proposed for Life Insurance"},
+                    stack:[
+                      {text:[
+                        {
+                          text: "Please provide your Bank Account details, which you will \t\t\t\t\t\t"
+                        },
+                        {
+                          text:convertTextToRtl("تفاصيل الحساب المصرفي للتسديد المباشر للحساب المصرفي ، ، والتي "),
+                          style: ["right", {fontSize: 9}, "arabic"]
+                        }
+                      ]},
+                      {text:[
+                        {
+                          text: "be using to pay the premium. Payment of premium by\t\t\t\t\t\t\t"
+                        },
+                        {
+                          text:convertTextToRtl("ستستخدم لدفع قسط التأمين عمليات التحويل التلكس / الشيك يجب ان "),
+                          style: ["right", {fontSize: 9}, "arabic"]
+                        }
+                      ]},
+                      {text:[
+                        {
+                          text: "way of cheque and telex transfers must be in favor of\t\t\t\t\t\t\t\t"
+                        },
+                        {
+                          text:convertTextToRtl("فقط"),
+                          style: ["right", {fontSize: 9}, "arabic"]
+                        },
+                        {
+                          text: " (LIC International) "
+                        },
+                        {
+                          text:convertTextToRtl("تكون لصالح شركة التأمين على الحياة "),
+                          style: ["right", {fontSize: 9}, "arabic"]
+                        },
+                      ]},
                       {
-                        text:convertTextToRtl("تفاصيل الخطة / الخطط المقترحة من أجل التأمين على الحياة"),
-                        style: ["right", {fontSize: 10}, "arabic"]
+                        text: "LIC International only"
                       },
                     ],
-                    colSpan:9
-                  },{},{},{},{},{},{},{},{}
+                    style:"justify",
+                    colSpan:2
+                  },{}
                 ],
                 [
                   {},
                   {
                     stack:[
                       {
-                        text:convertTextToRtl("الخطة"),
-                        style: [{fontSize: 10}, "arabic"]
+                        text:convertTextToRtl("اسم البنك"),
+                        style: ["center", {fontSize: 10}, "arabic"]
                       },
-                      {text:"Plan"},
-                    ], 
-                    style:"center"
+                      { text:"Name of the Bank", style:"center" },
+                    ],
                   },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("المدة"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl(")السنوات("),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"Term"},
-                      {text:"(Years)"},
-                    ], 
-                    style:"center"
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("مدة دفع"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("القسط"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"Premium"},
-                      {text:"paying term"},
-                    ], 
-                    style:"center"
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("طريقة الدفع"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("سنوي / نصف سنوي /"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("ربع سنوي /"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("شهرية / قسط واحد"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"Mode: Yly/ Hly/ "},
-                      {text:"Qly/Mly/S.P."},
-                    ], 
-                    style:"center"
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("مبلغ التأمين"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl(")بالدولار الأمريكي("),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"Sum Assured USD ($)"},
-                    ], 
-                    style:"center"
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("القسط"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl(")بالدولار الأمريكي("),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"Premium USD ($)"},
-                    ], 
-                    style:"center"
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("إضافة قسط"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl(")بالدولار الأمريكي("),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"Top Up Premium\nUSD ($)"},
-                    ], 
-                    style:"center"
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("مزايا تغطية الحوادث )يرجى"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("ذكرمبلغ التأمين لتغطية)"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"Double Accident benefits required (please state the Sum Assured)"},
-                    ], 
-                    style:"center"
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("إذا التاريخ بتاريخ "),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("سابق مطلوب"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"Date of commencement (if back dating required)"},
-                    ], 
-                    style:"center"
-                  }
-                ],
-                [
-                  {},{text:"\n\n"},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  {},{text:"\n\n"},{},{},{},{},{},{},{},{}
+                  {}
                 ],
                 [
                   {},
                   {
-                    columns:[
-                      {stack:[
-                        {
-                          text:convertTextToRtl("المزايا الإضافية للتأمين، عند الإختيار:"),
-                          style: [{fontSize: 10}, "arabic"]
-                        },
-                        {
-                          text:"For additional insurance riders,if opted"
-                        }
-                      ]},
-                      {stack:[
-                        {
-                          text:convertTextToRtl(")لا / نعم( ميزة حماية الأسرة مطلوبة"),
-                          style: [{fontSize: 10}, "arabic"]
-                        },
-                        {
-                          text:"A) Premium Waiver benefit required"
-                        }
-                      ]},
+                    stack:[
+                      {
+                        text:convertTextToRtl("الفرع البنك"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Bank Branch", style:"center" },
                     ],
-                    colSpan:5,
-                    border:[true, true, false, true]
-                  },{},{},{},{},
-                  {
-                    columns:[
-                      {stack:[
-                        {
-                          text:"YES",
-                          style: [{fontSize: 10}]
-                        },
-                        {
-                          text:"NO",
-                          style: [{fontSize: 10}]
-                        },
-                      ]},
-                      {stack:[
-                        {
-                          image : "./assets/images/uncheck.png",
-                          width: 10,
-                          border:[false,false,false,false],
-                          style:"center"
-                        },
-                        {text:"\n", style:{fontSize:3}},
-                        {
-                          image : "./assets/images/uncheck.png",
-                          width: 10,
-                          border:[false,false,false,false],
-                          style:"center"
-                        }
-                      ]},
-                    ],
-                    border:[false, true, false, true]
                   },
+                  {}
+                ],
+                [
+                  {},
                   {
                     stack:[
                       {
-                        text:convertTextToRtl(")لا / نعم( ميزة حماية الأسرة مطلوبة"),
-                        style: [{fontSize: 10}, "arabic"]
+                        text:convertTextToRtl("رقم الحساب المصرفي الدولي"),
+                        style: ["center", {fontSize: 10}, "arabic"]
                       },
-                      {
-                        text:"B) Family Protection benefit required"
-                      }
+                      { text:"IBAN", style:"center" },
                     ],
-                    colSpan:2,
-                    border:[false, true, false, true]
-                  },{},
-                  {
-                    columns:[
-                      {stack:[
-                        {
-                          text:"YES",
-                          style: [{fontSize: 10}]
-                        },
-                        {
-                          text:"NO",
-                          style: [{fontSize: 10}]
-                        },
-                      ]},
-                      {stack:[
-                        {
-                          image : "./assets/images/uncheck.png",
-                          width: 10,
-                          border:[false,false,false,false],
-                          style:"center"
-                        },
-                        {text:"\n", style:{fontSize:3}},
-                        {
-                          image : "./assets/images/uncheck.png",
-                          width: 10,
-                          border:[false,false,false,false],
-                          style:"center"
-                        }
-                      ]}
-                    ],
-                    border:[false, true, true, true]
-                  }
+                  },
+                  {}
                 ]
               ],
             }
@@ -287,160 +627,61 @@ const Page_5 = ({
               paddingBottom: (i, node) => 2,
               paddingTop: (i, node) => 2,
             },
-            margin:[0,10],
             table: {
               widths: [
-                10,"*","*","*","*","*","*","*","*","*"
+                10,280,236
               ],
               body: [
                 [
-                  {text:"22."},
+                  {text:""},
                   {
-                    columns:[
-                      {text:"Details of the previous insurance including policies with disability or critical illness cover with any insurance company worldwide."},
+                    text:[
                       {
-                        stack:[
-                          {
-                            text:convertTextToRtl("تفاصيل التأمين السابق الخاصة بالإعاقة أو تغطية الأمراض الخطيرة مع أي شركة تأمين في جميع"),
-                            style: ["right", {fontSize: 10}, "arabic"]
-                          },
-                          {
-                            text:convertTextToRtl("أنحاء العالم؟ إذا كانت الإجابة بنعم ، يرجى إكمال التفاصيل أدناه"),
-                            style: ["right", {fontSize: 10}, "arabic"]
-                          },
-                        ]
+                        text:"(Question No. 25 & 26 are for UAE Customers) \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t",
+                      },
+                      {
+                        text:convertTextToRtl("لزبائن الإمارات العربية المتحدة فقط"),
+                        style: ["right", {fontSize: 9.5}, "arabic"]
+                      },
+                    ],
+                    border:[true, true, true, true],colSpan:2,
+                    style:"justify"
+                  },
+                  {}
+                ],
+                [
+                  {text:"25."},
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("يرجى توضيح بيانات البنوك التي تتعامل معها / أو التي لديك حساب فيها، يرجى توضيح "),
+                        style: ["right", {fontSize: 9}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("اسم البنك ونوع الحساب المصرفي )جاري / ادخار( )في حالة كان الحساب غير شخصي "),
+                        style: ["right", {fontSize: 9}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("وكانت جميع المعاملات البنكية تتم من حساب شركة، يجب توضيح بيانات حساب الشركة "),
+                        style: ["right", {fontSize: 9}, "arabic"]
+                      },
+                      {
+                        text:"Please provide details of banks you are dealing with/holding account with. Please provide bank name and type of account maintained (current/savings) \nIn case no personal account is maintained and all transactions are being made from company account, details of company accounts should be provided."
                       }
                     ],
-                    colSpan:9
-                  },{},{},{},{},{},{},{},{}
-                ],
-                [
-                  {},{},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("أرقام بوليصة التأمين"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"Policy Numbers"},
-                    ], 
-                    style:"center"
+                    style:"justify"
                   },
                   {
                     stack:[
-                      {
-                        text:convertTextToRtl("اسم شركة التأمين"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"Name of"},
-                      {text:"Insurance Company"},
-                    ], 
-                    style:"center"
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("سنة الإصدار"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"Year Of Issue"},
-                    ], 
-                    style:"center"
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("المزايا و مبلغ تغطية التأمين"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl(")بالدولار الأمريكي("),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"Sum Assured USD ($)"},
-                    ], 
-                    style:"center"
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("مع أو بدون التأمين"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("ضد الحوادث"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"Accident Benefit\nYES/NO"},
-                    ], 
-                    style:"center"
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("فترة البوليصة"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"Policy Term"},
-                    ], 
-                    style:"center"
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("سبب تغطية التأمين"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"Purpose for Cover"},
-                    ], 
-                    style:"center"
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الوضع الحالي"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("لوثيقة التأمين"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {text:"Present Status"},
-                      {text:"of the policy"},
-                    ], 
-                    style:"center"
-                  },
-                ],
-                [
-                  {},{text:"\n\n"},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  {},{text:"\n\n"},{},{},{},{},{},{},{},{}
-                ],
-                [
-                  {},
-                  {
-                    columns:[
-                      {stack:[
-                        {
-                          text:"Please Note: The Company does not entertain any fresh proposal for insurance where a policy has lapsed or has been converted into paid up policy within the last three years or surrendered in last year."
-                        }
-                      ]},
-                      {stack:[
-                        {
-                          text:convertTextToRtl("ملاحظة : يُرجى العلم أن الشركة لا تقدم أي طلب جديد للتأمين في حالة انقضاء أحد وثائق التأمين أو"),
-                          style: [{fontSize: 10}, "arabic"]
-                        },
-                        {
-                          text:convertTextToRtl("إذا تم تحويلها إلى وثيقة مدفوعة خلال السنوات الثلاث الأخيرة أو تسليمها في العام الماضي."),
-                          style: [{fontSize: 10}, "arabic"]
-                        },
-                      ], style:"right"},
+                      { text:"\n1. _______________________________________" },
+                      { text:"\n_________________________________________" },
+                      { text:"\n2. _______________________________________" },
+                      { text:"\n_________________________________________" },
                     ],
-                    colSpan:9,
-                  },
-                  {},{},{},{},{},{},{},{}
-                ]
+                    style:{fontSize: 11},
+                    border:[false, true, true, true],
+                  }
+                ],
               ],
             }
           }
@@ -452,7 +693,7 @@ const Page_5 = ({
               paddingTop: (i, node) => 0
             },
             table: {
-              widths: [750],
+              widths: [550],
               body: [
                 [
                   {
@@ -471,5 +712,3 @@ const Page_5 = ({
 }
 
 module.exports = Page_5
-
-

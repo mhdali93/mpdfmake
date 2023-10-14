@@ -4,7 +4,8 @@ const Page_3 = ({
   return {
     layout : "customTableLayout",
     pageMargin : [0, 0, 0, 0],
-    pageBreak : "after",
+    pageOrientation: 'landscape',
+    pageBreak : "before",
     fontSize : 9.5,
     table : {
       body : [
@@ -12,468 +13,434 @@ const Page_3 = ({
           {
             border: [false, false, false, false],
             layout:{
-              paddingBottom: (i, node) => 1,
-              paddingTop: (i, node) => 1,
+              paddingBottom: (i, node) => 2,
+              paddingTop: (i, node) => 2,
             },
             table: {
               widths: [
-                10,90,100,40,50,50,50,100
+                10,50,50,55,"*","*","*","*","*","*"
               ],
               body: [
                 [
+                  {text:"15."},
                   {
-                    text:[
+                    columns:[
+                      {text:"Particulars of the Plan/s proposed for Life Insurance"},
                       {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ١"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"\nProposer / Life to be Assured 1",
-                        style: ["center", {fontSize: 10}, "Times"]
+                        text:convertTextToRtl("تفاصيل الخطة / الخطط المقترحة من أجل التأمين على الحياة"),
+                        style: ["right", {fontSize: 10}, "arabic"]
                       },
                     ],
-                    colSpan:4,
-                    style: {fillColor: '#f8eff2'},
-                  },{},{},{},
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ٢"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"\nProposer / Life to be Assured 2",
-                        style: ["center", {fontSize: 10}, "Times"]
-                      },
-                    ],
-                    colSpan:4,
-                    style: {fillColor: '#f8eff2'},
-                  },{},{},{}
-                ],
-                [
-                  {
-                    text:"4."
-                  },
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("السن"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"\nAge", style: "center"
-                      },
-                    ]
-                  },
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("سنة"),
-                        style: ["left", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"\nYears",
-                      },
-                    ]
-                  },
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("شهر"),
-                        style: ["left", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"\nMonths",
-                      },
-                    ],
-                    colSpan:2
-                  },{},
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("سنة"),
-                        style: ["left", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"\nYears",
-                      },
-                    ],
-                    colSpan: 2
-                  },{},
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("شهر"),
-                        style: ["left", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"\nMonths",
-                      },
-                    ]
-                  }
-                ],
-                [
-                  {
-                    text:"5."
-                  },
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("إثبات السن"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"\nAge Proof Submitted", style: "center"
-                      },
-                    ]
-                  },
-                  { text:"", colSpan: 3 },{},{},
-                  { text:"", colSpan: 3 },{},{}
-                ],
-                [
-                  { text:"6.", rowSpan:2 },
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("مكان الميلاد"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"\nPlace of Birth", style: "center"
-                      },
-                    ]
-                  },
-                  { text:"", colSpan: 3 },{},{},
-                  { text:"", colSpan: 3 },{},{}
+                    colSpan:9
+                  },{},{},{},{},{},{},{},{}
                 ],
                 [
                   {},
                   {
-                    text:[
+                    stack:[
                       {
-                        text:convertTextToRtl("بلد الميلاد"),
-                        style: ["center", {fontSize: 10}, "arabic"]
+                        text:convertTextToRtl("الخطة"),
+                        style: [{fontSize: 10}, "arabic"]
                       },
-                      {
-                        text:"\nCountry of Birth", style: "center"
-                      },
-                    ]
-                  },
-                  { text:"", colSpan: 3 },{},{},
-                  { text:"", colSpan: 3 },{},{}
-                ],
-                [
-                  {
-                    text:"7."
-                  },
-                  { 
-                    text:"Relationship with", 
-                    style: "center",
-                    border: [true, true, false, true] 
-                  },
-                  { border: [false, true, false, true], text:"", colSpan: 2 },{},
-                  { 
-                    text:convertTextToRtl("علاقته بـ"), 
-                    colSpan: 4,
-                    border: [false, true, true, true],
-                    style: ["right", {fontSize: 10}, "arabic"]
-                  },{},{},{}
-                ],
-                [
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ١"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"\nProposer / Life to be Assured 1",
-                        style: ["center", {fontSize: 10}, "Times"]
-                      },
-                    ],
-                    colSpan:4,
-                  },{},{},{},
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ٢"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"\nProposer / Life to be Assured 2",
-                        style: ["center", {fontSize: 10}, "Times"]
-                      },
-                    ],
-                    colSpan:4,
-                  },{},{},{}
-                ],
-                [
-                  {
-                    text:"8."
-                  },
-                  { 
-                    text:"Father's full Name (Surname first)", 
-                    style: "left",
-                    colSpan:3,
-                    border: [true, true, false, true] 
-                  },{},{},
-                  { 
-                    text:convertTextToRtl("اسم الأب بالكامل )اللقب أولاً("), 
-                    colSpan: 4,
-                    border: [false, true, true, true],
-                    style: ["right", {fontSize: 10}, "arabic"]
-                  },{},{},{}
-                ],
-                [
-                  {
-                    text:"\n\n\n\n\n",
-                    colSpan:4,
-                  },{},{},{},
-                  {
-                    text:"",
-                    colSpan:4,
-                  },{},{},{}
-                ],
-                [
-                  {
-                    text:"9."
-                  },
-                  { 
-                    text:[
-                      {text:"Nationality/ Citizenship/s:"},
-                      {text:"\nKindly mention names of Countries of which you are holding citizenship"}
+                      {text:"Plan"},
                     ], 
-                    style: "left",
-                    colSpan:4,
-                    border: [true, true, false, true] 
-                  },{},{},{},
-                  { 
-                    text:[
-                      {text:convertTextToRtl("الجنسية / المواطنة:")},
-                      {text:"\n"},
-                      {text:convertTextToRtl("يُرجى ذكر أسماء الدول التي تحمل جنسيتها")},
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("المدة"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl(")السنوات("),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Term"},
+                      {text:"(Years)"},
                     ], 
-                    colSpan: 3,
-                    border: [false, true, true, true],
-                    style: ["right", {fontSize: 10}, "arabic"]
-                  },{},{}
-                ],
-                [
-                  {
-                    text:"\n\n\n",
-                    colSpan:4,
-                  },{},{},{},
-                  {
-                    text:"",
-                    colSpan:4,
-                  },{},{},{}
-                ],
-                [
-                  {
-                    text:"10."
+                    style:"center"
                   },
-                  { 
-                    text:"Passport Details", 
-                    style: "left",
-                    colSpan:3,
-                    border: [true, true, false, true] 
-                  },{},{},
-                  { 
-                    text:convertTextToRtl("تفاصيل جواز السفر"), 
-                    colSpan: 4,
-                    border: [false, true, true, true],
-                    style: ["right", {fontSize: 10}, "arabic"]
-                  },{},{},{}
-                ],
-                [
                   {
-                    text:[
-                      {text:"Number", style:"left"},
-                      {text:"\t\t\t\t\t"},
-                      {text:convertTextToRtl("رقم"),style: ["right", {fontSize: 10}, "arabic"]},
-                      {text:"\n\n\n",}
-                    ],
-                    colSpan:2,
-                  },{},
-                  {
-                    text:[
-                      {text:"Date of Expiry ", style:"left"},
-                      {text:"\t\t\t"},
-                      {text:convertTextToRtl("تاريخ الانتهاء"),style: ["right", {fontSize: 10}, "arabic"]},
-                      {text:"\n\n\n",}
-                    ],
-                    colSpan:2
-                  },{},
-                  {
-                    text:[
-                      {text:"Number", style:"left"},
-                      {text:"\t\t\t\t\t"},
-                      {text:convertTextToRtl("رقم"),style: ["right", {fontSize: 10}, "arabic"]},
-                      {text:"\n\n\n",}
-                    ],
-                    colSpan:2,
-                  },{},
-                  {
-                    text:[
-                      {text:"Date of Expiry ", style:"left"},
-                      {text:"\t\t\t\t"},
-                      {text:convertTextToRtl("تاريخ الانتهاء"),style: ["right", {fontSize: 10}, "arabic"]},
-                      {text:"\n\n\n",}
-                    ],
-                    colSpan:2
-                  },{}
-                ],
-                [
-                  {
-                    text:[
-                      {text:"Country of Issue", style:"center"},
-                      {text:"\n"},
-                      {text:convertTextToRtl("بلد الإصدار"),style: ["center", {fontSize: 10}, "arabic"]}
-                    ],
-                    colSpan:2,
-                  },{},
-                  {
-                    text:"",
-                    colSpan:2
-                  },{},
-                  {
-                    text:[
-                      {text:"Country of Issue", style:"center"},
-                      {text:"\n"},
-                      {text:convertTextToRtl("بلد الإصدار"),style: ["center", {fontSize: 10}, "arabic"]}
-                    ],
-                    colSpan:2,
-                  },{},
-                  {
-                    text:"",
-                    colSpan:2
-                  },{}
-                ],
-                [
-                  {
-                    text:"11."
-                  },
-                  { 
-                    text:"CPR / Emirate ID / Citizenship Card No Number", 
-                    style: "left",
-                    colSpan:3,
-                    border: [true, true, false, true] 
-                  },{},{},
-                  { 
-                    text:convertTextToRtl("رقم البطاقة التعريفية / بطاقة الإقامة / بطاقة المواطنة"), 
-                    colSpan: 4,
-                    border: [false, true, true, true],
-                    style: ["right", {fontSize: 10}, "arabic"]
-                  },{},{},{}
-                ],
-                [
-                  {
-                    text:[
-                      {text:"Number", style:"left"},
-                      {text:"\t\t\t\t\t"},
-                      {text:convertTextToRtl("رقم"),style: ["right", {fontSize: 10}, "arabic"]},
-                      {text:"\n\n\n",}
-                    ],
-                    colSpan:2,
-                  },{},
-                  {
-                    text:[
-                      {text:"Date of Expiry ", style:"left"},
-                      {text:"\t\t\t"},
-                      {text:convertTextToRtl("تاريخ الانتهاء"),style: ["right", {fontSize: 10}, "arabic"]},
-                      {text:"\n\n\n",}
-                    ],
-                    colSpan:2
-                  },{},
-                  {
-                    text:[
-                      {text:"Number", style:"left"},
-                      {text:"\t\t\t\t\t"},
-                      {text:convertTextToRtl("رقم"),style: ["right", {fontSize: 10}, "arabic"]},
-                      {text:"\n\n\n",}
-                    ],
-                    colSpan:2,
-                  },{},
-                  {
-                    text:[
-                      {text:"Date of Expiry ", style:"left"},
-                      {text:"\t\t\t\t"},
-                      {text:convertTextToRtl("تاريخ الانتهاء"),style: ["right", {fontSize: 10}, "arabic"]},
-                      {text:"\n\n\n",}
-                    ],
-                    colSpan:2
-                  },{}
-                ],
-                [
-                  {
-                    text:"12."
-                  },
-                  { 
-                    text:"VISA issued by Country / Emirate", 
-                    style: "left",
-                    colSpan:3,
-                    border: [true, true, false, true] 
-                  },{},{},
-                  { 
-                    text:convertTextToRtl("تأشيرة الإقامة / مصدرة بواسطة"), 
-                    colSpan: 4,
-                    border: [false, true, true, true],
-                    style: ["right", {fontSize: 10}, "arabic"]
-                  },{},{},{}
-                ],
-                [
-                  {
-                    text:"\n\n\n",
-                    colSpan:4,
-                  },{},{},{},
-                  {
-                    text:"",
-                    colSpan:4,
-                  },{},{},{}
-                ],
-                [
-                  {
-                    text:"13."
-                  },
-                  { 
-                    text:[
-                      {text: "Address for Communication at present place of residence"},
-                      {text: "\n(Kindly provide address proof)"}
+                    stack:[
+                      {
+                        text:convertTextToRtl("مدة دفع"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("القسط"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Premium"},
+                      {text:"paying term"},
                     ], 
-                    style: "left",
-                    colSpan:3,
-                    border: [true, true, false, true] 
-                  },{},{},
-                  { 
-                    text:[
-                      {text: convertTextToRtl("عنوان الاتصال في محل الإقامة الحالي")},
-                      {text: "\n("},
-                      {text: convertTextToRtl("يرجى تقديم إثبات ملائم للعنوان")},
-                      {text: ")"},
-                    ],
-                    colSpan: 4,
-                    border: [false, true, true, true],
-                    style: ["right", {fontSize: 10}, "arabic"]
-                  },{},{},{}
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("طريقة الدفع"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("سنوي / نصف سنوي /"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("ربع سنوي /"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("شهرية / قسط واحد"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Mode: Yly/ Hly/ "},
+                      {text:"Qly/Mly/S.P."},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("مبلغ التأمين"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl(")بالدولار الأمريكي("),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Sum Assured USD ($)"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("القسط"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl(")بالدولار الأمريكي("),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Premium USD ($)"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("إضافة قسط"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl(")بالدولار الأمريكي("),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Top Up Premium\nUSD ($)"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("مزايا تغطية الحوادث )يرجى"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("ذكرمبلغ التأمين لتغطية)"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Double Accident benefits required (please state the Sum Assured)"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("إذا التاريخ بتاريخ "),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("سابق مطلوب"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Date of commencement (if back dating required)"},
+                    ], 
+                    style:"center"
+                  }
                 ],
                 [
-                  {
-                    text:[
-                      {text: "\n\n\n\n\n\n"},
-                      {text: convertTextToRtl("الدولة / الإمارة")},
-                      {text: "\nCountry / Emirates :"},
-                    ],
-                    colSpan:4,
-                  },{},{},{},
-                  {
-                    text:[
-                      {text: "\n\n\n\n\n\n"},
-                      {text: convertTextToRtl("الدولة / الإمارة")},
-                      {text: "\nCountry / Emirates :"},
-                    ],
-                    colSpan:4,
-                  },{},{},{}
+                  {},{text:"\n\n"},{},{},{},{},{},{},{},{}
                 ],
+                [
+                  {},{text:"\n\n"},{},{},{},{},{},{},{},{}
+                ],
+                [
+                  {},
+                  {
+                    columns:[
+                      {stack:[
+                        {
+                          text:convertTextToRtl("المزايا الإضافية للتأمين، عند الإختيار:"),
+                          style: [{fontSize: 10}, "arabic"]
+                        },
+                        {
+                          text:"For additional insurance riders,if opted"
+                        }
+                      ]},
+                      {stack:[
+                        {
+                          text:convertTextToRtl(")لا / نعم( ميزة حماية الأسرة مطلوبة"),
+                          style: [{fontSize: 10}, "arabic"]
+                        },
+                        {
+                          text:"A) Premium Waiver benefit required"
+                        }
+                      ]},
+                    ],
+                    colSpan:5,
+                    border:[true, true, false, true]
+                  },{},{},{},{},
+                  {
+                    columns:[
+                      {stack:[
+                        {
+                          text:"YES",
+                          style: [{fontSize: 10}]
+                        },
+                        {
+                          text:"NO",
+                          style: [{fontSize: 10}]
+                        },
+                      ]},
+                      {stack:[
+                        {
+                          image : "./assets/images/uncheck.png",
+                          width: 10,
+                          border:[false,false,false,false],
+                          style:"center"
+                        },
+                        {text:"\n", style:{fontSize:3}},
+                        {
+                          image : "./assets/images/uncheck.png",
+                          width: 10,
+                          border:[false,false,false,false],
+                          style:"center"
+                        }
+                      ]},
+                    ],
+                    border:[false, true, false, true]
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl(")لا / نعم( ميزة حماية الأسرة مطلوبة"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:"B) Family Protection benefit required"
+                      }
+                    ],
+                    colSpan:2,
+                    border:[false, true, false, true]
+                  },{},
+                  {
+                    columns:[
+                      {stack:[
+                        {
+                          text:"YES",
+                          style: [{fontSize: 10}]
+                        },
+                        {
+                          text:"NO",
+                          style: [{fontSize: 10}]
+                        },
+                      ]},
+                      {stack:[
+                        {
+                          image : "./assets/images/uncheck.png",
+                          width: 10,
+                          border:[false,false,false,false],
+                          style:"center"
+                        },
+                        {text:"\n", style:{fontSize:3}},
+                        {
+                          image : "./assets/images/uncheck.png",
+                          width: 10,
+                          border:[false,false,false,false],
+                          style:"center"
+                        }
+                      ]}
+                    ],
+                    border:[false, true, true, true]
+                  }
+                ]
+              ],
+            }
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingBottom: (i, node) => 2,
+              paddingTop: (i, node) => 2,
+            },
+            margin:[0,10],
+            table: {
+              widths: [
+                10,"*","*","*","*","*","*","*","*","*"
+              ],
+              body: [
+                [
+                  {text:"16."},
+                  {
+                    columns:[
+                      {text:"Details of the previous insurance including policies with disability or critical illness cover with any insurance company worldwide."},
+                      {
+                        stack:[
+                          {
+                            text:convertTextToRtl("تفاصيل التأمين السابق الخاصة بالإعاقة أو تغطية الأمراض الخطيرة مع أي شركة تأمين في جميع"),
+                            style: ["right", {fontSize: 10}, "arabic"]
+                          },
+                          {
+                            text:convertTextToRtl("أنحاء العالم؟ إذا كانت الإجابة بنعم ، يرجى إكمال التفاصيل أدناه"),
+                            style: ["right", {fontSize: 10}, "arabic"]
+                          },
+                        ]
+                      }
+                    ],
+                    colSpan:9
+                  },{},{},{},{},{},{},{},{}
+                ],
+                [
+                  {},{},
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("أرقام بوليصة التأمين"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Policy Numbers"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("اسم شركة التأمين"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Name of"},
+                      {text:"Insurance Company"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("سنة الإصدار"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Year Of Issue"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("المزايا و مبلغ تغطية التأمين"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl(")بالدولار الأمريكي("),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Sum Assured USD ($)"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("مع أو بدون التأمين"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("ضد الحوادث"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Accident Benefit\nYES/NO"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("فترة البوليصة"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Policy Term"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("سبب تغطية التأمين"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Purpose for Cover"},
+                    ], 
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("الوضع الحالي"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("لوثيقة التأمين"),
+                        style: [{fontSize: 10}, "arabic"]
+                      },
+                      {text:"Present Status"},
+                      {text:"of the policy"},
+                    ], 
+                    style:"center"
+                  },
+                ],
+                [
+                  {},{text:"\n\n"},{},{},{},{},{},{},{},{}
+                ],
+                [
+                  {},{text:"\n\n"},{},{},{},{},{},{},{},{}
+                ],
+                [
+                  {},
+                  {
+                    columns:[
+                      {stack:[
+                        {
+                          text:"Please Note: The Company does not entertain any fresh proposal for insurance where a policy has lapsed or has been converted into paid up policy within the last three years or surrendered in last year."
+                        }
+                      ]},
+                      {stack:[
+                        {
+                          text:convertTextToRtl("ملاحظة : يُرجى العلم أن الشركة لا تقدم أي طلب جديد للتأمين في حالة انقضاء أحد وثائق التأمين أو"),
+                          style: [{fontSize: 10}, "arabic"]
+                        },
+                        {
+                          text:convertTextToRtl("إذا تم تحويلها إلى وثيقة مدفوعة خلال السنوات الثلاث الأخيرة أو تسليمها في العام الماضي."),
+                          style: [{fontSize: 10}, "arabic"]
+                        },
+                      ], style:"right"},
+                    ],
+                    colSpan:9,
+                  },
+                  {},{},{},{},{},{},{},{}
+                ]
               ],
             }
           }
@@ -485,7 +452,7 @@ const Page_3 = ({
               paddingTop: (i, node) => 0
             },
             table: {
-              widths: [550],
+              widths: [750],
               body: [
                 [
                   {
@@ -504,3 +471,5 @@ const Page_3 = ({
 }
 
 module.exports = Page_3
+
+

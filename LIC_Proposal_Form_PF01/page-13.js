@@ -12,193 +12,94 @@ const Page_13 = ({
           {
             border: [false, false, false, false],
             layout:{
-              paddingBottom: (i, node) => 0,
-              paddingTop: (i, node) => 1,
-            },
-            table: {
-              widths: [
-                "*",200,"*","*","*"
-              ],
-              body: [
-                [
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("رقم وثيقة التأمين"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Policy No.", style:"center" },
-                    ],
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("شركات التأمين التي تم شراء وثائق"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("التأمين السابقة منها وعنوانها"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Insurance companies from where previous policy / policies have been purchased with address*", style:"center" },
-                    ],
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("مبلغ التأمين"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Sum Assured", style:"center" },
-                    ],
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الخطة والمدة"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Plan and Term", style:"center" },
-                    ],
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الوضع الحالي"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("لوثيقة التأمين"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Present status of the policy", style:"center" },
-                    ],
-                  },
-                ],
-                [
-                  {text:"\n\n"},{},{},{},{}
-                ],
-                [
-                  {text:"\n\n"},{},{},{},{}
-                ],
-                [
-                  {text:"\n\n"},{},{},{},{}
-                ],
-                [
-                  {text:"\n\n"},{},{},{},{}
-                ]
-              ],
-            }
-          }
-        ],
-        [
-          {
-            border: [false, false, false, false],
-            layout:{
-              paddingBottom: (i, node) => -3,
-              paddingTop: (i, node) => -2,
-            },
-            table: {
-              widths: [
-                "*","*"
-              ],
-              body: [
-                [
-                  {
-                    border:[false,false,false,false],
-                    text:"*If previous policies from LIC (International) BSC (C) please give name of the branch office"
-                  },
-                  {
-                    border:[false,false,false,false],
-                    stack:[
-                      {
-                        text:convertTextToRtl("إذا كانت البوالص السابقة من شركة التأمين على الحياة العالمية( ش.م.ب"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:[
-                          {text: "("},
-                          {text: "مقفلة"},
-                          {text: ")"},
-                          {text: "أذكر اسم مكتب الفرع"},
-                        ],
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                    ],
-                  },
-                ]
-              ],
-            }
-          }
-        ],
-        [
-          {
-            border: [false, false, false, false],
-            layout:{
-              paddingBottom: (i, node) => 0,
+              paddingBottom: (i, node) => -5,
               paddingTop: (i, node) => 0,
             },
             table: {
-              widths: [
-                12,"*","*"
-              ],
+              widths: [ 275,275 ],
               body: [
                 [
-                  {text:"17" },
-                  {
-                    text:"Do you agree to the condition that the policy if issued on the basis of this proposal, will be automatically vest in the life to be assured on the deferred date (Applicable only in case of proposal on the life of minor)",
-                    style: "justify",
-                    border:[true,true,false,true],
-                  },
-                  {
+                  { 
                     stack:[
-                      {
-                        text:convertTextToRtl("هل توافق على شرط أن البوليصة في حالة إصدارها على أساس هذا الطلب،"),
-                        style: ["right", {fontSize: 10}, "arabic"]
+                      { 
+                        text:"I hereby confirm that the information provided above is true, accurate and complete.",
                       },
-                      {
-                        text:convertTextToRtl("سوف تكون مستحقة تلقائيا للشخص المراد التأمين على حياته في التاريخ"),
-                        style: ["right", {fontSize: 10}, "arabic"]
+                      { 
+                        text:"Subject to applicable local laws, I hereby consent for the LIC International) BSC(C) or any of its affiliates (including branches) (collectively 'the Company') to share my information with domestic or overseas regulators or tax authorities where necessary to establish our tax liability in any jurisdiction.",
                       },
-                      {text:[
-                        {text:"("},
-                        {text:"ينطبق فقط في حالة تقديم طلب تامين على حياة شخص قاصر"},
-                        {text:") "},
-                        {text:"المؤجل"},
-                      ],style: ["right", {fontSize: 10}, "arabic"]}
-                    ],
-                    border:[false,true,true,true],
+                      { 
+                        text:"I agree and undertake to notify the Company within 30 calendar days if there is a change in any information which I have provided to the Company.",
+                      },
+                    ], 
+                    style: "justify",
+                    border: [false, false, false, false] ,
                   },
-                ],
+                  { 
+                    stack:[
+                      { 
+                        text:convertTextToRtl("اقر بموجبه ان المعلومات المدرجة صحيحة ودقيقة وكاملة"),
+                      },
+                      { 
+                        text:convertTextToRtl("بالخضوع لأحكام القوانين المحلية السارية، أقر بموافقتي على ان تشارك شركة "),
+                      },
+                      { 
+                        text:convertTextToRtl("التأمين على الحياة) العالمية( ش. م.ب )مقفلة( او أي من التابعين لها )بما في"),
+                      },
+                      { 
+                        text:convertTextToRtl("ذلك الافرع( )والمشار إليهم اجمالاً باصطلاح الشركة ( المعلومات مع المنظمين"),
+                      },
+                      { 
+                        text:convertTextToRtl("او سلطات الضرائب المحلية او الخارجية عند معلومات الضرورة لتحديد "),
+                      },
+                      { 
+                        text:convertTextToRtl("لتحديد التزاماتي الضريبية في أي ولاية قضائية"),
+                      },
+                      { 
+                        text:convertTextToRtl("وأقر واتحمل مسؤولية اخطار الشركة خلال ٣٠ يوم ميلادي في حالة حدوث"),
+                      },
+                      { 
+                        text:convertTextToRtl("تغيير في أي من المعلومات التي قدمتها للشركة"),
+                      },
+                      {text:"\n", style:{fontSize:6}}
+                    ],
+                    border: [false, false, false, false],
+                    style: ["right", {fontSize: 10}, "arabic"]
+                  }
+                ]
+              ],
+            }
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingBottom: (i, node) => 2,
+              paddingTop: (i, node) => 2,
+            },
+            fontSize : 10,
+            table: {
+              widths: [ 200, 200, 140 ],
+              body: [
                 [
                   {
-                    border: [false, false, false, false],
-                    text:[
-                      {
-                        text:"Part C: ",
-                        style: ["left", {fontSize: 14}, "Arial", "bold"]
-                      },
-                      {
-                        text:"Declaration by Proposer/Life to be Assured",
-                        style: ["left", {fontSize: 11}, "Arial", "bold"]
-                      }
-                    ],
-                    colSpan:2
-                  },{},
+                    text:"الاسم\tName",
+                    style:["center",{fillColor: '#f8eff2'}]
+                  },
                   {
-                    border: [false, false, false, false],
-                    text:[
-                      {
-                        text:convertTextToRtl("إقرار مقدم الطلب / المؤمن على حياته العرض "),
-                        style: ["right", {fontSize: 12}, "arabic", "bold"]
-                      },
-                      {
-                        text:convertTextToRtl("الجزء جـ:"),
-                        style: ["right", {fontSize: 15}, "arabic", "bold"]
-                      }
-                    ]
+                    text:"التوقيع\tSignature",
+                    style:["center",{fillColor: '#f8eff2'}]
+                  },
+                  {
+                    text:"التاريخ\tDate",
+                    style:["center",{fillColor: '#f8eff2'}]
                   }
                 ],
+                [
+                  {text:"\n\n\n"},//DYNAMIC
+                  {text:"\n\n\n"},//DYNAMIC
+                  {text:"\n\n\n"},//DYNAMIC
+                ]
               ],
             }
           }
@@ -207,127 +108,287 @@ const Page_13 = ({
           {
             border: [false, false, false, false],
             layout:{
-              paddingBottom: (i, node) => 0,
-              paddingTop: (i, node) => -3,
+              paddingBottom: (i, node) => -5,
+              paddingTop: (i, node) => 0,
             },
             table: {
-              widths: [ 550 ],
+              widths: [ 275,275 ],
+              body: [
+                [
+                  { 
+                    stack:[
+                      { 
+                        text:"List of the documents attached with proposal Form (Please tick mark the appropriate box): ",
+                      },
+                    ], 
+                    style: ["justify", "bold"],
+                    border: [false, false, false, false] ,
+                  },
+                  { 
+                    stack:[
+                      { 
+                        text:convertTextToRtl("قائمة الوثائق المرفقة مع نموذج الطلب: )يرجى وضع علامة في المربع "),
+                      },
+                      { 
+                        text:convertTextToRtl("المناسب(:"),
+                      }
+                    ],
+                    border: [false, false, false, false],
+                    style: ["right", {fontSize: 10}, "arabic", "bold"]
+                  }
+                ]
+              ],
+            }
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingBottom: (i, node) => 2,
+              paddingTop: (i, node) => 2,
+            },
+            table: {
+              widths: [15,155,155,60,60,60],
               body: [
                 [
                   {
-                    border:[false,false,false,false],
                     stack:[
-                      { text :[
-                        {text:"("},
-                        {text:convertTextToRtl("اسم مقدم الطلب")},
-                        {text:")_________________________________"},
-                        {text:"__________________________________"},
-                        {text:"__________________________________"},
-                        {text:"أقر ۱ "}
-                      ]},
-                      { text :[
-                        {text:convertTextToRtl("بموجب هذا أن البيانات والإجابات السابقة الواردة في جزء أ وب أعلاه قد قمت بتقديمها بعد فهمي الكامل لها وأقر بصحتها، كما أقر بعدم حجبي لأي معلومات ")},
-                      ]},
-                      { text :[
-                        {text:"("},
-                        {text:convertTextToRtl("المشار إليها فيما بعد باسم الشركة")},
-                        {text:")"},
-                        {text:"("},
-                        {text:"مقفلة"},
-                        {text:")"},
-                        {text:"ش.م.ب"},
-                        {text:"("},
-                        {text:"العالمية"},
-                        {text:")"},
-                        {text:convertTextToRtl("وأوافق أن تشكل هذه البيانات وهذا الإقرار أساسًا لعقد الضمان بيني وبين شركة التأمين على الحياة")},
-                      ]},
-                      { text :[
-                        {text:convertTextToRtl(" ، وكذلك جزءًا من أي عقد لوثيقة التأمين يُصدر بموجبها. كما أنني أدرك تماما وأوافق على أنه في وجود أي معلومات غير صحيحة في هذا العقد، يكون العقد")},
-                      ]},
-                      { text :[
-                        {text:convertTextToRtl("المذكور باطلا، ويحق للشركة مصادرة الأموال المدفوعة")},
-                      ]},
-                      { text :[
-                        { text: "1. I/we ______________________" },
-                        { text: "______________________________" },
-                        { text: "______________________________" },
-                        { text: "(Name of the proposer/s)," },
-                        { text:"do hereby declare that the foregoing statements and answers in part A and part B above have been given by me after fully understanding the questions and the same are true and complete in every particular and that I have not withheld any information and do hereby agree and declare that these statements and this declaration shall be basis of the contract of assurance between me and Life Insurance Corporation (International) B.S.C.(C) (referred as 'the Company' hereinafter). I agree that they shall form a part of any Policy contract that may be issued on the strength thereof. I am also fully aware and agreeing that if any untrue information be contained therein, the said contract shall be absolutely Null and Void and moneys which shall have been paid in respect thereof shall stand forfeited to the Company." },
-                      ], style: ["justify", "Arial", {fontSize: 8.5}]},
+                      {
+                        text:"\n",
+                        style: {fontSize: 4}
+                      },
+                      {
+                        text:"A",
+                        style: ["center", {fontSize: 9}, "Times", "bold"]
+                      },
+                    ], 
+                    border:[false,true,false,true],
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:"\n",
+                        style: {fontSize: 4}
+                      },
+                      {
+                        text:"Proof of identity",
+                        style: ["center", {fontSize: 9}, "Times"]
+                      },
                     ],
-                    style: ["right", {fontSize: 10}, "arabic"]
+                    border:[false,true,false,true],
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("إثبات الهوية"),
+                        style: ["center", {fontSize: 9}, "Times"]
+                      },
+                    ], 
+                    border:[false,true,false,true],
+                    style:["arabic","right"]
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("مقدم الطلب ۱"),
+                        style: ["center", {fontSize: 9.5}, "arabic"]
+                      },
+                      {
+                        text:"Proposer 1",
+                        style: ["center", {fontSize: 9}, "Times"]
+                      },
+                    ],
+                    border:[false,true,false,true],
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("مقدم الطلب ۲"),
+                        style: ["center", {fontSize: 9.5}, "arabic"]
+                      },
+                      {
+                        text:"Proposer 2",
+                        style: ["center", {fontSize: 9}, "Times"]
+                      },
+                    ],
+                    border:[false,true,false,true],
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("معين"),
+                        style: ["center", {fontSize: 9.5}, "arabic"]
+                      },
+                      {
+                        text:"Appointee",
+                        style: ["center", {fontSize: 9}, "Times"]
+                      },
+                    ],
+                    border:[false,true,false,true],
+                    style:"center"
                   },
                 ],
                 [
                   {
-                    border:[false,false,false,false],
                     stack:[
-                      { text :[
-                        {text:convertTextToRtl(". لقد فهمت بالكامل شروط وأحكام الخطة المقترحة ومزايا الاستحقاق والوفاة المتاحة في إطار الخطة المقترحة.")},
-                        {text:"۲"},
-                      ]},
-                      { text :[
-                        { text: "2. I/we have fully understood the terms and conditions of the proposed plan and maturity and death benefits available under the proposed plan." },
-                      ], style: ["justify", "Arial", {fontSize: 8.5}]},
+                      {
+                        text:"\n",
+                        style: {fontSize: 4}
+                      },
+                      {
+                        text:"1",
+                        style: ["center", {fontSize: 9}, "Times", "bold"]
+                      },
+                    ], 
+                    border:[false,true,false,false],
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:"Photocopy of CPR / Emirate ID /",
+                        style: ["left", {fontSize: 9}, "Times"]
+                      },
+                      {
+                        text:"National ID Card (both sides)",
+                        style: ["left", {fontSize: 9}, "Times"]
+                      },
                     ],
-                    style: ["right", {fontSize: 10}, "arabic"]
+                    border:[false,true,false,false],
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("نسخة من البطاقة السكانية / بطاقة الهوية"),
+                        style: ["right", {fontSize: 9}, "Times"]
+                      },
+                      {
+                        text:convertTextToRtl("الإماراتية / بطاقة الهوية الوطنية )كلا الجانبين"),
+                        style: ["right", {fontSize: 9}, "Times"]
+                      },
+                    ],
+                    border:[false,true,false,false],
+                    style:["arabic","right"]
+                  },
+                  {
+                    image : "./assets/images/uncheck.png",
+                    width: 10,
+                    border:[false,true,false,false],
+                    style:"center"
+                  },
+                  {
+                    image : "./assets/images/uncheck.png",
+                    width: 10,
+                    border:[false,true,false,false],
+                    style:"center"
+                  },
+                  {
+                    image : "./assets/images/check.png",
+                    width: 10,
+                    border:[false,true,false,false],
+                    style:"center"
                   },
                 ],
                 [
                   {
-                    border:[false,false,false,false],
                     stack:[
-                      { text :[
-                        {text:convertTextToRtl("أوافق على أن الضمانات المقترحة في هذه الوثيقة لن يسري العمل بها إلا على أساس الاتصال الرسمي لتحمل المخاطر من قبل الشركة وفقًا لهذا الاقتراح والبيان")},
-                        {text:"۳"},
-                      ]},
-                      { text :[
-                        {text:convertTextToRtl("الشخصي والتقارير الطبية الخاصة بحالتي الصحية التي قد تطلبها الشركة")},
-                      ]},
-                      { text :[
-                        { text: "3. I/we further agree that the assurance proposed herein shall commence only on formal communication of assumption of risk by the Company on the basis of this proposal and personal statement and such medical reports on my state of health as may be required by the Company." },
-                      ], style: ["justify", "Arial", {fontSize: 8.5}]},
+                      {
+                        text:"2",
+                        style: ["center", {fontSize: 9}, "Times", "bold"]
+                      },
+                    ], 
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:"Photocopy of Passport\n",
+                        style: ["left", {fontSize: 9}, "Times"]
+                      },
                     ],
-                    style: ["right", {fontSize: 10}, "arabic"]
+                    border:[false,false,false,false],
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("نسخة من جواز السفر"),
+                        style: ["right", {fontSize: 9}, "Times"]
+                      },
+                    ],
+                    border:[false,false,false,false],
+                    style:["arabic","right"]
+                  },
+                  {
+                    image : "./assets/images/uncheck.png",
+                    width: 10,
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                  {
+                    image : "./assets/images/uncheck.png",
+                    width: 10,
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                  {
+                    image : "./assets/images/check.png",
+                    width: 10,
+                    border:[false,false,false,false],
+                    style:"center"
                   },
                 ],
                 [
                   {
-                    border:[false,false,false,false],
                     stack:[
-                      { text :[
-                        {text:convertTextToRtl("وأوافق كذلك أن أبلغ الشركة على الفور، بعد تاريخ تقديم الطلب وقبل إصدار إيصال الاستلام الأول، كتابة بأي تغيير يطرأ على مهنتي أو مركزي المالي أو صحتي ")},
-                        {text:"۴"},
-                      ]},
-                      { text :[
-                        {text:convertTextToRtl("العامة أو أي تغيير يطرأ على أي فرد من أفراد أسرتي، لإعادة النظر في شروط قبول الضمان أي تقصير من جانبي في أداء ذلك يجعل هذا الضمان باطلا ويحق")},
-                      ]},
-                      { text :[
-                        {text:convertTextToRtl("ويحق للشركة مصادرة كافة الأموال المدفوعة")},
-                      ]},
-                      { text :[
-                        { text: "4. I/we further agree that after the date of submission of the proposal but before the issue of First Premium Receipt, any change in my occupation, financial position and the general health or that of any member of my family occur, I shall forthwith intimate the same to the Company in writing to reconsider the terms of acceptance of assurance. Any omission on my part to do so shall render this assurance invalid and all money which shall have been paid in respect thereof shall stand forfeited to the company." },
-                      ], style: ["justify", "Arial", {fontSize: 8.5}]},
-                    ],
-                    style: ["right", {fontSize: 10}, "arabic"]
+                      {
+                        text:"3",
+                        style: ["center", {fontSize: 9}, "Times", "bold"]
+                      },
+                    ], 
+                    border:[false,false,false,true],
+                    style:"center"
                   },
-                ],
-                [
                   {
-                    border:[false,false,false,false],
                     stack:[
-                      { text :[
-                        {text:convertTextToRtl("أفوض بموجب هذا أي طبيب أو مستشفى أو شركة تأمين أو أي منظمة أخرى لديها أي سجلات أو معلومات ذات صلة بصحتي بتقديم أي وجميع هذه المعلومات")},
-                        {text:"۵"},
-                      ]},
-                      { text :[
-                        {text:convertTextToRtl("إلى الشركة على أن تكون صورة هذا التفويض مطابقة للأصل")},
-                      ]},
-                      { text :[
-                        { text: "5. I/we hereby authorize any medical practitioner, physician, hospital, Insurance Company or any other organization, which has any records or knowledge of me or my health to provide any and all such information to the Company. A photocopy of this authorization shall be as valid as the original." },
-                      ], style: ["justify", "Arial", {fontSize: 8.5}]},
+                      {
+                        text:"Others (please specify)\n",
+                        style: ["left", {fontSize: 9}, "Times"]
+                      },
                     ],
-                    style: ["right", {fontSize: 10}, "arabic"]
+                    border:[false,false,false,true],
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("أخرى / يرجى التحديد"),
+                        style: ["right", {fontSize: 9}, "Times"]
+                      },
+                    ],
+                    border:[false,false,false,true],
+                    style:["arabic","right"]
+                  },
+                  {
+                    image : "./assets/images/uncheck.png",
+                    width: 10,
+                    border:[false,false,false,true],
+                    style:"center"
+                  },
+                  {
+                    image : "./assets/images/uncheck.png",
+                    width: 10,
+                    border:[false,false,false,true],
+                    style:"center"
+                  },
+                  {
+                    image : "./assets/images/check.png",
+                    width: 10,
+                    border:[false,false,false,true],
+                    style:"center"
                   },
                 ],
               ],
@@ -338,7 +399,543 @@ const Page_13 = ({
           {
             border: [false, false, false, false],
             layout:{
-              paddingTop: (i, node) => 0
+              paddingBottom: (i, node) => -5,
+              paddingTop: (i, node) => 0,
+            },
+            table: {
+              widths: [ 275,275 ],
+              body: [
+                [
+                  { 
+                    stack:[
+                      { 
+                        text:"B. Proofs of Permanent Address and Present Residential Address (if it is different from that of permanent address): ",
+                      },
+                    ], 
+                    style: ["justify", "bold"],
+                    border: [false, false, false, false] ,
+                  },
+                  { 
+                    stack:[
+                      { 
+                        text:convertTextToRtl("إثباتات العنوان الدائم وعنوان السكن الحالي )يرجى تقديم دليل على"),
+                      },
+                      { 
+                        text:convertTextToRtl("العنوان الدائم وإذا كان مختلفا عن العنوان الدائم(:"),
+                      }
+                    ],
+                    border: [false, false, false, false],
+                    style: ["right", {fontSize: 10}, "arabic", "bold"]
+                  }
+                ]
+              ],
+            }
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingBottom: (i, node) => 2,
+              paddingTop: (i, node) => 2,
+            },
+            table: {
+              widths: [15,155,155,60,60,60],
+              body: [
+                [
+                  {
+                    stack:[
+                      {
+                        text:"\n",
+                        style: {fontSize: 4}
+                      },
+                      {
+                        text:"1",
+                        style: ["center", {fontSize: 9}, "Times", "bold"]
+                      },
+                    ], 
+                    border:[false,true,false,false],
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:"Photocopy of Passport with VISA &",
+                        style: ["left", {fontSize: 9}, "Times"]
+                      },
+                      {
+                        text:"Permanent Address pages",
+                        style: ["left", {fontSize: 9}, "Times"]
+                      },
+                    ],
+                    border:[false,true,false,false],
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("نسخة من جواز السفر مع صفحات فيزا والعنوان"),
+                        style: ["right", {fontSize: 9}, "Times"]
+                      },
+                      {
+                        text:convertTextToRtl("الدائم"),
+                        style: ["right", {fontSize: 9}, "Times"]
+                      },
+                    ],
+                    border:[false,true,false,false],
+                    style:["arabic","right"]
+                  },
+                  {
+                    image : "./assets/images/uncheck.png",
+                    width: 10,
+                    border:[false,true,false,false],
+                    style:"center"
+                  },
+                  {
+                    image : "./assets/images/uncheck.png",
+                    width: 10,
+                    border:[false,true,false,false],
+                    style:"center"
+                  },
+                  {
+                    image : "./assets/images/check.png",
+                    width: 10,
+                    border:[false,true,false,false],
+                    style:"center"
+                  },
+                ],
+                [
+                  {
+                    stack:[
+                      {
+                        text:"2",
+                        style: ["center", {fontSize: 9}, "Times", "bold"]
+                      },
+                    ], 
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:"Information printout of National ID Card",
+                        style: ["left", {fontSize: 9}, "Times"]
+                      },
+                    ],
+                    border:[false,false,false,false],
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("نسخه من البطاقة الذكية لبطاقة الهوية الوطنية"),
+                        style: ["right", {fontSize: 9}, "arabic"]
+                      },
+                    ],
+                    border:[false,false,false,false],
+                    style:["arabic","right"]
+                  },
+                  {
+                    image : "./assets/images/uncheck.png",
+                    width: 10,
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                  {
+                    image : "./assets/images/uncheck.png",
+                    width: 10,
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                  {
+                    image : "./assets/images/check.png",
+                    width: 10,
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                ],
+                [
+                  {
+                    stack:[
+                      {
+                        text:"3",
+                        style: ["center", {fontSize: 9}, "Times", "bold"]
+                      },
+                    ], 
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:"Latest Electricity Bill or Telephone Bill / Bank Statement",
+                        style: ["left", {fontSize: 9}, "Times"]
+                      },
+                    ],
+                    border:[false,false,false,false],
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("حدث فاتورة كهرباء أو فاتورة هاتف / كشف"),
+                        style: ["right", {fontSize: 9}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("حساب بنكي" ),
+                        style: ["right", {fontSize: 9}, "arabic"]
+                      },
+                    ],
+                    border:[false,false,false,false],
+                    style:["arabic","right"]
+                  },
+                  {
+                    image : "./assets/images/uncheck.png",
+                    width: 10,
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                  {
+                    image : "./assets/images/uncheck.png",
+                    width: 10,
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                  {
+                    image : "./assets/images/check.png",
+                    width: 10,
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                ],
+                [
+                  {
+                    stack:[
+                      {
+                        text:"4",
+                        style: ["center", {fontSize: 9}, "Times", "bold"]
+                      },
+                    ], 
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:"Photocopy of Valid driving license (Bahrain only)",
+                        style: ["left", {fontSize: 9}, "Times"]
+                      },
+                    ],
+                    border:[false,false,false,false],
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("رخصة قيادة سارية - البحرين فقط"),
+                        style: ["right", {fontSize: 9}, "arabic"]
+                      },
+                    ],
+                    border:[false,false,false,false],
+                    style:["arabic","right"]
+                  },
+                  {
+                    image : "./assets/images/uncheck.png",
+                    width: 10,
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                  {
+                    image : "./assets/images/uncheck.png",
+                    width: 10,
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                  {
+                    image : "./assets/images/check.png",
+                    width: 10,
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                ],
+                [
+                  {
+                    stack:[
+                      {
+                        text:"5",
+                        style: ["center", {fontSize: 9}, "Times", "bold"]
+                      },
+                    ], 
+                    border:[false,false,false,true],
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:"Others (please specify)\n",
+                        style: ["left", {fontSize: 9}, "Times"]
+                      },
+                    ],
+                    border:[false,false,false,true],
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("أخرى / يرجى التحديد"),
+                        style: ["right", {fontSize: 9}, "Times"]
+                      },
+                    ],
+                    border:[false,false,false,true],
+                    style:["arabic","right"]
+                  },
+                  {
+                    image : "./assets/images/uncheck.png",
+                    width: 10,
+                    border:[false,false,false,true],
+                    style:"center"
+                  },
+                  {
+                    image : "./assets/images/uncheck.png",
+                    width: 10,
+                    border:[false,false,false,true],
+                    style:"center"
+                  },
+                  {
+                    image : "./assets/images/check.png",
+                    width: 10,
+                    border:[false,false,false,true],
+                    style:"center"
+                  },
+                ],
+              ],
+            }
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingBottom: (i, node) => -5,
+              paddingTop: (i, node) => 0,
+            },
+            table: {
+              widths: [ 275,275 ],
+              body: [
+                [
+                  { 
+                    stack:[
+                      { 
+                        text:"C. Proof for Source of income /funds for payment of premium",
+                      },
+                    ], 
+                    style: ["justify", "bold"],
+                    border: [false, false, false, false] ,
+                  },
+                  { 
+                    stack:[
+                      { 
+                        text:convertTextToRtl("مصدر الدخل المعلن / المقدم لدفع قسط التأمين"),
+                      }
+                    ],
+                    border: [false, false, false, false],
+                    style: ["right", {fontSize: 10}, "arabic", "bold"]
+                  }
+                ]
+              ],
+            }
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingBottom: (i, node) => 2,
+              paddingTop: (i, node) => 2,
+            },
+            table: {
+              widths: [15,225,155,10,40,60],
+              body: [
+                [
+                  {
+                    stack:[
+                      {
+                        text:"\n",
+                        style: {fontSize: 4}
+                      },
+                      {
+                        text:"1",
+                        style: ["center", {fontSize: 9}, "Times", "bold"]
+                      },
+                    ], 
+                    border:[false,true,false,false],
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:"For salaried income: Copy of latest Salary Certificate/ Pay slip or Bank Account Statement etc.,",
+                        style: ["justify", {fontSize: 9}, "Times"]
+                      }
+                    ],
+                    border:[false,true,false,false],
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("للراتب: كشف للحساب البنكي أو نسخة من أحدث شهادة راتب"),
+                        style: ["right", {fontSize: 9}, "Times"]
+                      },
+                    ],
+                    border:[false,true,false,false],
+                    style:["arabic","right"],
+                    colSpan:3
+                  },{},{},
+                  {
+                    image : "./assets/images/check.png",
+                    width: 10,
+                    border:[false,true,false,false],
+                    style:"center"
+                  },
+                ],
+                [
+                  {
+                    stack:[
+                      {
+                        text:"2",
+                        style: ["center", {fontSize: 9}, "Times", "bold"]
+                      },
+                    ], 
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:"For self-employed/Business Person:",
+                        style: ["left", {fontSize: 9}, "Times"]
+                      },
+                      {
+                        text:"a. Copy of Bank Statement for last 3/6 months",
+                        style: ["left", {fontSize: 9}, "Times"]
+                      },
+                      {
+                        text:"b. Copies of Audited financial statement of accounts for last 3 years & CR or Trade License copy",
+                        style: ["left", {fontSize: 9}, "Times"]
+                      },
+                    ],
+                    border:[false,false,false,false],
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("صاحب العمل :"),
+                        style: ["right", {fontSize: 9}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("ا. نسخة من كشف الحساب البنكي لآخر ٦/٣ أشهر "),
+                        style: ["right", {fontSize: 9}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("ب. أشهر كشف الحساب المالي المدقق لآخر ٣ سنوات ونسخة من السجل  "),
+                        style: ["right", {fontSize: 9}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("التجاري أو الرخصة التجارية"),
+                        style: ["right", {fontSize: 9}, "arabic"]
+                      },
+                    ],
+                    border:[false,false,false,false],
+                    style:["arabic","right"],
+                    colSpan:3
+                  },{},{},
+                  {
+                    image : "./assets/images/check.png",
+                    width: 10,
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                ],
+                [
+                  {
+                    stack:[
+                      {
+                        text:"3",
+                        style: ["center", {fontSize: 9}, "Times", "bold"]
+                      },
+                    ], 
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                  {
+                    stack:[
+                      {
+                        text:"Other Source / Income (please specify and provide documentory proof)\n",
+                        style: ["left", {fontSize: 9}, "Times"]
+                      },
+                    ],
+                    border:[false,false,false,false],
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("مصدر / مدخول آخر ) الرجاء تحديد وتقديم وثائق الإثبات("),
+                        style: ["right", {fontSize: 9}, "Times"]
+                      },
+                    ],
+                    border:[false,false,false,false],
+                    style:["arabic","right"],
+                    colSpan:3
+                  },{},{},
+                  {
+                    image : "./assets/images/check.png",
+                    width: 10,
+                    border:[false,false,false,false],
+                    style:"center"
+                  },
+                ],
+              ],
+            }
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingBottom: (i, node) => -5,
+              paddingTop: (i, node) => 0,
+            },
+            table: {
+              widths: [ 270,270 ],
+              body: [
+                [
+                  { 
+                    stack:[
+                      "\n","\n",
+                      "_______________________________________________________",
+                      { 
+                        text:"\nSignature of the Consultant / Authorised Official of Broker / Bank",
+                      },
+                    ], 
+                    style: ["center", "bold"],
+                    border: [false, false, false, false] ,
+                  },
+                  { 
+                    stack:[
+                      "\n","\n",
+                      "_______________________________________________________",
+                      { 
+                        text:"\nSignature of the Proposer / Life to be Assured",
+                      }
+                    ],
+                    border: [false, false, false, false],
+                    style: ["center", "bold"],
+                  }
+                ]
+              ],
+            }
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            layout:{
+              paddingTop: (i, node) => 10
             },
             table: {
               widths: [550],

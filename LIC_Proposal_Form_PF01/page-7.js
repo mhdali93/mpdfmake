@@ -5,446 +5,838 @@ const Page_7 = ({
     layout : "customTableLayout",
     pageMargin : [0, 0, 0, 0],
     pageBreak : "after",
-    fontSize : 9.5,
+    fontSize : 9,
     table : {
       body : [
         [
           {
-            border: [false, false, false, false],
             layout:{
-              paddingBottom: (i, node) => 0,
-              paddingTop: (i, node) => 1,
+              paddingTop: (i, node) => 0,
+              paddingBottom: (i, node) => 0
             },
+            border: [false, false, false, false],
+            table: {
+              widths: [280,260],
+              body: [
+                [
+                  {
+                    border: [false, false, false, false],
+                    text:[
+                      {
+                        text:convertTextToRtl("بيان شخصي حول الحالة الصحية الحالية"),
+                        style: ["right", {fontSize: 12}, "arabic", "bold"]
+                      },
+                      {
+                        text:convertTextToRtl("الجزء ب:"),
+                        style: ["right", {fontSize: 15}, "arabic", "bold"]
+                      },
+                      {
+                        text:"\nPart B: ",
+                        style: ["left", {fontSize: 14}, "Arial", "bold"]
+                      },
+                      {
+                        text:"Personal Statement about present state of health",
+                        style: ["left", {fontSize: 12}, "Arial", "bold"]
+                      }
+                    ],
+                    colSpan:2
+                  },{}
+                ],
+                [
+                  {
+                    border: [false, false, false, false],
+                    canvas: [
+                      {
+                        type: 'line',
+                        x1: 0, y1: 0,
+                        x2: 550, y2: 0,
+                        lineWidth: 1
+                      },
+                    ],
+                    colSpan:2
+                  },{}
+                ],
+                [
+                  {
+                    text:"Note: - Please read carefully and answer every Question. Do not use dots, dashes, or Ditto Marks. In case answer is yes please give full details in the space provided or attach separate sheet.",
+                    style:["justify",{fontSize:10}],
+                    border: [false, false, false, false],
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("احظة: يُرجى قراءة كل سؤال بعناية لا تستخدم النقاط أو الخطوط"),
+                        style: ["right", {fontSize: 10}, "arabic", "bold"]
+                      },
+                      {
+                        text:convertTextToRtl("الفاصلة، في حالة الإجابة بنعم، يُرجى سرد التفاصيل الكاملة في"),
+                        style: ["right", {fontSize: 10}, "arabic", "bold"]
+                      },
+                      {
+                        text:convertTextToRtl("المساحة المتوفرة أو إرفاق ورقة منفصلة"),
+                        style: ["right", {fontSize: 10}, "arabic", "bold"]
+                      }
+                    ],
+                    border: [false, false, false, false],
+                  }
+                ],
+                [
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl(")لا يلزم ملء هذا الجزء في حالة عدم وجود وثائق تأمين لتغطية المخاطر("),
+                        style: ["center", {fontSize: 12}, "arabic", "bold"]
+                      },
+                      {
+                        text:"(This part need not be filled in case of without risk cover policies)",
+                        style: ["center", "bold",{fontSize: 10}]
+                      }
+                    ],
+                    border: [false, false, false, false],
+                    colSpan:2
+                  },{}
+                ]
+              ],
+            },
+          }
+        ],
+        [
+          {
+            border: [false, false, false, false],
+            margin:[0,-5,0,0],
             table: {
               widths: [
-                10,"*","*","*","*","*"
+                10,420,100
               ],
               body: [
                 [
-                  {text:"30."},
                   {
+                    text:"no.",style:"header"
+                  },
+                  {
+                    border:[true, true, true, true],
                     text:[
                       {
-                        text:"Are you a member of the armed forces, either full time or part time?\t\t\t",
+                        text:"Question  ",style:"center"
                       },
                       {
-                        text:convertTextToRtl("هل أنت من أفراد القوات المسلحة، سواء بدوام كامل أو جزئي؟"),
+                        text:convertTextToRtl("السؤال"),
                         style: ["right", {fontSize: 10}, "arabic"]
                       },
                     ],
                     // border:[true, true, false, true],
-                    style:"justify",
-                    colSpan:5
-                  },{},{},{},{}
-                ],
-                [
-                  {
-                    text:"YES / NO\tIf yes, please provide details.\n\n",
-                    colSpan:3,
-                    style: "center"
-                  },{},{},
-                  {
-                    text:"YES / NO\tIf yes, please provide details.\n\n",
-                    style: "center",
-                    colSpan:3
-                  },{},{}
-                ],
-                [
-                  {text:"31."},
-                  {
-                    text:[
-                      {
-                        text:"Do you take part in or have definite plans to take part in any sports, recreations, pastime or activities that may be considered hazardous? For example Scuba diving, motor racing, rock climbing, private flying etc.?",
-                      }
-                    ],
-                    border:[true, true, false, true],
-                    style:"justify",
-                    colSpan:2
-                  },{},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("هل تشارك في أو لديك خطط محددة للمشاركة في أي رياضة أو"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl(" تسلية أو أنشطة يمكن اعتبارها خطرة؟ على سبيل المثال"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("غوص سكوبا، أو سباق السيارات أو تسلق الصخور أو الطيران الخاص"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl(" ذلك؟ إذا كانت الإجابة بنعم، أكمل الاستبيان ذي الصلة."),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                    ],
-                    border:[false, true, true, true],
-                    style:"justify",
-                    colSpan:3
-                  },{},{}
-                ],
-                [
-                  {
-                    text:"YES / NO\tIf yes, please provide details.\n\n",
-                    colSpan:3,
-                    style: "center"
-                  },{},{},
-                  {
-                    text:"YES / NO\tIf yes, please provide details.\n\n",
-                    style: "center",
-                    colSpan:3
-                  },{},{}
-                ],
-                [
-                  {text:"32."},
-                  {
-                    text:[
-                      {
-                        text:"Are you holding any honorary or regulatory or legisla- tive, government authority or position?",
-                      }
-                    ],
-                    border:[true, true, false, true],
-                    style:"justify",
-                    colSpan:2
-                  },{},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("هل تتقلد أي سلطة أو منصب حكومي فخري أو تنظيمي أو تشريعي؟"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      }
-                    ],
-                    border:[false, true, true, true],
-                    style:"justify",
-                    colSpan:3
-                  },{},{}
-                ],
-                [
-                  {
-                    text:"YES / NO\tIf yes, please provide details.\n\n",
-                    colSpan:3,
-                    style: "center"
-                  },{},{},
-                  {
-                    text:"YES / NO\tIf yes, please provide details.\n\n",
-                    style: "center",
-                    colSpan:3
-                  },{},{}
-                ],
-                [
-                  {text:"33."},
-                  {
-                    text:[
-                      {
-                        text:"Are any of your close relatives - parents, spouse, children brothers, sisters are holding any Government, Judiciary or Military position or holding a political position?",
-                      }
-                    ],
-                    border:[true, true, false, true],
-                    style:"justify",
-                    colSpan:2
-                  },{},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("هل يعمل أي من اقربائك من الدرجة الأولى -  الوالدين"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("الزوج الزوجة، الأبناء، الاخوة ، أو الاخوات في أي وظيفة قضائية أو"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl("عسكرية أو لهم منصب سياسي؟"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      }
-                    ],
-                    border:[false, true, true, true],
-                    style:"justify",
-                    colSpan:3
-                  },{},{}
-                ],
-                [
-                  {
-                    text:"YES / NO\tIf yes, please provide details.\n\n",
-                    colSpan:3,
-                    style: "center"
-                  },{},{},
-                  {
-                    text:"YES / NO\tIf yes, please provide details.\n\n",
-                    style: "center",
-                    colSpan:3
-                  },{},{}
-                ],
-                [
-                  {text: "Name: ", colSpan:3},{},{},
-                  {text: "Name: ", colSpan:3},{},{}
-                ],
-                [
-                  {text: "Relation: ", colSpan:2},{},
-                  {text: "Position: "},
-                  {text: "Relation: ", colSpan:2},{},
-                  {text: "Position: "},
-                ],
-                [
-                  {text:"34."},
-                  {
-                    text:[
-                      {
-                        text:"Have you in previous 12 months travelled or in the following 12 months intend to undertake travel outside the country of residence?",
-                      }
-                    ],
-                    border:[true, true, false, true],
-                    style:"justify",
-                    colSpan:2
-                  },{},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("هل سافرت خلال ١٢ شهرًا الماضية أو تنوي السفر خارج بلد الإقامة في ١٢ شهرا القادمة؟"),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      }
-                    ],
-                    border:[false, true, true, true],
-                    style:"justify",
-                    colSpan:3
-                  },{},{}
-                ],
-                [
-                  {
-                    text:"YES / NO\tIf yes, please provide details.",
-                    colSpan:3,
-                    style: "center"
-                  },{},{},
-                  {
-                    text:"YES / NO\tIf yes, please provide details.\n\n",
-                    style: "center",
-                    colSpan:3
-                  },{},{}
-                ],
-                [
-                  {
-                    text:[
-                      {
-                        text:"Details of travel that you have taken over the last 12 months\t\t\t\t\t\t\t\t\t\t",
-                      },
-                      {
-                        text:convertTextToRtl("تفاصيل السفر التي قمت بها خلال الـ 12 شهرا الماضية."),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                    ],
-                    style:"justify",
-                    colSpan:6
-                  },{},{},{},{},{}
-                ],
-                [
-                  {
-                    text:"",
-                    colSpan:2
-                  },{},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("المدينة و الدولة"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"Country & City",
-                        style: ["center", {fontSize: 10}, "Times"]
-                      },
-                    ],
+                    style:"header",
                   },
                   {
-                    stack:[
+                    text:[
                       {
-                        text:convertTextToRtl("مدة البقاء خلال الرحلة"),
-                        style: ["center", {fontSize: 10}, "arabic"]
+                        text:"Answer  ",style:"center"
                       },
                       {
-                        text:"Duration of stay per visit",
-                        style: "center"
+                        text:convertTextToRtl("الإجابة "),
+                        style: ["right", {fontSize: 10}, "arabic"]
                       },
-                    ],
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("عدد الرحلات خلال السنة"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Number of visits per year", style: "center" },
-                    ],
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الهدف من السفر"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl(")عمل / سياحة("),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      { text:"Purpose of travel"},
-                      { text:"(Business / Vacation)"},
-                    ],
-                    style: "center"
+                    ],style:"header",
                   },
                 ],
                 [
                   {
-                    text:[
-                      {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ١"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"\nProposer / Life to be Assured 1",
-                        style: ["center"]
-                      },
-                    ],
-                    colSpan:2,
-                    rowSpan:2
-                  },{},
-                  {},{},{},{text:"\n\n"}
-                ],
-                [
-                  {},{},
-                  {text:"\n\n"},{},{},{}
-                ],
-                [
-                  {
-                    text:[
-                      {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ٢"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"\nProposer / Life to be Assured 2",
-                        style: ["center", {fontSize: 10}, "Times"]
-                      },
-                    ],
-                    colSpan:2,
-                    rowSpan:2
-                  },{},
-                  {},{},{},{text:"\n\n"}
-                ],
-                [
-                  {},{},
-                  {text:"\n\n"},{},{},{}
-                ],
-                [
-                  {
-                    text:[
-                      {
-                        text:"Details of Travel that you intend to undertake in following 12 months",
-                      },
-                      {
-                        text:convertTextToRtl("تفاصيل السفر خارج بلد الإقامة اذا كنت تنوي السفر في 12 شهرا القادمة "),
-                        style: ["right", {fontSize: 10}, "arabic"]
-                      },
-                    ],
-                    style:"justify",
-                    colSpan:6
-                  },{},{},{},{},{}
-                ],
-                [
-                  {
-                    text:"",
-                    colSpan:2
-                  },{},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("المدينة و الدولة"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"Country & City",
-                        style: ["center", {fontSize: 10}, "Times"]
-                      },
-                    ],
+                    text:"1.",
                   },
                   {
-                    stack:[
-                      {
-                        text:convertTextToRtl("مدة البقاء خلال الرحلة"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"Duration of stay per visit",
-                        style: "center"
-                      },
-                    ],
+                    layout:{
+                      paddingTop: (i, node) => 0,
+                      paddingBottom: (i, node) => 0,
+                      paddingRight: (i, node) => 0,
+                      paddingLeft: (i, node) => 0
+                    },
+                    table: {
+                      widths: ["*","*"],
+                      body: [
+                        [
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {text:[
+                                {
+                                  text:convertTextToRtl("الطول"),
+                                  style: ["center", {fontSize: 10}, "arabic"]
+                                },
+                                {text:"\t\t\t\t\t\t\t\t\t"},
+                                {
+                                  text:convertTextToRtl("سم"),
+                                  style: ["center", {fontSize: 10}, "arabic"]
+                                },
+                              ]},
+                              {text:[
+                                {text:"Height"},
+                                {text:"__________________"},
+                                {text:"Cms"},
+                              ], style:"center"},
+                              {
+                                text:"\nHas your weight changed by more than 5kg in the last 12 months?", 
+                                style: "justify"
+                              },
+                              {
+                                text:"If yes, please provide reasons"
+                              }
+                            ],
+                          },
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {text:[
+                                {
+                                  text:convertTextToRtl("الوزن"),
+                                  style: ["center", {fontSize: 10}, "arabic"]
+                                },
+                                {text:"\t\t\t\t\t\t\t\t\t"},
+                                {
+                                  text:convertTextToRtl("كجم"),
+                                  style: ["center", {fontSize: 10}, "arabic"]
+                                },
+                              ]},
+                              {text:[
+                                {text:"Weight"},
+                                {text:"__________________"},
+                                {text:"Kgs"},
+                              ], style:"center"},
+                              {text:"\n", style:{fontSize:7}},
+                              {
+                                text:convertTextToRtl("هل تغير وزنك بأكثر من ۵ كجم في آخر ١۲ "),
+                                style: ["center", {fontSize: 9.5}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl("شهرا؟ اذا كانت الإجابة نعم يرجى ذكر السبب"),
+                                style: ["center", {fontSize: 9.5}, "arabic"]
+                              }
+                            ],
+                          },
+                        ]
+                      ]
+                    }
                   },
                   {
-                    stack:[
+                    text:[
                       {
-                        text:convertTextToRtl("عدد الرحلات خلال السنة"),
-                        style: ["center", {fontSize: 10}, "arabic"]
+                        text:"  ",style:"center"
                       },
-                      { text:"Number of visits per year", style: "center" },
                     ],
-                  },
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("الهدف من السفر"),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:convertTextToRtl(")عمل / سياحة("),
-                        style: [{fontSize: 10}, "arabic"]
-                      },
-                      { text:"Purpose of travel"},
-                      { text:"(Business / Vacation)"},
-                    ],
-                    style: "center"
                   },
                 ],
                 [
                   {
-                    text:[
-                      {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ١"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"\nProposer / Life to be Assured 1",
-                        style: ["center"]
-                      },
-                    ],
-                    colSpan:2,
-                    rowSpan:2
-                  },{},
-                  {},{},{},{text:"\n\n"}
-                ],
-                [
-                  {},{},
-                  {text:"\n\n"},{},{},{}
-                ],
-                [
+                    text:"2.",
+                  },
+                  {
+                    layout:{
+                      paddingTop: (i, node) => 0,
+                      paddingBottom: (i, node) => 0,
+                      paddingRight: (i, node) => 0,
+                      paddingLeft: (i, node) => 0
+                    },
+                    table: {
+                      widths: [220,180],
+                      body: [
+                        [
+                          {
+                            border:[false,false,false,false],
+                            text:"Have you smoked tobacco, e-cigarettes (Vape) or any other substance or used nicotine product within last 12 months?", 
+                            style:"justify"
+                          },
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:convertTextToRtl("بتدخين السجائر، السجائر هل قمت"),
+                                style: ["right", {fontSize: 9}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl("الإلكترونية )الشيشة الإلكترونية( أو"),
+                                style: ["right", {fontSize: 9}, "arabic"]
+                              },
+                            ]
+                          },
+                        ],
+                        [
+                          {
+                            border:[false,false,false,false],
+                            colSpan:2,
+                            stack:[
+                              {
+                                text:convertTextToRtl("إذا كانت الإجابة بنعم ، يرجى تقديم النوع والكمية في اليوم"),
+                                style: ["left", {fontSize: 9}, "arabic"]
+                              },
+                              {
+                                text:"If yes, please provide the type and quantity per day:_________________"
+                              },
+                              {
+                                text:convertTextToRtl("إذا كنت مدخنا سابقا ، فيرجى التأكيد عند التوقف عن التدخين"),
+                                style: ["left", {fontSize: 9}, "arabic"]
+                              },
+                              {
+                                text:"If you are ex-smoker, please confirm when you stopped smoking:",
+                              },
+                            ]
+                          },{}
+                        ],
+                        [
+                          {
+                            border:[false,false,false,false],
+                            text:""
+                          },{
+                            border:[false,false,false,false],
+                            table: {
+                              widths:[45,10,10,10,10],
+                              body: [
+                                [
+                                  {text:'',border:[false,false,true,false]},
+                                  '', '', '\n', '\n'
+                                ]
+                              ]
+                            },
+                          }
+                        ]
+                      ]
+                    }
+                  },
                   {
                     text:[
                       {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ٢"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      {
-                        text:"\nProposer / Life to be Assured 2",
-                        style: ["center", {fontSize: 10}, "Times"]
+                        text:"  ",style:"center"
                       },
                     ],
-                    colSpan:2,
-                    rowSpan:2
-                  },{},
-                  {},{},{},{text:"\n\n"}
+                  },
                 ],
                 [
-                  {},{},
-                  {text:"\n\n"},{},{},{}
-                ]
+                  {
+                    text:"3.",
+                  },{
+                    layout:{
+                      paddingTop: (i, node) => 0,
+                      paddingBottom: (i, node) => 0,
+                      paddingRight: (i, node) => 0,
+                      paddingLeft: (i, node) => 0
+                    },
+                    table: {
+                      widths: ["*","*"],
+                      body: [
+                        [
+                          {
+                            border:[false,false,false,false],
+                            text:"Do you consume alcohol?", 
+                            style:"left"
+                          },
+                          {
+                            border:[false,false,false,false],
+                            text:convertTextToRtl("هل تستهلك الكحول؟"),
+                            style: ["right", {fontSize: 9}, "arabic"]
+                          },
+                        ],
+                        [
+                          {
+                            border:[false,false,false,false],
+                            colSpan:2,
+                            stack:[
+                              {
+                                text:convertTextToRtl("إذا كانت الإجابة بنعم ، فيرجى تقديم عدد الوحدات المستهلكة في الأسبوع"),
+                                style: ["left", {fontSize: 9}, "arabic"]
+                              },
+                              {
+                                text:"If yes, please provide the number of units consumed per week:__________________"
+                              }
+                            ],
+                          },{}
+                        ],
+                        [
+                          {
+                            border:[false,false,false,false],
+                            text:"1 unit = single measure of spirits or 125 ml glass of wine or 250 ml of beer", 
+                            style:"justify"
+                          },
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:convertTextToRtl("١ وحدة =  قياس واحد من المشروبات الروحية أو"),
+                                style: ["right", {fontSize: 7}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl("  125 مل من كأس النبيذ أو 250 مل من البيرة"),
+                                style: ["right", {fontSize: 7}, "arabic"]
+                              }
+                            ],
+                          },
+                        ],
+                      ]
+                    }
+                  },
+                  {
+                    text:[
+                      {
+                        text:"  ",style:"center"
+                      },
+                    ],
+                  },
+                ],
+                [
+                  {
+                    text:"4.",
+                  },
+                  {
+                    layout:{
+                      paddingTop: (i, node) => 0,
+                      paddingBottom: (i, node) => 0,
+                      paddingRight: (i, node) => 0,
+                      paddingLeft: (i, node) => 0
+                    },
+                    table: {
+                      widths: ["*","*"],
+                      body: [
+                        [
+                          {
+                            border:[false,false,false,false],
+                            text:"Have you ever been advised to give up tobacco and/or alcohol for a specific reason?", 
+                            style:"justify"
+                          },
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:convertTextToRtl("هل تم نصحك من قبل بالتخلي عن التبغ و / أو "),
+                                style: ["right", {fontSize: 7}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl("الكحول لسبب محدد؟"),
+                                style: ["right", {fontSize: 7}, "arabic"]
+                              }
+                            ],
+                          },
+                        ],
+                      ]
+                    }
+                  },
+                  {
+                    text:[
+                      {
+                        text:"  ",style:"center"
+                      },
+                    ],
+                  },
+                ],
+                [
+                  {
+                    text:"5.",
+                  },
+                  {
+                    layout:{
+                      paddingTop: (i, node) => 0,
+                      paddingBottom: (i, node) => 0,
+                      paddingRight: (i, node) => 0,
+                      paddingLeft: (i, node) => 0
+                    },
+                    table: {
+                      widths: ["*","*"],
+                      body: [
+                        [
+                          {
+                            border:[false,false,false,false],
+                            text:"Have you ever had, been treated for or had symptoms for the following conditions?", 
+                            style:"justify"
+                          },
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:convertTextToRtl("هل سبق لك أن عانيت أو عولجت أو عانيت من"),
+                                style: ["right", {fontSize: 7}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl("أعراض من الحالات التالية؟"),
+                                style: ["right", {fontSize: 7}, "arabic"]
+                              }
+                            ],
+                          },
+                        ],
+                      ]
+                    }
+                  },
+                  {
+                    text:[
+                      {
+                        text:"  ",style:"center"
+                      },
+                    ],
+                  },
+                ],
+                [
+                  {
+                    text:"a.",
+                  },
+                  {
+                    layout:{
+                      paddingTop: (i, node) => 0,
+                      paddingBottom: (i, node) => 0,
+                      paddingRight: (i, node) => 0,
+                      paddingLeft: (i, node) => 0
+                    },
+                    table: {
+                      widths: ["*","*"],
+                      body: [
+                        [
+                          {
+                            border:[false,false,false,false],
+                            text:"Diabetes or raised blood sugar?", 
+                            style:"justify"
+                          },
+                          {
+                            border:[false,false,false,false],
+                            text:convertTextToRtl("مرض السكري أو ارتفاع السكر في الدم؟ "),
+                            style: ["right", {fontSize: 8}, "arabic"]
+                          },
+                        ]
+                      ]
+                    }
+                  },
+                  {
+                    text:[
+                      {
+                        text:"  ",style:"center"
+                      },
+                    ],
+                  },
+                ],
+                [
+                  {
+                    text:"b.",
+                  },
+                  {
+                    layout:{
+                      paddingTop: (i, node) => 0,
+                      paddingBottom: (i, node) => 0,
+                      paddingRight: (i, node) => 0,
+                      paddingLeft: (i, node) => 0
+                    },
+                    table: {
+                      widths: ["*","*"],
+                      body: [
+                        [
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:"Any disease, disorder or condition related to heart or circulatory system?",
+                              },
+                              {
+                                text:"(including high blood pressure, chest pain heart attack, murmur, palpitations etc.)"
+                              }
+                            ],
+                            style:["justify",{fontSize:8}]
+                          },
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:convertTextToRtl("أي مرض أو اضطراب أو حالة تتعلق بالقلب أو"),
+                                style: ["right", {fontSize: 6.5}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl("الدورة الدموية؟"),
+                                style: ["right", {fontSize: 6.5}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl("بما في ذلك ارتفاع ضغط الدم ، ألم الصدر ، النوبة"),
+                                style: ["right", {fontSize: 6.5}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl("القلبية ، النفخات ، الخفقان ، الخ("),
+                                style: ["right", {fontSize: 6.5}, "arabic"]
+                              }
+                            ],
+                            style: ["right", {fontSize: 8}, "arabic"]
+                          },
+                        ]
+                      ]
+                    }
+                  },
+                  {
+                    text:[
+                      {
+                        text:"  ",style:"center"
+                      },
+                    ],
+                  },
+                ],
+                [
+                  {
+                    text:"c.",
+                  },
+                  {
+                    layout:{
+                      paddingTop: (i, node) => 0,
+                      paddingBottom: (i, node) => 0,
+                      paddingRight: (i, node) => 0,
+                      paddingLeft: (i, node) => 0
+                    },
+                    table: {
+                      widths: ["*","*"],
+                      body: [
+                        [
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:"Any type of cancer, pre-cancerous conditions, tumor, lump, cyst or enlarged glands?"
+                              }
+                            ],
+                            style:["justify",{fontSize:8}]
+                          },
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:convertTextToRtl("أي نوع من السرطان ، حالات ما قبل السرطان ،"),
+                                style: ["right", {fontSize: 7}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl("ورم، كتل ، كيس أو تضخم الغدد؟"),
+                                style: ["right", {fontSize: 7}, "arabic"]
+                              }
+                            ],
+                            style: ["right", {fontSize: 8}, "arabic"]
+                          },
+                        ]
+                      ]
+                    }
+                  },
+                  {
+                    text:[
+                      {
+                        text:"  ",style:"center"
+                      },
+                    ],
+                  },
+                ],
+                [
+                  {
+                    text:"d.",
+                  },
+                  {
+                    layout:{
+                      paddingTop: (i, node) => 0,
+                      paddingBottom: (i, node) => 0,
+                      paddingRight: (i, node) => 0,
+                      paddingLeft: (i, node) => 0
+                    },
+                    table: {
+                      widths: ["*","*"],
+                      body: [
+                        [
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:"Any disease or disorder of lung or respiratory system?"
+                              },
+                              {
+                                text:"(Including shortness of breath, asthma, bronchitis, persistent cough, tuberculosis etc.)"
+                              }
+                            ],
+                            style:["justify",{fontSize:8}]
+                          },
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:convertTextToRtl("أي مرض أو اضطراب في الرئة أو الجهاز التنفسي؟"),
+                                style: ["right", {fontSize: 6.5}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl("بما في ذلك ضيق التنفس ، والربو ، والتهاب"),
+                                style: ["right", {fontSize: 6.5}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl("الشعب الهوائية ، والسعال المستمر ، والسل ، إلخ"),
+                                style: ["right", {fontSize: 6.5}, "arabic"]
+                              }
+                            ],
+                            style: ["right", {fontSize: 8}, "arabic"]
+                          },
+                        ]
+                      ]
+                    }
+                  },
+                  {
+                    text:[
+                      {
+                        text:"  ",style:"center"
+                      },
+                    ],
+                  },
+                ],
+                [
+                  {
+                    text:"e.",
+                  },
+                  {
+                    layout:{
+                      paddingTop: (i, node) => 0,
+                      paddingBottom: (i, node) => 0,
+                      paddingRight: (i, node) => 0,
+                      paddingLeft: (i, node) => 0
+                    },
+                    table: {
+                      widths: ["*","*"],
+                      body: [
+                        [
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:"Any condition affecting your bowel or digestive system?"
+                              },
+                              {
+                                text:"(including reflux, ulcers, hernia, recurrent indigestion, persistent constipation or diarrhea, gastric banding or sleeve etc.)"
+                              },
+                            ],
+                            style:["justify",{fontSize:8}]
+                          },
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:convertTextToRtl("أى حالة تؤثر على الأمعاء أو الجهاز الهضمي؟"),
+                                style: ["right", {fontSize: 6.5}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl(")بما في ذلك الارتجاع أو القرحة أو الفتق أو عسر"),
+                                style: ["right", {fontSize: 6.5}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl("الهضم المتكرر أو الإمساك أو الإسهال المستمر أو ربط"),
+                                style: ["right", {fontSize: 6.5}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl("المعدة أو التكميم وما إلى ذلك ("),
+                                style: ["right", {fontSize: 6.5}, "arabic"]
+                              },
+                            ],
+                            style: ["right", {fontSize: 8}, "arabic"]
+                          },
+                        ]
+                      ]
+                    }
+                  },
+                  {
+                    text:[
+                      {
+                        text:"  ",style:"center"
+                      },
+                    ],
+                  },
+                ],
+                [
+                  {
+                    text:"f.",
+                  },
+                  {
+                    layout:{
+                      paddingTop: (i, node) => 0,
+                      paddingBottom: (i, node) => 0,
+                      paddingRight: (i, node) => 0,
+                      paddingLeft: (i, node) => 0
+                    },
+                    table: {
+                      widths: ["*","*"],
+                      body: [
+                        [
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:"Any disease, disorder or condition related to kidneys or bladder? (including blood or protein in urine, kidney or bladder stones etc.)"
+                              }
+                            ],
+                            style:["justify",{fontSize:8}]
+                          },
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:convertTextToRtl("أي مرض أو اضطراب أو حالة تتعلق بالكلى أو "),
+                                style: ["right", {fontSize: 8}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl("ثانة؟ ) بما في ذلك الدم أو البروتين في البول أو "),
+                                style: ["right", {fontSize: 8}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl("حصوات الكلى أو المثانة وما إلى ذلك("),
+                                style: ["right", {fontSize: 8}, "arabic"]
+                              }
+                            ],
+                          },
+                        ]
+                      ]
+                    }
+                  },
+                  {
+                    text:[
+                      {
+                        text:"  ",style:"center"
+                      },
+                    ],
+                  },
+                ],
+                [
+                  {
+                    text:"g.",
+                  },
+                  {
+                    layout:{
+                      paddingTop: (i, node) => 0,
+                      paddingBottom: (i, node) => 0,
+                      paddingRight: (i, node) => 0,
+                      paddingLeft: (i, node) => 0
+                    },
+                    table: {
+                      widths: ["*","*"],
+                      body: [
+                        [
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:"Any condition affecting your liver or pancreas  (including fatty liver, hepatitis etc.)"
+                              }
+                            ],
+                            style:["justify",{fontSize:8}]
+                          },
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:convertTextToRtl("أي حالة تؤثر على الكبد أو البنكرياس ) بما في"),
+                                style: ["right", {fontSize: 8}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl("لك الكبد الدهني والتهاب الكبد وما إلى ذلك("),
+                                style: ["right", {fontSize: 8}, "arabic"]
+                              }
+                            ],
+                          },
+                        ]
+                      ]
+                    }
+                  },
+                  {
+                    text:[
+                      {
+                        text:"  ",style:"center"
+                      },
+                    ],
+                  },
+                ],
               ],
             }
           }

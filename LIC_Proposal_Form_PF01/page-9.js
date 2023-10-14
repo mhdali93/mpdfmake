@@ -11,194 +11,329 @@ const Page_9 = ({
         [
           {
             border: [false, false, false, false],
-            layout:{
-              paddingBottom: (i, node) => 0,
-              paddingTop: (i, node) => 1,
-            },
+            margin:[0,-5,0,0],
             table: {
               widths: [
-                10,140,380
+                10,420,103
               ],
               body: [
                 [
-                  {text:"37.", rowSpan:4},
                   {
-                    stack:[
-                      {text:[
-                        {
-                          text: "Please provide your Bank Account details, which you will \t\t\t\t\t\t"
-                        },
-                        {
-                          text:convertTextToRtl("تفاصيل الحساب المصرفي للتسديد المباشر للحساب المصرفي ، ، والتي "),
-                          style: ["right", {fontSize: 9}, "arabic"]
-                        }
-                      ]},
-                      {text:[
-                        {
-                          text: "be using to pay the premium. Payment of premium by\t\t\t\t\t\t\t"
-                        },
-                        {
-                          text:convertTextToRtl("ستستخدم لدفع قسط التأمين عمليات التحويل التلكس / الشيك يجب ان "),
-                          style: ["right", {fontSize: 9}, "arabic"]
-                        }
-                      ]},
-                      {text:[
-                        {
-                          text: "way of cheque and telex transfers must be in favor of\t\t\t\t\t\t\t\t"
-                        },
-                        {
-                          text:convertTextToRtl("فقط"),
-                          style: ["right", {fontSize: 9}, "arabic"]
-                        },
-                        {
-                          text: " (LIC International) "
-                        },
-                        {
-                          text:convertTextToRtl("تكون لصالح شركة التأمين على الحياة "),
-                          style: ["right", {fontSize: 9}, "arabic"]
-                        },
-                      ]},
-                      {
-                        text: "LIC International only"
-                      },
-                    ],
-                    style:"justify",
-                    colSpan:2
-                  },{}
-                ],
-                [
-                  {},
+                    text:"13.",
+                  },
                   {
-                    stack:[
+                    layout:{
+                      paddingTop: (i, node) => 0,
+                      paddingBottom: (i, node) => 0,
+                      paddingRight: (i, node) => 0,
+                      paddingLeft: (i, node) => 0
+                    },
+                    table: {
+                      widths: ["*","*"],
+                      body: [
+                        [
+                          {
+                            border:[false,false,false,false],
+                            text:"Did you ever have any accident or injury? YES/NO If yes please provide details", 
+                            style:"justify"
+                          },
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:convertTextToRtl("هل سبق لك أن تعرضت لأي حادث أو إصابة؟"),
+                                style: ["right", {fontSize: 7}, "arabic"]
+                              },
+                              {
+                                text:convertTextToRtl("اذا كانت الإجابة نعم يرجى ذكر التفاصيل."),
+                                style: ["right", {fontSize: 7}, "arabic"]
+                              }
+                            ],
+                          },
+                        ],
+                      ]
+                    }
+                  },
+                  {
+                    text:[
                       {
-                        text:convertTextToRtl("اسم البنك"),
-                        style: ["center", {fontSize: 10}, "arabic"]
+                        text:"  ",style:"center"
                       },
-                      { text:"Name of the Bank", style:"center" },
                     ],
                   },
-                  {}
                 ],
                 [
-                  {},
                   {
-                    stack:[
+                    text:"14.",
+                  },
+                  {
+                    layout:{
+                      paddingTop: (i, node) => 0,
+                      paddingBottom: (i, node) => 0,
+                      paddingRight: (i, node) => 0,
+                      paddingLeft: (i, node) => 0
+                    },
+                    table: {
+                      widths: ["*","*"],
+                      body: [
+                        [
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:"What has been your usual state of health?"
+                              }
+                            ],
+                            style:["justify",{fontSize:8}]
+                          },
+                          {
+                            border:[false,false,false,false],
+                            stack:[
+                              {
+                                text:convertTextToRtl("ماهي حالتك الصحية المعتادة؟"),
+                                style: ["right", {fontSize: 8}, "arabic"]
+                              }
+                            ],
+                          },
+                        ]
+                      ]
+                    },
+                  },
+                  {
+                    text:[
                       {
-                        text:convertTextToRtl("الفرع البنك"),
-                        style: ["center", {fontSize: 10}, "arabic"]
+                        text:"  ",style:"center"
                       },
-                      { text:"Bank Branch", style:"center" },
                     ],
                   },
-                  {}
                 ],
-                [
-                  {},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("رقم الحساب المصرفي الدولي"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"IBAN", style:"center" },
-                    ],
-                  },
-                  {}
-                ]
               ],
             }
           }
         ],
         [
           {
+            border: [false, false, false, false],
             layout:{
               paddingTop: (i, node) => 0,
-              paddingBottom: (i, node) => 0
+              paddingBottom: (i, node) => 0,
+              paddingLeft: (i, node) => 2,
+              paddingRight: (i, node) => 2,
             },
-            border: [false, false, false, false],
+            margin:[0,-5,0,0],
             table: {
-              widths: [280,260],
+              widths: [10,80,70,75,80,90,120],
               body: [
                 [
                   {
-                    border: [false, false, false, false],
-                    text:[
+                    text:"15.", rowSpan:9
+                  },
+                  {
+                    text:"Family History of Proposer/Life to be assured 2\nPlease provide details of your family history below. Particular importance is where your father, mother or any of your brothers or sisters had died or suffered from heart disease, cancer, stroke, multiple sclerosis, diabetes or any neurological disorders before age of 60 years or from a familial / hereditary disorder.",
+                    colSpan:3,
+                    style:"justify",
+                    border:[true,true,false,true]
+                  },{},{},
+                  {
+                    stack:[
                       {
-                        text:convertTextToRtl("البيان الشخصي لمقدم الطلب والشخص الذي يريد التأمين على حياته بشأن الحالة الصحية الحالية"),
-                        style: ["right", {fontSize: 12}, "arabic", "bold"]
+                        text:convertTextToRtl("التاريخ العائلي لمقدم الطلب / المؤمن على حياته ٢"),
+                        style: ["right", {fontSize: 8}, "arabic"]
                       },
                       {
-                        text:convertTextToRtl("الجزء ب:"),
-                        style: ["right", {fontSize: 15}, "arabic", "bold"]
+                        text:convertTextToRtl("يرجى تقديم تفاصيل تاريخ عائلتك أدناه من الأهمية بمكان أن"),
+                        style: ["right", {fontSize: 8}, "arabic"]
                       },
                       {
-                        text:"\nPart B: ",
-                        style: ["left", {fontSize: 14}, "Arial", "bold"]
+                        text:convertTextToRtl("يكون والدك أو والدتك أو أي من إخوتك أو أخواتك قد مات أو عانى من"),
+                        style: ["right", {fontSize: 8}, "arabic"]
                       },
                       {
-                        text:"Personal Statement of Proposer and Life to be Assured about present state of health",
-                        style: ["left", {fontSize: 12}, "Arial", "bold"]
-                      }
+                        text:convertTextToRtl("أمراض القلب أو السرطان أو السكتة الدماغية أو التصلب المتعدد أو"),
+                        style: ["right", {fontSize: 8}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("مرض السكري أو أي اضطرابات عصبية قبل سن 60 عاما أو بسبب"),
+                        style: ["right", {fontSize: 8}, "arabic"]
+                      },
+                      {
+                        text:convertTextToRtl("اضطراب عائلي / وراثي"),
+                        style: ["right", {fontSize: 8}, "arabic"]
+                      },
                     ],
-                    colSpan:2
-                  },{}
+                    colSpan:3,
+                    border:[false,true,true,true]
+                  },{},{}
                 ],
                 [
+                  {},
                   {
-                    border: [false, false, false, false],
-                    canvas: [
+                    stack:[
                       {
-                        type: 'line',
-                        x1: 0, y1: 0,
-                        x2: 550, y2: 0,
-                        lineWidth: 1
+                        text:convertTextToRtl("صلة القرابة"),
+                        style: ["center", {fontSize: 10}, "arabic"]
                       },
+                      { text:"Relationship", style:"center" },
                     ],
-                    colSpan:2
-                  },{}
-                ],
-                [
-                  {
-                    text:"Note: - Please read carefully and answer every Question. Do not use dots, dashes, or Ditto Marks. In case answer is yes please give full details in the space provided or attach separate sheet.",
-                    style:["justify",{fontSize:10}],
-                    border: [false, false, false, false],
+                    style:["center","header", {fontSize: 9.5}]
                   },
                   {
                     stack:[
                       {
-                        text:convertTextToRtl("احظة: يُرجى قراءة كل سؤال بعناية لا تستخدم النقاط أو الخطوط"),
-                        style: ["right", {fontSize: 10}, "arabic", "bold"]
+                        text:convertTextToRtl("الحي"),
+                        style: ["center", {fontSize: 10}, "arabic"]
                       },
-                      {
-                        text:convertTextToRtl("الفاصلة، في حالة الإجابة بنعم، يُرجى سرد التفاصيل الكاملة في"),
-                        style: ["right", {fontSize: 10}, "arabic", "bold"]
-                      },
-                      {
-                        text:convertTextToRtl("المساحة المتوفرة أو إرفاق ورقة منفصلة"),
-                        style: ["right", {fontSize: 10}, "arabic", "bold"]
-                      }
+                      { text:"Living", style:"center" },
                     ],
-                    border: [false, false, false, false],
-                  }
-                ],
-                [
+                    style:["center","header", {fontSize: 9.5}],
+                    colSpan:3
+                  },{},{},
                   {
                     stack:[
                       {
-                        text:convertTextToRtl(")لا يلزم ملء هذا الجزء في حالة عدم وجود وثائق تأمين لتغطية المخاطر("),
-                        style: ["center", {fontSize: 12}, "arabic", "bold"]
+                        text:convertTextToRtl("المتوفى"),
+                        style: ["center", {fontSize: 10}, "arabic"]
                       },
-                      {
-                        text:"(This part need not be filled in case of without risk cover policies)",
-                        style: ["center", "bold",{fontSize: 10}]
-                      }
+                      { text:"Dead", style:"center" },
                     ],
-                    border: [false, false, false, false],
+                    style:["center","header", {fontSize: 9.5}],
                     colSpan:2
                   },{}
+                ],
+                [
+                  {},
+                  {
+                    text:"",
+                    style:["center","header"]
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("السن"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Age", style:"center" },
+                    ],
+                    style:["center","header", {fontSize: 9.5}]
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("الحالة الصحية المعتادة"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Present State of Health", style:"center" },
+                    ],
+                    style:["center","header", {fontSize: 9.5}],
+                    colSpan:2
+                  },{},
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("السن عند الوفاة"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Age at Death", style:"center" },
+                    ],
+                    style:["center","header", {fontSize: 9.5}]
+                  },
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("سبب الوفاة"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Cause of death", style:"center" },
+                    ],
+                    style:["center","header", {fontSize: 9.5}]
+                  }
+                ],
+                [
+                  {},
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("الأب"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Father", style:"center" },
+                    ],
+                    style:["center", {fontSize: 9.5}]
+                  },{},
+                  { text:"", colSpan:2 },{},{},{}
+                ],
+                [
+                  {},
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("الأم"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Mother", style:"center" },
+                    ],
+                    style:["center", {fontSize: 9.5}]
+                  },{},
+                  { text:"", colSpan:2 },{},{},{}
+                ],
+                [
+                  {},
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("الاخ"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Brother", style:"center" },
+                    ],
+                    style:["center", {fontSize: 9.5}]
+                  },{},
+                  { text:"", colSpan:2 },{},{},{}
+                ],
+                [
+                  {},
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("الاخ"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Brother", style:"center" },
+                    ],
+                    style:["center", {fontSize: 9.5}]
+                  },{},
+                  { text:"", colSpan:2 },{},{},{}
+                ],
+                [
+                  {},
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("الأخت"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Sister", style:"center" },
+                    ],
+                    style:["center", {fontSize: 9.5}]
+                  },{},
+                  { text:"", colSpan:2 },{},{},{}
+                ],
+                [
+                  {},
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("الأخت"),
+                        style: ["center", {fontSize: 10}, "arabic"]
+                      },
+                      { text:"Sister", style:"center" },
+                    ],
+                    style:["center", {fontSize: 9.5}]
+                  },{},
+                  { text:"", colSpan:2 },{},{},{}
                 ]
-              ],
-            },
+              ]
+            }
           }
         ],
         [
@@ -211,427 +346,278 @@ const Page_9 = ({
               paddingRight: (i, node) => 2,
             },
             table: {
-              widths: [10,325,48,47,48,47],
+              widths: [10,"*",100,"*",100],
               body: [
                 [
                   {
-                    text:"\n\nNo.",
-                    rowSpan:2,
-                    style:["center","header"]
+                    text:"16.", rowSpan: 10
+                  },
+                  {
+                    text:[
+                      {text: "For Female Proposer only: ", style:"bold"},
+                      {text: "(Kindly fill in if applicable)"},
+                    ],
+                    colSpan:2,
+                    style:"justify",
+                    border:[true, true, false, true]
+                  },{},
+                  {
+                    text:[
+                      {text:"("},
+                      {
+                        text:convertTextToRtl("يُرجى ملء هذا الطلب، إن أمكن"),
+                        style: [{fontSize: 9}, "arabic"]
+                      },
+                      {text:")"},
+                      {
+                        text:convertTextToRtl("فقط لمقدمي الطلب النساء"),
+                        style: [{fontSize: 9}, "arabic", "bold"]
+                      },
+                    ],
+                    colSpan:2,
+                    style:"right",
+                    border:[false, true, true, true]
+                  },{}
+                ],
+                [
+                  {},
+                  {
+                    text:[
+                      {text: "a. Personal Details:"},
+                    ],
+                    colSpan:2,
+                    style:["justify", "header"],
+                    border:[true, true, false, true]
+                  },{},
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("أ - البيانات الشخصية"),
+                        style: [{fontSize: 9}, "arabic"]
+                      },
+                    ],
+                    colSpan:2,
+                    style:["right", "header"],
+                    border:[false, true, true, true]
+                  },{}
+                ],
+                [
+                  {},
+                  {
+                    stack:[
+                      {text:[
+                        {
+                          text:convertTextToRtl("إذا كانت الإجابة"),
+                          style: [{fontSize: 9}, "arabic"]
+                        },
+                        { text:")" },
+                        {
+                          text:convertTextToRtl("هل أنت حامل الآن؟"),
+                          style: [{fontSize: 9}, "arabic"]
+                        },
+                      ]},
+                      {text:[
+                        { text:"(" },
+                        {
+                          text:convertTextToRtl("نعم، يُرجى ذكر عدد أشهر الحمل"),
+                          style: [{fontSize: 9}, "arabic"]
+                        },
+                      ]},
+                      {
+                        text:"Are you pregnant now? (If yes, how many months)"
+                      }
+                    ],
+                    style:["center"],
                   },
                   {
                     stack:[
                       {text:"\n"},
                       {
-                        text:convertTextToRtl("السؤال"),
-                        style: ["center", {fontSize: 10}, "arabic"]
+                        text:convertTextToRtl("تاريخ آخر ولادة"),
+                        style: [{fontSize: 9}, "arabic"]
                       },
-                      { text:"Question", style:"center" },
-                    ],
-                    rowSpan:2,
-                    style:["center","header", {fontSize: 9.5}]
-                  },
-                  {
-                    colSpan:2,
-                    stack:[
                       {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ١"),
-                        style: ["center", {fontSize: 8.5}, "arabic"]
-                      },
-                      { text:"Proposer / Life to be Assured 1", style:["center", {fontSize: 7}] },
+                        text:"State date of last delivery"
+                      }
                     ],
-                    style:"header",
-                  },{},
-                  {
-                    colSpan:2,
-                    stack:[
-                      {
-                        text:convertTextToRtl("مقدم الطلب / المؤمن على حياته ۲"),
-                        style: ["center", {fontSize: 8.5}, "arabic"]
-                      },
-                      { text:"Proposer / Life to be Assured 2", style:["center", {fontSize: 7}] },
-                    ],
-                    style:"header",
-                  },{}
-                ],
-                [
-                  {},{},
-                  {
-                    stack:[
-                      {
-                        text:convertTextToRtl("نعم"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"Yes", style:"center" },
-                    ],
-                    style:"header",
+                    style:["center"],
                   },
                   {
                     stack:[
                       {
-                        text:convertTextToRtl("لا"),
-                        style: ["center", {fontSize: 10}, "arabic"]
+                        text:convertTextToRtl("هل أجريت أي عملية إجهاض أو عملية قيصرية؟"),
+                        style: [{fontSize: 9}, "arabic"]
                       },
-                      { text:"No", style:"center" },
+                      {
+                        text:convertTextToRtl("إذا كان الأمر كذلك، يُرجى إعطاء التفاصيل"),
+                        style: [{fontSize: 9}, "arabic"]
+                      },
+                      {
+                        text:"Have you had any abortion or miscarriage or Caesarian section? If so please give details.",
+                      }
                     ],
-                    style:"header",
+                    style:["center"],
+                    border:[false, true, true, true]
                   },
                   {
                     stack:[
+                      {text:"\n"},
                       {
-                        text:convertTextToRtl("نعم"),
-                        style: ["center", {fontSize: 10}, "arabic"]
+                        text:convertTextToRtl("تاريخ آخر حيض"),
+                        style: [{fontSize: 9}, "arabic"]
                       },
-                      { text:"Yes", style:"center" },
-                    ],
-                    style:"header",
-                  },
-                  {
-                    stack:[
                       {
-                        text:convertTextToRtl("لا"),
-                        style: ["center", {fontSize: 10}, "arabic"]
-                      },
-                      { text:"No", style:"center" },
+                        text:"Date of last Menstruation",
+                      }
                     ],
-                    style:"header",
+                    style:["center"],
+                    border:[false, true, true, true]
                   }
                 ],
                 [
-                  {text:"1."},
-                  {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {text:"Proposer / Life to be Assured 1", style:"center"},
-                              {text:[
-                                {
-                                  text:convertTextToRtl("الطول"),
-                                  style: ["center", {fontSize: 10}, "arabic"]
-                                },
-                                {text:"\t\t\t\t\t\t\t\t\t"},
-                                {
-                                  text:convertTextToRtl("سم"),
-                                  style: ["center", {fontSize: 10}, "arabic"]
-                                },
-                              ]},
-                              {text:[
-                                {text:"Height"},
-                                {text:"__________________"},
-                                {text:"Cms"},
-                              ], style:"center"},
-                              {text:"\n"},
-                              {text:"Proposer / Life to be Assured 2", style:"center"},
-                              {text:[
-                                {
-                                  text:convertTextToRtl("الطول"),
-                                  style: ["center", {fontSize: 10}, "arabic"]
-                                },
-                                {text:"\t\t\t\t\t\t\t\t\t"},
-                                {
-                                  text:convertTextToRtl("سم"),
-                                  style: ["center", {fontSize: 10}, "arabic"]
-                                },
-                              ]},
-                              {text:[
-                                {text:"Height"},
-                                {text:"__________________"},
-                                {text:"Cms"},
-                              ], style:"center"},
-                              {
-                                text:"\nHas your weight changed by more than 5kg in the last 12 months?", 
-                                style: "justify"
-                              },
-                              {
-                                text:"If yes, please provide reasons"
-                              }
-                            ],
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("مقدم الطلب ١ / المؤمن على حياته"),
-                                style: ["center", {fontSize: 10}, "arabic"]
-                              },
-                              {text:[
-                                {
-                                  text:convertTextToRtl("الوزن"),
-                                  style: ["center", {fontSize: 10}, "arabic"]
-                                },
-                                {text:"\t\t\t\t\t\t\t\t\t"},
-                                {
-                                  text:convertTextToRtl("كجم"),
-                                  style: ["center", {fontSize: 10}, "arabic"]
-                                },
-                              ]},
-                              {text:[
-                                {text:"Weight"},
-                                {text:"__________________"},
-                                {text:"Kgs"},
-                              ], style:"center"},
-                              {text:"\n"},
-                              {
-                                text:convertTextToRtl("مقدم الطلب ۲ / المؤمن على حياته"),
-                                style: ["center", {fontSize: 10}, "arabic"]
-                              },
-                              {text:[
-                                {
-                                  text:convertTextToRtl("الوزن"),
-                                  style: ["center", {fontSize: 10}, "arabic"]
-                                },
-                                {text:"\t\t\t\t\t\t\t\t\t"},
-                                {
-                                  text:convertTextToRtl("كجم"),
-                                  style: ["center", {fontSize: 10}, "arabic"]
-                                },
-                              ]},
-                              {text:[
-                                {text:"Weight"},
-                                {text:"__________________"},
-                                {text:"Kgs"}
-                              ], style:"center"},
-                              {text:"\n", style:{fontSize:7}},
-                              {
-                                text:convertTextToRtl("هل تغير وزنك بأكثر من ۵ كجم في آخر ١۲ "),
-                                style: ["center", {fontSize: 9.5}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("شهرا؟ اذا كانت الإجابة نعم يرجى ذكر السبب"),
-                                style: ["center", {fontSize: 9.5}, "arabic"]
-                              }
-                            ],
-                          },
-                        ]
-                      ]
-                    }
-                  },
-                  {},{},{},{}
+                  {},{text:"\n\n"},{},{},{}
                 ],
                 [
-                  {text:"2."},
+                  {},
                   {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: [180,130],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            text:"Have you smoked tobacco, e-cigarettes (Vape) or any other substance or used nicotine product within last 12 months?", 
-                            style:"justify"
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("بتدخين السجائر، السجائر هل قمت"),
-                                style: ["right", {fontSize: 9}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("الإلكترونية )الشيشة الإلكترونية( أو"),
-                                style: ["right", {fontSize: 9}, "arabic"]
-                              },
-                            ]
-                          },
+                    text:"b. Any Disease or disorder of the breasts, cervix, uterus, ovaries or fallopian tubes? (Yes/No) If yes, please provide details.",
+                    colSpan:2,
+                    border:[true, true, false, true]
+                  },{},
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("ب. أي مرض أو اضطراب في الثدي أو عنق الرحم أو الرحم أو"),
+                      },
+                      {
+                        text:[
+                          {text:convertTextToRtl(")نعم / لا(")},
+                          {text:convertTextToRtl("المبايض أو قناتي فالوب؟")},
                         ],
-                        [
-                          {
-                            border:[false,false,false,false],
-                            colSpan:2,
-                            stack:[
-                              {
-                                text:convertTextToRtl("إذا كانت الإجابة بنعم ، يرجى تقديم النوع والكمية في اليوم"),
-                                style: ["left", {fontSize: 9}, "arabic"]
-                              },
-                              {
-                                text:"If yes, please provide the type and quantity per day:_________________"
-                              },
-                              {
-                                text:convertTextToRtl("إذا كنت مدخنا سابقا ، فيرجى التأكيد عند التوقف عن التدخين"),
-                                style: ["left", {fontSize: 9}, "arabic"]
-                              },
-                              {
-                                text:"If you are ex-smoker, please confirm when you stopped smoking:",
-                              },
-                            ]
-                          },{}
-                        ],
-                        [
-                          {
-                            border:[false,false,false,false],
-                            text:""
-                          },{
-                            border:[false,false,false,false],
-                            table: {
-                              widths:[45,10,10,10,10],
-                              body: [
-                                [
-                                  {text:'',border:[false,false,true,false]},
-                                  '', '', '\n', '\n'
-                                ]
-                              ]
-                            },
-                          }
-                        ]
-                      ]
-                    }
-                  },
-                  {},{},{},{}
+                      },
+                      {text:"\n\n"}
+                    ],
+                    colSpan:2,
+                    style: [{fontSize: 9}, "arabic", "right"],
+                    border:[false, true, true, true]
+                  },{}
                 ],
                 [
-                  {text:"3."},
+                  {},
                   {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            text:"Do you consume alcohol?", 
-                            style:"left"
-                          },
-                          {
-                            border:[false,false,false,false],
-                            text:convertTextToRtl("هل تستهلك الكحول؟"),
-                            style: ["right", {fontSize: 9}, "arabic"]
-                          },
-                        ],
-                        [
-                          {
-                            border:[false,false,false,false],
-                            colSpan:2,
-                            stack:[
-                              {
-                                text:convertTextToRtl("إذا كانت الإجابة بنعم ، فيرجى تقديم عدد الوحدات المستهلكة في الأسبوع"),
-                                style: ["left", {fontSize: 9}, "arabic"]
-                              },
-                              {
-                                text:"If yes, please provide the number of units consumed per week:__________________"
-                              }
-                            ],
-                          },{}
-                        ],
-                        [
-                          {
-                            border:[false,false,false,false],
-                            text:"1 unit = single measure of spirits or 125 ml glass of wine or 250 ml of beer", 
-                            style:"justify"
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("١ وحدة =  قياس واحد من المشروبات الروحية أو"),
-                                style: ["right", {fontSize: 9}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("  125 مل من كأس النبيذ أو 250 مل من البيرة"),
-                                style: ["right", {fontSize: 9}, "arabic"]
-                              }
-                            ],
-                          },
-                        ],
-                      ]
-                    }
-                  },
-                  {},{},{},{}
+                    text:"c. Any complication of pregnancy or childbirth or a child with congenital abnormalities? (Yes/No) If yes, please provide details.",
+                    colSpan:2,
+                    border:[true, true, false, true]
+                  },{},
+                  {
+                    stack:[
+                      {
+                        text:convertTextToRtl("ج. هل من مضاعفات الحمل أو الولادة أو إصابة الطفل بتشوهات خلقية؟ "),
+                      },
+                      {
+                        text:convertTextToRtl(")نعم / لا(")
+                      },
+                      {text:"\n\n"}
+                    ],
+                    colSpan:2,
+                    style: [{fontSize: 9}, "arabic", "right"],
+                    border:[false, true, true, true]
+                  },{}
                 ],
                 [
-                  {text:"4."},
+                  {},
                   {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            text:"Have you ever been advised to give up tobacco and/or alcohol for a specific reason?", 
-                            style:"justify"
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("هل تم نصحك من قبل بالتخلي عن التبغ و / أو "),
-                                style: ["right", {fontSize: 9}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("الكحول لسبب محدد؟"),
-                                style: ["right", {fontSize: 9}, "arabic"]
-                              }
-                            ],
-                          },
-                        ],
-                      ]
-                    }
-                  },
-                  {},{},{},{}
+                    text:[
+                      {text: "d. If you are married, kindly furnish following details."},
+                    ],
+                    colSpan:2,
+                    style:["justify", "header"],
+                    border:[true, true, false, true]
+                  },{},
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("د - إذا كنت متزوجة، يُرجى ذكر التفاصيل التالية:"),
+                        style: [{fontSize: 9}, "arabic"]
+                      },
+                    ],
+                    colSpan:2,
+                    style:["right", "header"],
+                    border:[false, true, true, true]
+                  },{}
                 ],
                 [
-                  {text:"5."},
+                  {},
                   {
-                    layout:{
-                      paddingTop: (i, node) => 0,
-                      paddingBottom: (i, node) => 0,
-                      paddingRight: (i, node) => 0,
-                      paddingLeft: (i, node) => 0
-                    },
-                    table: {
-                      widths: ["*","*"],
-                      body: [
-                        [
-                          {
-                            border:[false,false,false,false],
-                            text:"Have you ever had, been treated for or had symptoms for the following conditions?", 
-                            style:"justify"
-                          },
-                          {
-                            border:[false,false,false,false],
-                            stack:[
-                              {
-                                text:convertTextToRtl("هل سبق لك أن عانيت أو عولجت أو عانيت من"),
-                                style: ["right", {fontSize: 9}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("أعراض من الحالات التالية؟"),
-                                style: ["right", {fontSize: 9}, "arabic"]
-                              }
-                            ],
-                          },
-                        ],
-                      ]
-                    }
-                  },
-                  {},{},{},{}
-                ]
+                    stack:[
+                      {text: "\ni. Husband's full name:"},
+                      {text: "\n"}
+                    ],
+                    colSpan:2,
+                    style:["justify"],
+                    border:[true, true, false, true]
+                  },{},
+                  {
+                    stack:[
+                      {text: "\n", style:{fontSize:6}},
+                      {
+                        text:convertTextToRtl("ا. اسم الزوج بالكامل:"),
+                        style: [{fontSize: 9}, "arabic"]
+                      },
+                    ],
+                    colSpan:2,
+                    style:["right"],
+                    border:[false, true, true, true]
+                  },{}
+                ],
+                [
+                  {},
+                  {
+                    stack:[
+                      {text: "\nii. His occupation:"},
+                      {text: "\n"}
+                    ],
+                    colSpan:2,
+                    style:["justify"],
+                    border:[true, true, false, true]
+                  },{},
+                  {
+                    stack:[
+                      {text: "\n", style:{fontSize:6}},
+                      {
+                        text:convertTextToRtl("اا. مهنته:"),
+                        style: [{fontSize: 9}, "arabic"]
+                      },
+                    ],
+                    colSpan:2,
+                    style:["right"],
+                    border:[false, true, true, true]
+                  },{}
+                ],
+                [
+                  {},
+                  {
+                    stack:[
+                      {text: "\niii. His annual Income:"},
+                      {text: "\n"}
+                    ],
+                    colSpan:2,
+                    style:["justify"],
+                    border:[true, true, false, true]
+                  },{},
+                  {
+                    stack:[
+                      {text: "\n", style:{fontSize:6}},
+                      {
+                        text:convertTextToRtl("ااا.دخله السنوي:"),
+                        style: [{fontSize: 9}, "arabic"]
+                      },
+                    ],
+                    colSpan:2,
+                    style:["right"],
+                    border:[false, true, true, true]
+                  },{}
+                ],
               ]
             }
           }

@@ -484,6 +484,7 @@ const Page_3 = ({
             layout:{
               paddingTop: (i, node) => 0
             },
+            margin:[0,100,0,100],
             table: {
               widths: [550],
               body: [
