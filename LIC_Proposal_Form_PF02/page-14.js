@@ -252,6 +252,20 @@ const Page_14 = ({
                   },{}
                 ],
                 [
+                  {
+                    border: [false, false, false, false],
+                    canvas: [
+                      {
+                        type: 'line',
+                        x1: 0, y1: 0,
+                        x2: 555, y2: 0,
+                        lineWidth: 1
+                      },
+                    ],
+                    colSpan:2
+                  },{}
+                ],
+                [
                   { 
                     border:[false,false,false,false],
                     text :[
@@ -265,20 +279,6 @@ const Page_14 = ({
                       },
                     ],
                     style:"bold",
-                    colSpan:2
-                  },{}
-                ],
-                [
-                  {
-                    border: [false, false, false, false],
-                    canvas: [
-                      {
-                        type: 'line',
-                        x1: 0, y1: 0,
-                        x2: 555, y2: 0,
-                        lineWidth: 1
-                      },
-                    ],
                     colSpan:2
                   },{}
                 ],
