@@ -32,28 +32,22 @@ const Page_6 = ({
                   },
                   {},{},
                   {
-                    text:[
-                      {
-                        text:"□",
-                        style: ["center", {fontSize: 12}, "Times"]
-                      },
-                    ],
+                    border:[true,true,false,true],
+                    image : "./assets/images/check.png",
+                    width: 15,
+                    alignment: 'center',
                   },
                   {
-                    text:[
-                      {
-                        text:"□",
-                        style: ["center", {fontSize: 12}, "Times"]
-                      },
-                    ],
+                    border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
                   },
                   {
-                    text:[
-                      {
-                        text:"□",
-                        style: ["center", {fontSize: 12}, "Times"]
-                      },
-                    ],
+                    border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
                   },
                   {},
                 ],
@@ -68,28 +62,22 @@ const Page_6 = ({
                   },
                   {},{},
                   {
-                    text:[
-                      {
-                        text:"□",
-                        style: ["center", {fontSize: 12}, "Times"]
-                      },
-                    ],
+                    border:[true,true,false,true],
+                    image : "./assets/images/check.png",
+                    width: 15,
+                    alignment: 'center',
                   },
                   {
-                    text:[
-                      {
-                        text:"□",
-                        style: ["center", {fontSize: 12}, "Times"]
-                      },
-                    ],
+                    border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
                   },
                   {
-                    text:[
-                      {
-                        text:"□",
-                        style: ["center", {fontSize: 12}, "Times"]
-                      },
-                    ],
+                    border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
                   },
                   {},
                 ],
@@ -104,28 +92,22 @@ const Page_6 = ({
                   },
                   {},{},
                   {
-                    text:[
-                      {
-                        text:"□",
-                        style: ["center", {fontSize: 12}, "Times"]
-                      },
-                    ],
+                    border:[true,true,false,true],
+                    image : "./assets/images/check.png",
+                    width: 15,
+                    alignment: 'center',
                   },
                   {
-                    text:[
-                      {
-                        text:"□",
-                        style: ["center", {fontSize: 12}, "Times"]
-                      },
-                    ],
+                    border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
                   },
                   {
-                    text:[
-                      {
-                        text:"□",
-                        style: ["center", {fontSize: 12}, "Times"]
-                      },
-                    ],
+                    border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
                   },
                   {},
                 ],

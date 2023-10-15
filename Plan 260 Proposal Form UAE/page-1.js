@@ -418,47 +418,98 @@ const Page_1 = ({
                         text:convertTextToRtl("1."),
                         style: ["left", {fontSize: 11}, "times", "bold"]
                       },
+                    ], rowSpan:2,
+                  },
+                  {
+                    layout: 'noBorders',
+                    table:{
+                      widths:[60,12,20,12,20,12,100,20,12,25,12,20,12,60,],
+                      body:[
+                        [
+                          {
+                            text:"Full Name:  ",
+                            style: ["left", {fontSize: 11}, "Times"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 11,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"Mr.  ",
+                            style: ["left", {fontSize: 11}, "Times"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 11,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"Mrs.  ",
+                            style: ["left", {fontSize: 11}, "Times"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 11,
+                            alignment: 'center',
+                          },
+                          {
+                            text:" Ms.",
+                            style: ["left", {fontSize: 11}, "Times"]
+                          },
+                          {
+                            text:convertTextToRtl("لأنسة  "),
+                            style: ["right", {fontSize: 9}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 11,
+                            alignment: 'center',
+                          },
+                          {
+                            text:convertTextToRtl("السیدة  "),
+                            style: ["right", {fontSize: 9}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 11,
+                            alignment: 'center',
+                          },
+                          {
+                            text:convertTextToRtl("السید  "),
+                            style: ["right", {fontSize: 9}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 11,
+                            alignment: 'center',
+                          },
+                          {
+                            text:convertTextToRtl("الإسم بالكامل"),
+                            style: ["right", {fontSize: 9}, "arabic"]
+                          },
+                        ],
+                      ],
+                    },colSpan:10,border:[true,true,true,false],
+                  },{},{},{},{},{},{},{},{},{},
+                ],
+                [
+                  {
+                    text:[
+                      {
+                        text:convertTextToRtl("1."),
+                        style: ["left", {fontSize: 11}, "times", "bold"]
+                      },
                     ], 
                   },
                   {
                     text:[
-                    {
-                      text:convertTextToRtl("لأنسة  "),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:convertTextToRtl("      □ "),
-                      style: ["right", {fontSize: 11}, "times"]
-                    },
-                    {
-                      text:convertTextToRtl("السیدة  "),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:convertTextToRtl("      □ "),
-                      style: ["right", {fontSize: 11}, "times"]
-                    },
-                    {
-                      text:convertTextToRtl("السید  "),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:convertTextToRtl(":      □ "),
-                      style: ["right", {fontSize: 11}, "times"]
-                    },
-                    {
-                      text:convertTextToRtl("الإسم بالكامل"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:"\nFull Name:  □ Mr.  □ Mrs.  □ Ms.",
-                      style: ["left", {fontSize: 11}, "Times"]
-                    },
-                    
-                    {
-                      text:"\n",
-                      style: ["left", {fontSize: 11}, "Times"]
-                    },
                     {
                       text:"\nFirst                                                              Middle                                        Last",
                       style: ["left", {fontSize: 11}, "Times","bold",],
@@ -487,7 +538,7 @@ const Page_1 = ({
                       text:convertTextToRtl("الأسم الجد  "),
                       style: ["left", {fontSize: 9}, "arabic"]
                     },
-                  ],colSpan:10,
+                  ],colSpan:10,border:[true,false,true,true],
                   },{},{},{},{},{},{},{},{},{},
                 ],
                 [

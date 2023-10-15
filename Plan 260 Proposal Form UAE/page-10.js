@@ -42,13 +42,36 @@ const Page_10 = ({
                     ],colSpan:2 
                   },{},
                   {
-                    text:[
-                    {
-                      text:"□ Yes □ No",
-                      style: ["left", {fontSize: 10}, "Times"]
-                    },
-                  ],
-                 },
+                    layout: 'noBorders',
+                    margin:[-5,-1,0,-5],
+                    table:{
+                      widths:['*','*','*','*'],
+                      body:[
+                        [
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"Yes",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"no",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                        ],
+                      ],
+                    }, 
+                  },
                 ],
               ],
             }

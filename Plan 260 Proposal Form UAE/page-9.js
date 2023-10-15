@@ -272,28 +272,54 @@ const Page_9 = ({
                     ], 
                   },
                   {
-                    text:[
-                      {
-                        text:convertTextToRtl("لا"),
-                        style: ["right", {fontSize: 9}, "arabic"]
-                      },
-                      {
-                        text:" □  ",
-                        style: ["right", {fontSize: 10}, "Times"]
-                      },
-                      {
-                        text:convertTextToRtl("نعم"),
-                        style: ["right", {fontSize: 9}, "arabic"]
-                      },
-                      {
-                        text:" □  ",
-                        style: ["right", {fontSize: 10}, "Times"]
-                      },
-                      {
-                        text:"\n□ Yes □ No",
-                        style: ["left", {fontSize: 10}, "Times"]
-                      },
-                    ],colSpan:2 
+                    layout: 'noBorders',
+                    table:{
+                      widths:[12,20,12,13,15,12,20,12,],
+                      body:[
+                        [
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 11,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"Yes",
+                            style: ["left", {fontSize: 11}, "Times"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 11,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"no",
+                            style: ["left", {fontSize: 11}, "Times"]
+                          },
+                          {
+                            text:convertTextToRtl("لا"),
+                            style: ["right", {fontSize: 9}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 11,
+                            alignment: 'center',
+                          },
+                          {
+                            text:convertTextToRtl("نعم"),
+                            style: ["right", {fontSize: 9}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 11,
+                            alignment: 'center',
+                          },
+                        ],
+                      ],
+                    },colSpan:2 
                   },{},
                 ],
                 [
@@ -364,29 +390,59 @@ const Page_9 = ({
                       },
                     ],colSpan:2 
                   },{},
-                  {text:[
-                    {
-                      text:convertTextToRtl("لا"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                    {
-                      text:convertTextToRtl("نعم"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                    {
-                      text:"\n□ Yes □ No",
-                      style: ["left", {fontSize: 10}, "Times"]
-                    },
-                  ],
-                 },
+                  {
+                    layout: 'noBorders',
+                    margin:[-5,-1,0,-5],
+                    table:{
+                      widths:['*','*','*','*'],
+                      body:[
+                        [
+                          {
+                            text:convertTextToRtl("لا"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:convertTextToRtl("نعم"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                        ],
+                        [
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"Yes",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"no",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                        ],
+                      ],
+                    }, 
+                  },
                 ],
                 [
                   {
@@ -409,29 +465,59 @@ const Page_9 = ({
                       },
                     ],colSpan:2 
                   },{},
-                  {text:[
-                    {
-                      text:convertTextToRtl("لا"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                    {
-                      text:convertTextToRtl("نعم"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                    {
-                      text:"\n□ Yes □ No",
-                      style: ["left", {fontSize: 10}, "Times"]
-                    },
-                  ],
-                 },
+                  {
+                    layout: 'noBorders',
+                    margin:[-5,-1,0,-5],
+                    table:{
+                      widths:['*','*','*','*'],
+                      body:[
+                        [
+                          {
+                            text:convertTextToRtl("لا"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:convertTextToRtl("نعم"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                        ],
+                        [
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"Yes",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"no",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                        ],
+                      ],
+                    }, 
+                  },
                 ],
                 [
                   {
@@ -479,29 +565,59 @@ const Page_9 = ({
                       },
                     ],colSpan:2 
                   },{},
-                  {text:[
-                    {
-                      text:convertTextToRtl("لا"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                    {
-                      text:convertTextToRtl("نعم"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                    {
-                      text:"\n□ Yes □ No",
-                      style: ["left", {fontSize: 10}, "Times"]
-                    },
-                  ],
-                 },
+                  {
+                    layout: 'noBorders',
+                    margin:[-5,-1,0,-5],
+                    table:{
+                      widths:['*','*','*','*'],
+                      body:[
+                        [
+                          {
+                            text:convertTextToRtl("لا"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:convertTextToRtl("نعم"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                        ],
+                        [
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"Yes",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"no",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                        ],
+                      ],
+                    }, 
+                  },
                 ],
                 [
                   {
@@ -524,29 +640,59 @@ const Page_9 = ({
                       },
                     ],colSpan:2 
                   },{},
-                  {text:[
-                    {
-                      text:convertTextToRtl("لا"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                    {
-                      text:convertTextToRtl("نعم"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                    {
-                      text:"\n□ Yes □ No",
-                      style: ["left", {fontSize: 10}, "Times"]
-                    },
-                  ],
-                 },
+                  {
+                    layout: 'noBorders',
+                    margin:[-5,-1,0,-5],
+                    table:{
+                      widths:['*','*','*','*'],
+                      body:[
+                        [
+                          {
+                            text:convertTextToRtl("لا"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:convertTextToRtl("نعم"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                        ],
+                        [
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"Yes",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"no",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                        ],
+                      ],
+                    }, 
+                  },
                 ],
                 [
                   {
@@ -577,29 +723,59 @@ const Page_9 = ({
                       },
                     ],colSpan:2 
                   },{},
-                  {text:[
-                    {
-                      text:convertTextToRtl("لا"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                    {
-                      text:convertTextToRtl("نعم"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                    {
-                      text:"\n□ Yes □ No",
-                      style: ["left", {fontSize: 10}, "Times"]
-                    },
-                  ],
-                 },
+                  {
+                    layout: 'noBorders',
+                    margin:[-5,-1,0,-5],
+                    table:{
+                      widths:['*','*','*','*'],
+                      body:[
+                        [
+                          {
+                            text:convertTextToRtl("لا"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:convertTextToRtl("نعم"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                        ],
+                        [
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"Yes",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"no",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                        ],
+                      ],
+                    }, 
+                  },
                 ],
                 [
                   {
@@ -655,29 +831,59 @@ const Page_9 = ({
                       },
                     ],colSpan:2 
                   },{},
-                  {text:[
-                    {
-                      text:convertTextToRtl("لا"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                    {
-                      text:convertTextToRtl("نعم"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                    {
-                      text:"\n□ Yes □ No",
-                      style: ["left", {fontSize: 10}, "Times"]
-                    },
-                  ],
-                 },
+                  {
+                    layout: 'noBorders',
+                    margin:[-5,-1,0,-5],
+                    table:{
+                      widths:['*','*','*','*'],
+                      body:[
+                        [
+                          {
+                            text:convertTextToRtl("لا"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:convertTextToRtl("نعم"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                        ],
+                        [
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"Yes",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"no",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                        ],
+                      ],
+                    }, 
+                  },
                 ],
                 [
                   {
@@ -708,29 +914,59 @@ const Page_9 = ({
                       },
                     ],colSpan:2 
                   },{},
-                  {text:[
-                    {
-                      text:convertTextToRtl("لا"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                    {
-                      text:convertTextToRtl("نعم"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                    {
-                      text:"\n□ Yes □ No",
-                      style: ["left", {fontSize: 10}, "Times"]
-                    },
-                  ],
-                 },
+                  {
+                    layout: 'noBorders',
+                    margin:[-5,-1,0,-5],
+                    table:{
+                      widths:['*','*','*','*'],
+                      body:[
+                        [
+                          {
+                            text:convertTextToRtl("لا"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:convertTextToRtl("نعم"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                        ],
+                        [
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"Yes",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"no",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                        ],
+                      ],
+                    }, 
+                  },
                 ],
                 [
                   {
@@ -753,29 +989,59 @@ const Page_9 = ({
                       },
                     ],colSpan:2 
                   },{},
-                  {text:[
-                    {
-                      text:convertTextToRtl("لا"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                    {
-                      text:convertTextToRtl("نعم"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                    {
-                      text:"\n□ Yes □ No",
-                      style: ["left", {fontSize: 10}, "Times"]
-                    },
-                  ],
-                 },
+                  {
+                    layout: 'noBorders',
+                    margin:[-5,-1,0,-5],
+                    table:{
+                      widths:['*','*','*','*'],
+                      body:[
+                        [
+                          {
+                            text:convertTextToRtl("لا"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:convertTextToRtl("نعم"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                        ],
+                        [
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"Yes",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:"no",
+                            style: ["left", {fontSize: 8}, "Times"]
+                          },
+                        ],
+                      ],
+                    }, 
+                  },
                 ],
                 [
                   {
@@ -794,25 +1060,37 @@ const Page_9 = ({
                       },
                     ],colSpan:2 
                   },{},
-                  {text:[
-                    {
-                      text:convertTextToRtl("لا"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                    {
-                      text:convertTextToRtl("نعم"),
-                      style: ["right", {fontSize: 9}, "arabic"]
-                    },
-                    {
-                      text:" □  ",
-                      style: ["right", {fontSize: 10}, "Times"]
-                    },
-                  ],
-                 },
+                  {
+                    layout: 'noBorders',
+                    margin:[-5,-1,0,-5],
+                    table:{
+                      widths:['*','*','*','*'],
+                      body:[
+                        [
+                          {
+                            text:convertTextToRtl("لا"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                          {
+                            text:convertTextToRtl("نعم"),
+                            style: ["right", {fontSize: 7}, "arabic"]
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 8,
+                            alignment: 'center',
+                          },
+                        ],
+                      ],
+                    }, 
+                  },
                 ],
               ],
             }
