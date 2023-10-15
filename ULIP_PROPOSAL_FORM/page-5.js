@@ -35,14 +35,42 @@ const Page_5 = ({
                 [
                   { text: 'B.', style: ['cellHeader', 'center'] },
                   { text: 'Who will pay Premium?', style: ['cellHeader', 'center'] },
-                  { text: 'Proposer', border:[true, true, false, true] },
-                  { text: 'Life to be Assured', border:[false, true, true, true] }
+                  { columns:[
+                    { text:"Proposer"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    {text:"\t\t\t\t"}
+                  ], border:[true, true, false, true] },
+                  { columns:[
+                    { text:"Life to be Assured"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    {text:"\t\t\t\t"}
+                  ], border:[false, true, true, true] }
                 ],  
                 [
                   { text: 'C.', style: ['cellHeader', 'center'] },
                   { text: 'Premium Currency', style: ['cellHeader', 'center'] },
-                  { text: 'USD', border:[true, true, false, true] },
-                  { text: 'AED', border:[false, true, true, true] }
+                  { columns:[
+                    { text:"USD"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    {text:"\t\t\t\t"}
+                  ], border:[true, true, false, true] },
+                  { columns:[
+                    { text:"AED"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    {text:"\t\t\t\t"}
+                  ], border:[false, true, true, true] }
                 ],       
                 [
                   {text: 'D',style: ['cellHeader', 'center']}, 

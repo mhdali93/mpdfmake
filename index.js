@@ -6,10 +6,10 @@ const generateLICPF01Document = require("./LIC_Proposal_Form_PF01");
 //   console.log("Done");
 // })
 
-// generatePF1Document().then(() => {
-//   console.log("ULIP_PROPOSAL_FORM Generated")
-// })
+generatePF1Document().then(() => {
+  console.log("ULIP_PROPOSAL_FORM Generated")
+})
 
 generateLICPF01Document().then(() => {
-  console.log("LIC_Proposal_Form_PF02 Generated")
+  console.log("LIC_Proposal_Form_PF01 Generated")
 })

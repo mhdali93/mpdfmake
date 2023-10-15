@@ -60,7 +60,20 @@ const Page_7 = ({
                 ],
                 [
                   { text: 'Are you a tax resident in any other country outside UAE?', style:["cellHeader"], colSpan:3 },{},{},
-                  { text: 'Yes\t\t\t\t\t\t\t\t\t\t\tNo     ', colSpan:3 },
+                  { columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                  ],colSpan:3 },
                   {},{}
                 ],
                 [
@@ -189,19 +202,55 @@ const Page_7 = ({
                 ],
                 [
                   {text: '1', style:["center"]},
-                  {},{},{},{},{},{}
+                  {},{},{
+                    image : "./assets/images/check.png",
+                    width: 10,style:"center"
+                  },{
+                    image : "./assets/images/uncheck.png",
+                    width: 10,style:"center"
+                  },{
+                    image : "./assets/images/check.png",
+                    width: 10,style:"center"
+                  },{}
                 ],
                 [
                   {text: '2', style:["center"]},
-                  {},{},{},{},{},{}
+                  {},{},{
+                    image : "./assets/images/check.png",
+                    width: 10,style:"center"
+                  },{
+                    image : "./assets/images/uncheck.png",
+                    width: 10,style:"center"
+                  },{
+                    image : "./assets/images/check.png",
+                    width: 10,style:"center"
+                  },{}
                 ],
                 [
                   {text: '3', style:["center"]},
-                  {},{},{},{},{},{}
+                  {},{},{
+                    image : "./assets/images/check.png",
+                    width: 10,style:"center"
+                  },{
+                    image : "./assets/images/uncheck.png",
+                    width: 10,style:"center"
+                  },{
+                    image : "./assets/images/check.png",
+                    width: 10,style:"center"
+                  },{}
                 ],
                 [
                   {text: '4', style:["center"]},
-                  {},{},{},{},{},{}
+                  {},{},{
+                    image : "./assets/images/check.png",
+                    width: 10,style:"center"
+                  },{
+                    image : "./assets/images/uncheck.png",
+                    width: 10,style:"center"
+                  },{
+                    image : "./assets/images/check.png",
+                    width: 10,style:"center"
+                  },{}
                 ],
                 [
                   {
@@ -318,19 +367,58 @@ const Page_7 = ({
                   {},
                   { text:"I.",style:["cellHeader", "center"]},
                   { text:"Are you a US Tax Payer?",style:["cellHeader", "left"]},
-                  { text:"Yes\t\t\t\t\t\t\t\t\t\t\t\t\t\tNo"}
+                  {columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                  ]}
                 ],
                 [
                   {},
                   { text:"II.",style:["cellHeader", "center"]},
                   { text:"Are you a US Citizen?",style:["cellHeader", "left"]},
-                  { text:"Yes\t\t\t\t\t\t\t\t\t\t\t\t\t\tNo"}
+                  {columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                  ]}
                 ],
                 [
                   {},
                   { text:"III.",style:["cellHeader", "center"]},
                   { text:"Do you have a US based Telephone No?",style:["cellHeader", "left"]},
-                  { text:"Yes\t\t\t\t\t\t\t\t\t\t\t\t\t\tNo"}
+                  {columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                  ]}
                 ],
                 [
                   {text:'F.',style:["cellHeader", "center"]},

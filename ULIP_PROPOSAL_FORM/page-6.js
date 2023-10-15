@@ -27,23 +27,99 @@ const Page_6 = ({
                 [
                   {text:'A.',style:["cellHeader", "center"]},
                   {text:'Emirates ID (Photocopy both sides)', style:["cellHeader", "left"], colSpan:2},{},
-                  {text:'Proposer\t\t\t\t\t\t\t\tLife to be Assured\t\t\t\t\t\t\t\tNominee   ',style:["left"]}
+                  { columns:[
+                    { text:"Proposer"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"Life to be Assured"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"Nominee"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    },
+                    { text: "\t\t\t"},
+                  ],style:["left"]}
                 ],
                 [
                   {text:'B.',style:["cellHeader", "center"]},
                   {text:'Passport (photocopy with address page)', style:["cellHeader", "left"], colSpan:2},{},
-                  {text:'Proposer\t\t\t\t\t\t\t\tLife to be Assured\t\t\t\t\t\t\t\tNominee   ',style:["left"]}
+                  { columns:[
+                    { text:"Proposer"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"Life to be Assured"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"Nominee"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    },
+                    { text: "\t\t\t"},
+                  ],style:["left"]}
                 ],
                 [
                   {text:'C.',style:["cellHeader", "center"]},
                   {text:'Latest Utilities Bill / Telephone Bill', style:["cellHeader", "left"], colSpan:2},{},
-                  {text:'Proposer\t\t\t\t\t\t\t\tLife to be Assured\t\t\t\t\t\t\t\tNominee   ',style:["left"]}
+                  { columns:[
+                    { text:"Proposer"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"Life to be Assured"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"Nominee"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    },
+                    { text: "\t\t\t"},
+                  ],style:["left"]}
                 ],
                 [
                   {text:'D.',style:["cellHeader", "center"]},
                   {text:'Others', style:["cellHeader", "left"]},
                   {text:'Specify: '},
-                  {text:'Proposer\t\t\t\t\t\t\t\tLife to be Assured\t\t\t\t\t\t\t\tNominee   ',style:["left"]}
+                  { columns:[
+                    { text:"Proposer"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"Life to be Assured"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"Nominee"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    },
+                    { text: "\t\t\t"},
+                  ],style:["left"]}
                 ]
               ],
             }

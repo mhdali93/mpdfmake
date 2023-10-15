@@ -261,85 +261,253 @@ const Page_3 = ({
                 [
                   { text: 'A.', style:["center", "cellHeader"] },
                   { text: 'During last 5 years have you consulted a Medical Practitioner for any ailment requiring treatment for more than a week?', style:["justify", "cellHeader"]},
-                  { text: 'Yes        No'},
+                  {  columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    }
+                  ]},
                   { text: '' }
                 ],
                 [
                   { text: 'B.', style:["center", "cellHeader"] },
                   { text: 'Have you ever been admitted to any hospital for treatment or operation?', style:["justify", "cellHeader"]},
-                  { text: 'Yes        No'},
+                  { columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    }
+                  ]},
                   { text: '' }
                 ],
                 [
                   { text: 'C.', style:["center", "cellHeader"] },
                   { text: 'Have you remained absent from place of work on health grounds during the last 5 years?', style:["justify", "cellHeader"]},
-                  { text: 'Yes        No'},
+                  {  columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    }
+                  ]},
                   { text: '' }
                 ],
                 [
                   { text: 'D.', style:["center", "cellHeader"] },
                   { text: 'Are you suffering from or have you ever suffered from High/low Blood Pressure, Rheumatic fever, Chest Pain, Breathing, Palpitation, Heart diseases, Lungs, Brain, or Nervous system? ', style:["justify", "cellHeader"]},
-                  { text: 'Yes        No'},
+                  {  columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    }
+                  ]},
                   { text: '' }
                 ],
                 [
                   { text: 'E.', style:["center", "cellHeader"] },
                   { text: 'Are you suffering from or have you ever suffered from Diabetes, TB, Cancer, Gout, enlarged glands or Tumors, Epilepsy, Hernia, Leprosy or any other disease of Stomach, Liver, Spleen, Gall Bladder, Pancreas, Kidney, Prostate, Urinary system?', style:["justify", "cellHeader"]},
-                  { text: 'Yes        No'},
+                  {  columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    }
+                  ]},
                   { text: '' }
                 ],
                 [
                   { text: 'F.', style:["center", "cellHeader"] },
                   { text: 'Are you suffering from or have you ever suffered from Hydrocele, Fistula, Varicose Veins, Skin eruption, Filariasis, Goiter, Gonorrhea, Syphilis or any other venereal disease?', style:["justify", "cellHeader"]},
-                  { text: 'Yes        No'},
+                  {  columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    }
+                  ]},
                   { text: '' }
                 ],
                 [
                   { text: 'G.', style:["center", "cellHeader"] },
                   { text: 'Are you suffering from or have you ever suffered from any disease of ear, nose throat or eyes including defective sight or hearing and discharge from ears?', style:["justify", "cellHeader"]},
-                  { text: 'Yes        No'},
+                  {  columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    }
+                  ]},
                   { text: '' }
                 ],
                 [
                   { text: 'H.', style:["center", "cellHeader"] },
                   { text: 'Do you use or ever used Alcohol / Narcotics / Tobacco / any other drugs?', style:["justify", "cellHeader"]},
-                  { text: 'Yes        No'},
+                  {  columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    }
+                  ]},
                   { text: '' }
                 ],
                 [
                   { text: 'I.', style:["center", "cellHeader"] },
                   { text: 'Have you ever received advice/treatment for Hepatitis B or AIDS condition?', style:["justify", "cellHeader"]},
-                  { text: 'Yes        No'},
+                  {  columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    }
+                  ]},
                   { text: '' }
                 ],
                 [
                   { text: 'J.', style:["center", "cellHeader"] },
                   { text: 'Has any of your relations, living or dead suffered from any hereditary or infectious disease like diabetes, insanity, epilepsy, gout, asthma, cancer, tuberculosis, leprosy etc.? ', style:["justify", "cellHeader"]},
-                  { text: 'Yes        No'},
+                  {  columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    }
+                  ]},
                   { text: '' }
                 ],
                 [
                   { text: 'K.', style:["center", "cellHeader"] },
                   { text: 'Have you any bodily defect or deformity? If so, give details.', style:["justify", "cellHeader"]},
-                  { text: 'Yes        No'},
+                  {  columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    }
+                  ]},
                   { text: '' }
                 ],
                 [
                   { text: 'L.', style:["center", "cellHeader"] },
                   { text: 'Did you ever have any operation, accident, or injury?', style:["justify", "cellHeader"]},
-                  { text: 'Yes        No'},
+                  {  columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    }
+                  ]},
                   { text: '' }
                 ],
                 [
                   { text: 'M.', style:["center", "cellHeader"] },
                   { text: 'Have you ever had ECG, X-Ray, Screening blood/urine/stool examination?', style:["justify", "cellHeader"]},
-                  { text: 'Yes        No'},
+                  {  columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    }
+                  ]},
                   { text: '' }
                 ],
                 [
                   { text: 'N.', style:["center", "cellHeader"] },
                   { text: 'Has your weight changed in the past year? If yes state with reason', style:["justify", "cellHeader"]},
-                  { text: 'Yes        No'},
+                  {  columns:[
+                    { text:"Yes"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"No"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    }
+                  ]},
                   { text: '' }
                 ],
                 [

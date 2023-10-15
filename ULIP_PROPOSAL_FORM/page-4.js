@@ -286,17 +286,59 @@ const Page_4 = ({
                 [
                   { text: 'C.', style: ['cellHeader', 'center'] },
                   { text: 'Premium Type', style: ['cellHeader', 'center'] },
-                  { text: 'Single', style: ['cellHeader', 'center'] },
+                  { columns:[
+                    { text:"Single"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    }
+                  ], style: ['cellHeader', 'center'] },
                   { text: '$', style: ['left'] },
-                  { text: 'Top-up', style: ['cellHeader', 'center'] },
+                  {  columns:[
+                    { text:"Top-up "},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    }
+                  ], style: ['cellHeader', 'center'] },
                   { text: '$', style: ['left'] },
-                  { text: 'Regular', style: ['cellHeader', 'center'] },
+                  { columns:[
+                    { text:"Regular"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    }
+                  ], style: ['cellHeader', 'center'] },
                   { text: '$', style: ['left'] },
                 ],  
                 [
                   { text: 'D.', style: ['cellHeader', 'center'] },
                   { text: 'Frequency (If regular)', style: ['cellHeader', 'center'] },
-                  { text: 'Yearly\t\t\t\t\t\t\t\tHalf Yearly\t\t\t\t\t\t\t\t\tQuarterly\t\t\t\t\t\t\t\t\tMonthly', style: ['left'], colSpan:6 },
+                  { columns:[
+                    { text:"Yearly"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"Half Yearly"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"Quarterly"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    },
+                    { text: "\t"},
+                    { text:"tMonthly"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    }
+                  ], style: ['left'], colSpan:6 },
                   {},{},{},{},{}
                 ],   
                 [

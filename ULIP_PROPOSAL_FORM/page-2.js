@@ -15,7 +15,7 @@ const Page_2 = ({
               heights: 13,
               widths: [
                 9, 
-                85, 
+                80, 
                 "*", 
                 "*", 
                 "*", 
@@ -24,14 +24,14 @@ const Page_2 = ({
                 "*", 
                 "*", 
                 "*", 
-                60, 
+                57, 
                 "*", 
                 "*", 
                 "*", 
                 "*", 
                 "*", 
                 "*",
-                50,
+                47,
                 "*", 
                 "*", 
                 "*", 
@@ -51,49 +51,94 @@ const Page_2 = ({
                 [
                   { text: 'A.', style:["center", "cellHeader"] },
                   { text: 'Full Name', style:["left", "cellHeader"] },
-                  { text: 'First name', style: ["left", "readOnly"], colSpan: 8 },
+                  { text: 'First name', style: ["left"], colSpan: 8 },
                   {},{},{},{},{},{},{},
-                  { text: 'Last name', style: ["left", "readOnly"], colSpan: 8 },
+                  { text: 'Last name', style: ["left"], colSpan: 8 },
                   {},{},{},{},{},{},{},
-                  { text: 'Mr.', style:["left", "cellHeader"], colSpan: 2 },
+                  { 
+                    columns:[
+                      { text:"Mr"},
+                      {
+                        image : "./assets/images/check.png",
+                        width: 10,
+                      }
+                    ], 
+                    style:["left", "cellHeader"], colSpan: 2 
+                  },
                   {},
-                  { text: 'Mrs.', style:["left", "cellHeader"], colSpan: 2 },
+                  { 
+                    columns:[
+                      { text:"Mrs"},
+                      {
+                        image : "./assets/images/check.png",
+                        width: 10,
+                      }
+                    ], 
+                    style:["left", "cellHeader"], colSpan: 2 
+                  },
                   {},
-                  { text: 'Ms.', style:["left", "cellHeader"], colSpan: 2 },
+                  { 
+                    columns:[
+                      { text:"Ms"},
+                      {
+                        image : "./assets/images/check.png",
+                        width: 10,
+                      }
+                    ], 
+                    style:["left", "cellHeader"], colSpan: 2 
+                  },
                   {}
                 ],
                 [
                   { text: 'B.', style:["center", "cellHeader"] },
                   { text: 'Father Name', style:["left", "cellHeader"] },
-                  { text: 'First name', style: ["left", "readOnly"], colSpan: 8 },
+                  { text: 'First name', style: ["left"], colSpan: 8 },
                   {},{},{},{},{},{},{},
-                  { text: 'Last name', style: ["left", "readOnly"], colSpan: 8 },
+                  { text: 'Last name', style: ["left"], colSpan: 8 },
                   {},{},{},{},{},{},{},
-                  { text: 'Male', style:["left", "cellHeader"], colSpan: 3 },
+                  { 
+                    columns:[
+                      { text:"Male"},
+                      {
+                        image : "./assets/images/check.png",
+                        width: 10,
+                      }
+                    ], 
+                    style:["left", "cellHeader"], colSpan: 3 
+                  },
                   {},{},
-                  { text: 'Female', style:["left", "cellHeader"], colSpan: 3 },
+                  { 
+                    columns:[
+                      { text:"Female"},
+                      {
+                        image : "./assets/images/check.png",
+                        width: 10,
+                      }
+                    ], 
+                    style:["left", "cellHeader"], colSpan: 3 
+                  },
                   {},{}
                 ],
                 [
                   { text: 'C.', style:["center", "cellHeader"] },
                   { text: 'Nationality', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 8 },
+                  { text: '', style: ["left"], colSpan: 8 },
                   {},{},{},{},{},{},{},
                   { text: 'Place of Birth', style:["left", "cellHeader"] },
-                  { text: '', style: ["left", "readOnly"], colSpan: 13 },
+                  { text: '', style: ["left"], colSpan: 13 },
                   {},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: 'D.', style:["center", "cellHeader"] },
                   { text: 'Date of Birth', style: ["left", "cellHeader"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
+                  { text: 'D', style: ["left"] },
+                  { text: 'D', style: ["left"] },
+                  { text: 'M', style: ["left"] },
+                  { text: 'M', style: ["left"] },
+                  { text: 'Y', style: ["left"] },
+                  { text: 'Y', style: ["left"] },
+                  { text: 'Y', style: ["left"] },
+                  { text: 'Y', style: ["left"] },
                   { text: 'Age', style: ["left", "cellHeader"] },
                   { text: '', colSpan: 7 },
                   {},{},{},{},{},{},
@@ -103,74 +148,98 @@ const Page_2 = ({
                 [
                   { text: 'E.', style:["center", "cellHeader"] },
                   { text: 'Emirates ID Number', style:["left", "cellHeader"] },
-                  { text: '', style: ["left", "readOnly"], colSpan: 8 },
+                  { text: '', style: ["left"], colSpan: 8 },
                   {},{},{},{},{},{},{},
                   { text: 'Issue Date', style:["left", "cellHeader"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
+                  { text: 'D', style: ["left"] },
+                  { text: 'D', style: ["left"] },
+                  { text: 'M', style: ["left"] },
+                  { text: 'M', style: ["left"] },
+                  { text: 'Y', style: ["left"] },
+                  { text: 'Y', style: ["left"] },
                   { text: 'Expiry Date',style:["left", "cellHeader"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
+                  { text: 'D', style: ["left"] },
+                  { text: 'D', style: ["left"] },
+                  { text: 'M', style: ["left"] },
+                  { text: 'M', style: ["left"] },
+                  { text: 'Y', style: ["left"] },
+                  { text: 'Y', style: ["left"] },
                 ],
                 [
                   { text: 'F.', style:["center", "cellHeader"] },
                   { text: 'Passport Number', style:["left", "cellHeader"] },
-                  { text: '', style: ["left", "readOnly"], colSpan: 8 },
+                  { text: '', style: ["left"], colSpan: 8 },
                   {},{},{},{},{},{},{},
                   { text: 'Issue Date', style:["left", "cellHeader"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
+                  { text: 'D', style: ["left"] },
+                  { text: 'D', style: ["left"] },
+                  { text: 'M', style: ["left"] },
+                  { text: 'M', style: ["left"] },
+                  { text: 'Y', style: ["left"] },
+                  { text: 'Y', style: ["left"] },
                   { text: 'Expiry Date',style:["left", "cellHeader"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'D', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'M', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
-                  { text: 'Y', style: ["left", "readOnly"] },
+                  { text: 'D', style: ["left"] },
+                  { text: 'D', style: ["left"] },
+                  { text: 'M', style: ["left"] },
+                  { text: 'M', style: ["left"] },
+                  { text: 'Y', style: ["left"] },
+                  { text: 'Y', style: ["left"] },
                 ],
                 [
                   { text: 'G.', style:["center", "cellHeader"] },
                   { text: 'Qualification', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 8 },
+                  { text: '', style: ["left"], colSpan: 8 },
                   {},{},{},{},{},{},{},
                   { text: 'Annual Income', style:["left", "cellHeader"] },
-                  { text: '', style: ["left", "readOnly"], colSpan: 13 },
+                  { text: '', style: ["left"], colSpan: 13 },
                   {},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: 'H.', style:["center", "cellHeader"] },
                   { text: 'Marital Status', style:["left", "cellHeader"]},
-                  { text: 'Single', style: ["left", "cellHeader"], colSpan: 4 },
+                  { columns:[
+                    { text:"Single"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    }
+                  ], style: ["left", "cellHeader"], colSpan: 4 },
                   {},{},{},
-                  { text: 'Married', style: ["left", "cellHeader"], colSpan: 4 },
+                  { columns:[
+                    { text:"Married"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    }
+                  ], style: ["left", "cellHeader"], colSpan: 4 },
                   {},{},{},
-                  { text: 'Widow', style:["left", "cellHeader"], colSpan:4 },
+                  { columns:[
+                    { text:"Widow"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    }
+                  ], style:["left", "cellHeader"], colSpan:4 },
                   {},{},{},
-                  { text: 'Divorced', style: ["left", "cellHeader"], colSpan: 10 },
+                  { columns:[
+                    { text:"Divorced"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    }
+                  ], style: ["left", "cellHeader"], colSpan: 10 },
                   {},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: 'I.', style:["center", "cellHeader"] },
                   { text: 'Relation with Proposer', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 22 },
+                  { text: '', style: ["left"], colSpan: 22 },
                   {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: 'J.', style:["center", "cellHeader"] },
                   { text: 'Email', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 22 },
+                  { text: '', style: ["left"], colSpan: 22 },
                   {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
@@ -180,118 +249,154 @@ const Page_2 = ({
                 [
                   { text: 'K.', style:["center", "cellHeader"] },
                   { text: 'Residential', style:["left", "cellHeader"]},
-                  { text: 'Building:', style: ["left", "readOnly"], colSpan: 22 },
+                  { text: 'Building:', style: ["left"], colSpan: 22 },
                   {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: '', style:["center", "cellHeader"] },
                   { text: '', style:["left", "cellHeader"]},
-                  { text: 'Street:', style: ["left", "readOnly"], colSpan: 22 },
+                  { text: 'Street:', style: ["left"], colSpan: 22 },
                   {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: '', style:["center", "cellHeader"] },
                   { text: '', style:["left", "cellHeader"]},
-                  { text: 'PO Box.', style: ["left", "readOnly"], colSpan: 8 },
+                  { text: 'PO Box.', style: ["left"], colSpan: 8 },
                   {},{},{},{},{},{},{},
-                  { text: 'City: ', style:["left", "readOnly"] },
-                  { text: 'Country:', style: ["left", "readOnly"], colSpan: 13 },
+                  { text: 'City: ', style:["left"] },
+                  { text: 'Country:', style: ["left"], colSpan: 13 },
                   {},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: '', style:["center", "cellHeader"] },
                   { text: 'Mobile', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 8 },
+                  { text: '', style: ["left"], colSpan: 8 },
                   {},{},{},{},{},{},{},
                   { text: 'Telephone', style:["left", "cellHeader"] },
-                  { text: '', style: ["left", "readOnly"], colSpan: 13 },
+                  { text: '', style: ["left"], colSpan: 13 },
                   {},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: 'L.', style:["center", "cellHeader"] },
                   { text: 'Office', style:["left", "cellHeader"]},
-                  { text: 'Building:', style: ["left", "readOnly"], colSpan: 22 },
+                  { text: 'Building:', style: ["left"], colSpan: 22 },
                   {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: '', style:["center", "cellHeader"] },
                   { text: '', style:["left", "cellHeader"]},
-                  { text: 'Street:', style: ["left", "readOnly"], colSpan: 22 },
+                  { text: 'Street:', style: ["left"], colSpan: 22 },
                   {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: '', style:["center", "cellHeader"] },
                   { text: '', style:["left", "cellHeader"]},
-                  { text: 'PO Box.', style: ["left", "readOnly"], colSpan: 8 },
+                  { text: 'PO Box.', style: ["left"], colSpan: 8 },
                   {},{},{},{},{},{},{},
-                  { text: 'City: ', style:["left", "readOnly"] },
-                  { text: 'Country:', style: ["left", "readOnly"], colSpan: 13 },
+                  { text: 'City: ', style:["left"] },
+                  { text: 'Country:', style: ["left"], colSpan: 13 },
                   {},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: '', style:["center", "cellHeader"] },
                   { text: 'Mobile', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 8 },
+                  { text: '', style: ["left"], colSpan: 8 },
                   {},{},{},{},{},{},{},
                   { text: 'Telephone', style:["left", "cellHeader"] },
-                  { text: '', style: ["left", "readOnly"], colSpan: 13 },
+                  { text: '', style: ["left"], colSpan: 13 },
                   {},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: 'M.', style:["center", "cellHeader"] },
                   { text: 'Home Country', style:["left", "cellHeader"]},
-                  { text: 'Building:', style: ["left", "readOnly"], colSpan: 22 },
+                  { text: 'Building:', style: ["left"], colSpan: 22 },
                   {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: '', style:["center", "cellHeader"] },
                   { text: '', style:["left", "cellHeader"]},
-                  { text: 'Street:', style: ["left", "readOnly"], colSpan: 22 },
+                  { text: 'Street:', style: ["left"], colSpan: 22 },
                   {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: '', style:["center", "cellHeader"] },
                   { text: '', style:["left", "cellHeader"]},
-                  { text: 'PO Box.', style: ["left", "readOnly"], colSpan: 8 },
+                  { text: 'PO Box.', style: ["left"], colSpan: 8 },
                   {},{},{},{},{},{},{},
-                  { text: 'City: ', style:["left", "readOnly"] },
-                  { text: 'Country:', style: ["left", "readOnly"], colSpan: 13 },
+                  { text: 'City: ', style:["left"] },
+                  { text: 'Country:', style: ["left"], colSpan: 13 },
                   {},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: '', style:["center", "cellHeader"] },
                   { text: 'Mobile', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 8 },
+                  { text: '', style: ["left"], colSpan: 8 },
                   {},{},{},{},{},{},{},
                   { text: 'Telephone', style:["left", "cellHeader"] },
-                  { text: '', style: ["left", "readOnly"], colSpan: 13 },
+                  { text: '', style: ["left"], colSpan: 13 },
                   {},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: 'N. ', style:["center", "cellHeader"] },
                   { text: 'Correspondence Address', style:["left", "cellHeader"]},
-                  { text: 'Residential                        Office', style: ["left", "cellHeader"], colSpan: 9 },
+                  { columns:[
+                    { text:"Residential"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    },
+                    { text: "\t\t\t\t\t"},
+                    { text:"Office"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 10,
+                    }
+                  ], style: ["left", "cellHeader"], colSpan: 9 },
                   {},{},{},{},{},{},{},{},
-                  { text: '', style: ["left", "readOnly"], colSpan: 13 },
+                  { text: '', style: ["left"], colSpan: 13 },
                   {},
                   {},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: 'O.', style:["center", "cellHeader"] },
                   { text: 'Occupation', style:["left", "cellHeader"]},
-                  { text: 'Salaried', style: ["left", "cellHeader"], colSpan: 4 },
+                  { columns:[
+                    { text:"Salaried"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    }
+                  ], style: ["left", "cellHeader"], colSpan: 4 },
                   {},{},{},
-                  { text: 'Business', style: ["left", "cellHeader"], colSpan: 4 },
+                  { columns:[
+                    { text:"Business"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    }
+                  ], style: ["left", "cellHeader"], colSpan: 4 },
                   {},{},{},
-                  { text: 'Self Employed', style:["left", "cellHeader"], colSpan:6 },
+                  { columns:[
+                    { text:'Self Employed'},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    }
+                  ], style:["left", "cellHeader"], colSpan:6 },
                   {},{},{},{},{},
-                  { text: 'Other', style: ["left", "cellHeader"], colSpan: 8 },
+                  { columns:[
+                    { text:'Other'},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    }
+                  ], style: ["left", "cellHeader"], colSpan: 8 },
                   {},{},{},{},{},{},{}
                 ],
                 [
                   { text: 'P.', style:["center", "cellHeader"] },
                   { text: 'Job Title', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 8 },
+                  { text: '', style: ["left"], colSpan: 8 },
                   {},{},{},{},{},{},{},
                   { text: 'Length of Service', style:["left", "cellHeader"], colSpan:4 },
                   {},{},{},
@@ -301,13 +406,13 @@ const Page_2 = ({
                 [
                   { text: 'Q.', style:["center", "cellHeader"] },
                   { text: 'Company Name', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 22 },
+                  { text: '', style: ["left"], colSpan: 22 },
                   {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
                   { text: 'R.', style:["center", "cellHeader"] },
                   { text: 'Name of Business', style:["left", "cellHeader"]},
-                  { text: '', style: ["left", "readOnly"], colSpan: 22 },
+                  { text: '', style: ["left"], colSpan: 22 },
                   {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
                 ],
                 [
@@ -326,9 +431,21 @@ const Page_2 = ({
                   { text: 'T.', style:["center", "cellHeader"] },
                   { text: 'Are you a Politically Exposed Person*?', style:["left", "cellHeader"], colSpan: 7 },
                   {},{},{},{},{},{},
-                  { text: 'Yes', style: ["left", "cellHeader"], colSpan: 8 },
+                  { columns:[
+                    { text:'Yes'},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    }
+                  ], style: ["left", "cellHeader"], colSpan: 8 },
                   {},{},{},{},{},{},{},
-                  { text: 'No', style:["left", "cellHeader"], colSpan:8 },
+                  { columns:[
+                    { text:'No'},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 10,
+                    }
+                  ], style:["left", "cellHeader"], colSpan:8 },
                   {},{},{},{},{}
                 ],
               ],
