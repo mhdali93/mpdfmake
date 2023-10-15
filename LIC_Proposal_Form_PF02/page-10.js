@@ -294,11 +294,11 @@ const Page_10 = ({
                             border:[false,false,false,false],
                             stack:[
                               {
-                                text:"Any condition affecting your bowel or digestive system?"
+                                text:"Any disease or disorder of lung or respiratory system?"
                               },
                               {
-                                text:"(including reflux, ulcers, hernia, recurrent indigestion, persistent constipation or diarrhea, gastric banding or sleeve etc.)"
-                              },
+                                text:"(Including shortness of breath, asthma, bronchitis, persistent cough, tuberculosis etc.)"
+                              }
                             ],
                             style:["justify",{fontSize:8}]
                           },
@@ -306,21 +306,17 @@ const Page_10 = ({
                             border:[false,false,false,false],
                             stack:[
                               {
-                                text:convertTextToRtl("أى حالة تؤثر على الأمعاء أو الجهاز الهضمي؟"),
+                                text:convertTextToRtl("أي مرض أو اضطراب في الرئة أو الجهاز التنفسي؟"),
                                 style: ["right", {fontSize: 8}, "arabic"]
                               },
                               {
-                                text:convertTextToRtl("(بما في ذلك الارتجاع أو القرحة أو الفتق أو عسر"),
+                                text:convertTextToRtl("بما في ذلك ضيق التنفس ، والربو ، والتهاب"),
                                 style: ["right", {fontSize: 8}, "arabic"]
                               },
                               {
-                                text:convertTextToRtl("الهضم المتكرر أو الإمساك أو الإسهال المستمر أو ربط"),
+                                text:convertTextToRtl("الشعب الهوائية ، والسعال المستمر ، والسل ، إلخ"),
                                 style: ["right", {fontSize: 8}, "arabic"]
-                              },
-                              {
-                                text:convertTextToRtl("المعدة أو التكميم وما إلى ذلك"),
-                                style: ["right", {fontSize: 8}, "arabic"]
-                              },
+                              }
                             ],
                             style: ["right", {fontSize: 8}, "arabic"]
                           },
