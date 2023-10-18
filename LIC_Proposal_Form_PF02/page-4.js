@@ -290,10 +290,80 @@ const Page_4 = ({
                   },{},{},{}
                 ],
                 [
-                  {
-                    text:"USD\t\t\tBD\t\t\tAED\t\t\tKD\t\t\tOR\t\t\tQR\t\t\tUSD\t\t\tBD\t\t\tAED\t\t\tKD\t\t\tOR\t\t\tQR",
-                    colSpan:8,
-                  },{},{},{},{},{},{},{}
+                  { columns:[
+                    { text:"USD"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 8,
+                    },
+                    { text: "\t"},
+                    { text:"BD"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 8,
+                    },
+                    { text: "\t"},
+                    { text:"AED"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 8,
+                    },
+                    { text: "\t"},
+                    { text:"KD"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 8,
+                    },
+                    { text: "\t"},
+                    { text:"OR"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 8,
+                    },
+                    { text: "\t"},
+                    { text:"QR"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 8,
+                    }
+                  ], style: ['left'], colSpan:4 },{},{},{},
+                  { columns:[
+                    { text:"USD"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 8,
+                    },
+                    { text: "\t"},
+                    { text:"BD"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 8,
+                    },
+                    { text: "\t"},
+                    { text:"AED"},
+                    {
+                      image : "./assets/images/uncheck.png",
+                      width: 8,
+                    },
+                    { text: "\t"},
+                    { text:"KD"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 8,
+                    },
+                    { text: "\t"},
+                    { text:"OR"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 8,
+                    },
+                    { text: "\t"},
+                    { text:"QR"},
+                    {
+                      image : "./assets/images/check.png",
+                      width: 8,
+                    }
+                  ], style: ['left'], colSpan:4 },{},{},{},
                 ],
                 [
                   {
@@ -321,12 +391,109 @@ const Page_4 = ({
                   },{},{}
                 ],
                 [
-                  { text: "Salary Income\t\t\t\tBusiness Income\nOther sources .....................",
-                    colSpan:4,
+                  {
+                    border: [true, false, true, true],
+                    margin:[0,0,0,0],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,"*",20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"Salary Income",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"Business Income",
+                          },
+                        ],
+                        [
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"Other Sources",
+                          },
+                          {
+                            text:" ",
+                          },
+                          {
+                            text:" ",
+                          },
+                        ],
+                      ],
+                    },colSpan:4,
                   },{},{},{},
                   {
-                    text: "Salary Income\t\t\t\tBusiness Income\nOther sources .....................",
-                    colSpan:4,
+                    border: [true, false, true, true],
+                    margin:[0,0,0,0],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,"*",20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"Salary Income",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"Business Income",
+                          },
+                        ],
+                        [
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"Other Sources",
+                          },
+                          {
+                            text:" ",
+                          },
+                          {
+                            text:" ",
+                          },
+                        ],
+                      ],
+                    },colSpan:4,
                   },{},{},{}
                 ],
                 [

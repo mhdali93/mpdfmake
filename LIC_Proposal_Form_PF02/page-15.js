@@ -456,17 +456,85 @@ const Page_15 = ({
                   {}
                 ],
                 [
-                  {text:"\n"},{},{},{},{},{},{}
+                  {text:"\n"},{},{},
+                  {border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },
+                  {
+                    border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },
+                  {
+                    border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },{}
                 ],
                 [
-                  {text:"\n"},{},{},{},{},{},{}
+                  {text:"\n"},{},{},
+                  {border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },
+                  {
+                    border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },
+                  {
+                    border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },{}
                 ],
                 [
-                  {text:"\n"},{},{},{},{},{},{}
+                  {text:"\n"},{},{},
+                  {border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },
+                  {
+                    border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },
+                  {
+                    border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },{}
                 ],
                 [
-                  {text:"\n"},{},{},{},{},{},{}
-                ]
+                  {text:"\n"},{},{},
+                  {border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },
+                  {
+                    border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },
+                  {
+                    border:[true,true,false,true],
+                    image : "./assets/images/uncheck.png",
+                    width: 15,
+                    alignment: 'center',
+                  },{}
+                ],
               ],
             },
           }

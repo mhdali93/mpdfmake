@@ -73,14 +73,79 @@ const Page_6 = ({
                 ],
                 [
                   {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    colSpan:2,
-                    style: "center"
+                    border: [true, true, true, true],
+                    margin:[0,5,0,25],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    },colSpan:2
                   },{},
                   {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    style: "center"
-                  }
+                    border: [true, true, true, true],
+                    margin:[0,5,0,25],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    }
+                  },
                 ],
                 [
                   {text:"24."},
@@ -111,14 +176,79 @@ const Page_6 = ({
                 ],
                 [
                   {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    colSpan:2,
-                    style: "center"
+                    border: [true, true, true, true],
+                    margin:[0,5,0,25],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    },colSpan:2
                   },{},
                   {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    style: "center"
-                  }
+                    border: [true, true, true, true],
+                    margin:[0,5,0,25],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    }
+                  },
                 ],
                 [
                   {text:"25."},
@@ -144,14 +274,79 @@ const Page_6 = ({
                 ],
                 [
                   {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    colSpan:2,
-                    style: "center"
+                    border: [true, true, true, true],
+                    margin:[0,5,0,25],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    },colSpan:2
                   },{},
                   {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    style: "center"
-                  }
+                    border: [true, true, true, true],
+                    margin:[0,5,0,25],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    }
+                  },
                 ],
                 [
                   {text:"26."},
@@ -177,14 +372,79 @@ const Page_6 = ({
                 ],
                 [
                   {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    colSpan:2,
-                    style: "center"
+                    border: [true, true, true, true],
+                    margin:[0,5,0,25],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    },colSpan:2
                   },{},
                   {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    style: "center"
-                  }
+                    border: [true, true, true, true],
+                    margin:[0,5,0,25],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    }
+                  },
                 ],
                 [
                   {text:"27."},
@@ -215,14 +475,79 @@ const Page_6 = ({
                 ],
                 [
                   {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    colSpan:2,
-                    style: "center"
+                    border: [true, true, true, true],
+                    margin:[0,5,0,25],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    },colSpan:2
                   },{},
                   {
-                    text:"\nYES / NO\tIf yes, please provide details.\n\n",
-                    style: "center"
-                  }
+                    border: [true, true, true, true],
+                    margin:[0,5,0,25],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    }
+                  },
                 ],
                 [
                   {
@@ -278,6 +603,7 @@ const Page_6 = ({
             layout:{
               paddingTop: (i, node) => 0
             },
+            margin:[0,0,0,30],
             table: {
               widths: [550],
               body: [

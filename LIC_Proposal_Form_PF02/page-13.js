@@ -144,11 +144,11 @@ const Page_13 = ({
               ],
               body: [
                 [
-                  {text:"17" },
+                  {text:"17",rowSpan:2 },
                   {
                     text:"Do you agree to the condition that the policy if issued on the basis of this proposal, will be automatically vest in the life to be assured on the deferred date (Applicable only in case of proposal on the life of minor)",
                     style: "justify",
-                    border:[true,true,false,true],
+                    border:[true,true,false,false],
                   },
                   {
                     stack:[
@@ -167,7 +167,59 @@ const Page_13 = ({
                         {text:"المؤجل"},
                       ],style: ["right", {fontSize: 10}, "arabic"]}
                     ],
-                    border:[false,true,true,true],
+                    border:[false,true,true,false],
+                  },
+                ],
+                [
+                  {
+                    text:" ",
+                  },
+                  {
+                    border: [false, false, false, true],
+                    margin:[0,-10,0,-10],
+                    layout: 'noBorders',
+                    table: {
+                      widths: [
+                        20,20,20,20,"*"
+                      ],
+                      body: [
+                        [
+                          {
+                            text:"Yes",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/check.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"/ No",
+                          },
+                          {
+                            border:[true,true,false,true],
+                            image : "./assets/images/uncheck.png",
+                            width: 15,
+                            alignment: 'center',
+                            
+                          },
+                          {
+                            text:"If yes, please provide details.",
+                          },
+                        ],
+                      ],
+                    }
+                  },
+                  {
+                    text:[
+                      { text:convertTextToRtl(" "),
+                      style: ["right"],
+                      },
+                      {
+                        text:"\n",
+                      },
+                    ],border:[false,false,true,true],
                   },
                 ],
                 [
@@ -340,6 +392,7 @@ const Page_13 = ({
             layout:{
               paddingTop: (i, node) => 0
             },
+            margin:[0,-10,0,0],
             table: {
               widths: [550],
               body: [
